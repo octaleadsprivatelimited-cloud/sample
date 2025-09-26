@@ -32,8 +32,11 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <section className="hero">
+    <div className="contact-page">
+      <section className="hero hero-with-image">
+        <div className="hero-background">
+          <div className="hero-overlay"></div>
+        </div>
         <div className="hero-content">
           <h1>Contact Us</h1>
           <p>

@@ -12,13 +12,12 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4>Services</h4>
+            <h4>Work</h4>
             <ul>
-              <li><Link to="/wedding">Wedding Photography</Link></li>
-              <li><Link to="/event">Event Photography</Link></li>
-              <li><Link to="/birthday">Birthday Photography</Link></li>
-              <li><Link to="/portrait">Portrait Photography</Link></li>
-              <li><Link to="/nature">Nature Photography</Link></li>
+              <li><Link to="/work/abroad-shoots">Abroad Shoots</Link></li>
+              <li><Link to="/work/photo-shoot">Photo Shoot</Link></li>
+              <li><Link to="/work/product-shoot">Product Shoot</Link></li>
+                  <li><Link to="/work/tv-cs">T V C's</Link></li>
             </ul>
           </div>
           
@@ -26,8 +25,8 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/portfolio">Portfolio</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/services">Our Services</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>

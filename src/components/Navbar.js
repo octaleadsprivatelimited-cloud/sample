@@ -110,10 +110,19 @@ const Navbar = () => {
                   className={location.pathname === '/work/tv-cs' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  TV C's
+                      T V C's
                 </Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link 
+              to="/contact" 
+              className={location.pathname === '/contact' ? 'active' : ''}
+              onClick={closeMobileMenu}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         

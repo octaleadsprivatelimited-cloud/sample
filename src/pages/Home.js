@@ -8,6 +8,7 @@ import {
   portraitImages, 
   natureImages 
 } from '../data/images';
+import { abroadShootsImages } from '../data/abroadShootsImages';
 
 const Home = () => {
   return (
@@ -29,6 +30,30 @@ const Home = () => {
             <Link to="/about" className="btn-secondary">About Us</Link>
           </div>
         </div>
+        
+        {/* Social Media Icons */}
+        <div className="hero-social-icons">
+          <a href="https://twitter.com/pixeli" target="_blank" rel="noopener noreferrer" className="social-icon" title="Follow us on Twitter">
+            <svg className="social-twitter" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/pixeli" target="_blank" rel="noopener noreferrer" className="social-icon" title="Follow us on Facebook">
+            <svg className="social-facebook" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/pixeli" target="_blank" rel="noopener noreferrer" className="social-icon" title="Follow us on Instagram">
+            <svg className="social-instagram" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.281c-.49 0-.875-.385-.875-.875s.385-.875.875-.875.875.385.875.875-.385.875-.875.875zm-7.83 1.297c-1.297 0-2.448.49-3.323 1.297-.807.875-1.297 2.026-1.297 3.323s.49 2.448 1.297 3.323c.875.807 2.026 1.297 3.323 1.297s2.448-.49 3.323-1.297c.807-.875 1.297-2.026 1.297-3.323s-.49-2.448-1.297-3.323c-.875-.807-2.026-1.297-3.323-1.297z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/pixeli" target="_blank" rel="noopener noreferrer" className="social-icon" title="Subscribe to our YouTube">
+            <svg className="social-youtube" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
       </section>
 
       {/* About Us Section */}
@@ -36,11 +61,10 @@ const Home = () => {
         <div className="container">
           <div className="about-grid">
             <div className="about-content-left">
-              <div className="about-image">
-                <div className="image-placeholder">
-                  <span>Professional Photography Studio</span>
-                </div>
-              </div>
+                  <div className="about-image">
+                    <div className="image-placeholder">
+                    </div>
+                  </div>
             </div>
             <div className="about-content-right">
               <h2>About Pixel-i</h2>
@@ -76,75 +100,62 @@ const Home = () => {
       <section className="categories-section">
         <div className="carousels-full-width">
           
-          {/* Wedding Photography */}
+          {/* Abroad Shoots */}
           <div className="category-section">
             <div className="category-section-header">
               <CategoryCarousel 
-                title="Wedding Photography"
-                images={weddingImages}
-                category="wedding"
+                title="Abroad Shoots"
+                images={abroadShootsImages}
+                category="abroad-shoots"
               />
-              <Link to="/wedding" className="view-btn-top-right">
+              <Link to="/work/abroad-shoots" className="view-btn-top-right">
                 View All
               </Link>
             </div>
           </div>
 
-          {/* Event Photography */}
+          {/* Photo Shoot */}
           <div className="category-section">
             <div className="category-section-header">
               <CategoryCarousel 
-                title="Event Photography"
+                title="Photo Shoot"
                 images={eventImages}
-                category="event"
+                category="photo-shoot"
               />
-              <Link to="/event" className="view-btn-top-right">
+              <Link to="/work/photo-shoot" className="view-btn-top-right">
                 View All
               </Link>
             </div>
           </div>
 
-          {/* Birthday Photography */}
+          {/* Product Shoot */}
           <div className="category-section">
             <div className="category-section-header">
               <CategoryCarousel 
-                title="Birthday Photography"
+                title="Product Shoot"
                 images={birthdayImages}
-                category="birthday"
+                category="product-shoot"
               />
-              <Link to="/birthday" className="view-btn-top-right">
+              <Link to="/work/product-shoot" className="view-btn-top-right">
                 View All
               </Link>
             </div>
           </div>
 
-          {/* Portrait Photography */}
+          {/* TV C's */}
           <div className="category-section">
             <div className="category-section-header">
               <CategoryCarousel 
-                title="Portrait Photography"
+                    title="T V C's"
                 images={portraitImages}
-                category="portrait"
+                category="tv-cs"
               />
-              <Link to="/portrait" className="view-btn-top-right">
+              <Link to="/work/tv-cs" className="view-btn-top-right">
                 View All
               </Link>
             </div>
           </div>
 
-          {/* Nature Photography */}
-          <div className="category-section">
-            <div className="category-section-header">
-              <CategoryCarousel 
-                title="Nature Photography"
-                images={natureImages}
-                category="nature"
-              />
-              <Link to="/nature" className="view-btn-top-right">
-                View All
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
 

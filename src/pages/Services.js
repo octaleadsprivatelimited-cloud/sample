@@ -2,8 +2,11 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div>
-      <section className="hero">
+    <div className="services-page">
+      <section className="hero hero-with-image">
+        <div className="hero-background">
+          <div className="hero-overlay"></div>
+        </div>
         <div className="hero-content">
           <h1>Our Services</h1>
           <p>
@@ -15,9 +18,12 @@ const Services = () => {
       <section className="gallery-section">
         <div className="container">
           <div className="services-content">
-            <div className="services-grid">
-              <div className="service-card">
-                <div className="service-icon">🎬</div>
+            {/* Row 1: Image left, text right */}
+            <div className="service-row">
+              <div className="service-media left">
+                <div className="service-photo tvc"></div>
+              </div>
+              <div className="service-info right">
                 <h3>TV Commercials</h3>
                 <p>Professional TV commercial production with creative storytelling, high-end cinematography, and compelling narratives that engage audiences and drive brand awareness.</p>
                 <ul>
@@ -28,9 +34,14 @@ const Services = () => {
                   <li>Post-production & Editing</li>
                 </ul>
               </div>
+            </div>
 
-              <div className="service-card">
-                <div className="service-icon">📱</div>
+            {/* Row 2: Text left, image right */}
+            <div className="service-row reverse">
+              <div className="service-media right">
+                <div className="service-photo digital"></div>
+              </div>
+              <div className="service-info left">
                 <h3>Digital Films</h3>
                 <p>Engaging digital content for modern audiences across social media platforms, web, and digital marketing campaigns.</p>
                 <ul>
@@ -41,9 +52,14 @@ const Services = () => {
                   <li>Interactive Content</li>
                 </ul>
               </div>
+            </div>
 
-              <div className="service-card">
-                <div className="service-icon">📸</div>
+            {/* Row 3: Image left, text right */}
+            <div className="service-row">
+              <div className="service-media left">
+                <div className="service-photo print"></div>
+              </div>
+              <div className="service-info right">
                 <h3>Print Campaigns</h3>
                 <p>Stunning print photography for advertising, marketing materials, billboards, magazines, and promotional content.</p>
                 <ul>
@@ -54,9 +70,14 @@ const Services = () => {
                   <li>Brand Campaigns</li>
                 </ul>
               </div>
+            </div>
 
-              <div className="service-card">
-                <div className="service-icon">🎉</div>
+            {/* Row 4: Text left, image right */}
+            <div className="service-row reverse">
+              <div className="service-media right">
+                <div className="service-photo events"></div>
+              </div>
+              <div className="service-info left">
                 <h3>Events</h3>
                 <p>Complete event coverage and documentation for corporate events, weddings, conferences, and special occasions.</p>
                 <ul>
@@ -67,42 +88,8 @@ const Services = () => {
                   <li>Live Streaming</li>
                 </ul>
               </div>
-
-              <div className="service-card">
-                <div className="service-icon">📦</div>
-                <h3>Catalogue Shoots</h3>
-                <p>Professional product photography for e-commerce, catalogues, and retail marketing materials.</p>
-                <ul>
-                  <li>E-commerce Photography</li>
-                  <li>Product Catalogues</li>
-                  <li>Lifestyle Product Shoots</li>
-                  <li>White Background Shoots</li>
-                  <li>360° Product Views</li>
-                </ul>
-              </div>
-
-              <div className="service-card">
-                <div className="service-icon">🌍</div>
-                <h3>Abroad Shoots</h3>
-                <p>International photography and video production services for global brands and international projects.</p>
-                <ul>
-                  <li>International Travel</li>
-                  <li>Global Brand Campaigns</li>
-                  <li>Cultural Documentation</li>
-                  <li>International Events</li>
-                  <li>Worldwide Coverage</li>
-                </ul>
-              </div>
             </div>
 
-            <div className="services-cta">
-              <h2>Ready to Start Your Project?</h2>
-              <p>Contact us today to discuss your creative vision and how we can bring it to life.</p>
-              <div className="cta-buttons">
-                <a href="tel:+919704771222" className="btn-primary">Call Us</a>
-                <a href="mailto:info@pixel-i.com" className="btn-secondary">Email Us</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>

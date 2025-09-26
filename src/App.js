@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
 import AbroadShoots from './pages/work/AbroadShoots';
 import PhotoShoot from './pages/work/PhotoShoot';
 import ProductShoot from './pages/work/ProductShoot';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/work/abroad-shoots" element={<AbroadShoots />} />
           <Route path="/work/photo-shoot" element={<PhotoShoot />} />
           <Route path="/work/product-shoot" element={<ProductShoot />} />

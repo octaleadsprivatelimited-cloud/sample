@@ -2,8 +2,11 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div>
-      <section className="hero">
+    <div className="about-page">
+      <section className="hero hero-with-image">
+        <div className="hero-background">
+          <div className="hero-overlay"></div>
+        </div>
         <div className="hero-content">
           <h1>About Pixel-i</h1>
           <p>
