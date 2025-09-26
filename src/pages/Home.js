@@ -158,28 +158,24 @@ const Home = () => {
             <div className="service-item">
               <div className="service-image">
                 <div className="service-placeholder">
-                  <span>TV Commercials</span>
                 </div>
               </div>
             </div>
             <div className="service-item">
               <div className="service-image">
                 <div className="service-placeholder">
-                  <span>Digital Films</span>
                 </div>
               </div>
             </div>
             <div className="service-item">
               <div className="service-image">
                 <div className="service-placeholder">
-                  <span>Print Campaigns</span>
                 </div>
               </div>
             </div>
             <div className="service-item">
               <div className="service-image">
                 <div className="service-placeholder">
-                  <span>Events</span>
                 </div>
               </div>
             </div>
