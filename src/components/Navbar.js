@@ -6,12 +6,6 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
 
-  const handleWhatsAppClick = () => {
-    const message = "Hi! I'm interested in your photography services. Can you please provide more information?";
-    const phoneNumber = "919704771222"; // Your actual WhatsApp number
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,10 +22,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="logo" onClick={closeMobileMenu}>
-          Pixel-i
-        </Link>
-        
         <button 
           className="mobile-menu-toggle"
           onClick={toggleMobileMenu}
@@ -39,6 +29,10 @@ const Navbar = () => {
         >
           ☰
         </button>
+        
+        <Link to="/" className="logo" onClick={closeMobileMenu}>
+          Pixel-i
+        </Link>
         
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li>
@@ -125,15 +119,6 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        
-        <button 
-          className="whatsapp-btn"
-          onClick={handleWhatsAppClick}
-          title="Contact us on WhatsApp"
-        >
-          <div className="whatsapp-icon"></div>
-          WhatsApp
-        </button>
       </div>
     </nav>
   );
