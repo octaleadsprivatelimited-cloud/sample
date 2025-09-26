@@ -12,13 +12,62 @@ import {
 const Home = () => {
   return (
     <div>
-      <section className="hero">
+      <section className="hero hero-with-image">
+        <div className="hero-background">
+          <div className="hero-overlay"></div>
+        </div>
         <div className="hero-content">
-          <h1>Capturing Life's Beautiful Moments</h1>
+          <h1>Pixel-i</h1>
+          <h2>Bringing Creative Visions to Life</h2>
           <p>
-            Professional photography services for weddings, events, birthdays, portraits, and nature. 
-            Let us help you preserve your precious memories with stunning imagery.
+            Professional photography and video production services specializing in TV commercials, 
+            digital films, print campaigns, events, and catalogue shoots. We deliver high-quality 
+            content that captivates audiences and elevates brands.
           </p>
+          <div className="hero-buttons">
+            <Link to="/services" className="btn-primary">Our Services</Link>
+            <Link to="/about" className="btn-secondary">About Us</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="about-section">
+        <div className="container">
+          <div className="about-grid">
+            <div className="about-content-left">
+              <div className="about-image">
+                <div className="image-placeholder">
+                  <span>Professional Photography Studio</span>
+                </div>
+              </div>
+            </div>
+            <div className="about-content-right">
+              <h2>About Pixel-i</h2>
+              <p>
+                We are a professional photography and video production company specializing in 
+                creative content that brings your vision to life. Our team combines technical 
+                expertise with artistic creativity to deliver exceptional results.
+              </p>
+              <div className="about-features">
+                <div className="feature-item">
+                  <h3>🎬 Professional Production</h3>
+                  <p>High-end equipment and experienced crew for all projects</p>
+                </div>
+                <div className="feature-item">
+                  <h3>🎨 Creative Excellence</h3>
+                  <p>Innovative approaches to storytelling and visual content</p>
+                </div>
+                <div className="feature-item">
+                  <h3>⚡ Fast Turnaround</h3>
+                  <p>Efficient workflow ensuring timely delivery</p>
+                </div>
+              </div>
+              <div className="about-cta">
+                <Link to="/about" className="btn-primary">Learn More</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -94,6 +143,98 @@ const Home = () => {
               <Link to="/nature" className="view-btn-top-right">
                 View All
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services Section */}
+      <section className="services-section">
+        <div className="container">
+          <div className="services-header">
+            <h2>Our Services</h2>
+          </div>
+          <div className="services-grid">
+            <div className="service-item">
+              <div className="service-image">
+                <div className="service-placeholder">
+                  <span>TV Commercials</span>
+                </div>
+              </div>
+            </div>
+            <div className="service-item">
+              <div className="service-image">
+                <div className="service-placeholder">
+                  <span>Digital Films</span>
+                </div>
+              </div>
+            </div>
+            <div className="service-item">
+              <div className="service-image">
+                <div className="service-placeholder">
+                  <span>Print Campaigns</span>
+                </div>
+              </div>
+            </div>
+            <div className="service-item">
+              <div className="service-image">
+                <div className="service-placeholder">
+                  <span>Events</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clients Section */}
+      <section className="clients-section">
+        <div className="container">
+          <div className="clients-header">
+            <h2>Our Clients</h2>
+          </div>
+          <div className="clients-slider">
+            <div className="clients-track">
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 1</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 2</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 3</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 4</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 5</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 6</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 7</span>
+                </div>
+              </div>
+              <div className="client-item">
+                <div className="client-logo">
+                  <span>Brand 8</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

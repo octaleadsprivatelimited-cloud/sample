@@ -85,9 +85,9 @@ export const classicGraphicsData = {
 
   aboutUs: {
     title: "About Pixel-i",
-    description: "At Pixel-i, we are passionate about bringing creative visions to life. Specializing in TV commercials, digital films, print campaigns, events, and catalogue shoots, we pride ourselves on delivering high-quality content that captivates audiences and elevates brands.",
-    tagline: "Bringing Creative Visions to Life",
-    subtitle: "With a team of dedicated professionals and state-of-the-art technology, we combine innovation and expertise to produce visually stunning and impactful media. Our commitment to excellence and attention to detail ensures that every project we undertake meets the highest standards of creativity and professionalism."
+    description: "Professional photography and video production services.",
+    tagline: "Creative Excellence",
+    subtitle: "Delivering high-quality content for all your creative needs."
   }
 };
 
