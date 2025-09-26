@@ -1,0 +1,234 @@
+.external-data-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.external-data-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.external-data-header h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.external-data-header a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
+.external-data-header a:hover {
+  text-decoration: underline;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.tabs button:hover {
+  background: #333;
+}
+
+.tabs button.active {
+  border-bottom-color: #4a9eff;
+  background: #333;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4a9eff;
+}
+
+.service-card h4 {
+  color: #4a9eff;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.service-contact {
+  background: #333;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.service-item:hover {
+  background: #333;
+}
+
+.service-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.about-section h3 {
+  color: #4a9eff;
+  margin-bottom: 1rem;
+}
+
+.tagline-section {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.tagline-section h4 {
+  color: #4a9eff;
+  margin-bottom: 0.5rem;
+}
+
+.featured-services {
+  margin-top: 2rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.featured-item {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #4a9eff;
+  transition: all 0.3s ease;
+}
+
+.featured-item:hover {
+  background: #4a9eff;
+  color: #000;
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4a9eff;
+}
+
+.faq-question {
+  color: #4a9eff;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-item {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-item strong {
+  color: #4a9eff;
+}
+
+.contact-item a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .external-data-container {
+    padding: 1rem;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tabs button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .featured-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
