@@ -1,94 +1,104 @@
-// External data from Pixel-i Photography
+// External data from Pixel-i Creative Studio
 export const classicGraphicsData = {
   companyInfo: {
-    name: "Pixel-i Photography",
-    website: "https://pixel-i.com/",
+    name: "PIXEL-I (VISUALIZE YOUR IDEA)",
+    tagline: "AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK",
+    website: "www.pixel-i.in",
     phone: "9704771222",
-    email: "info@pixel-i.com",
-    address: "Hyderabad, Telangana, India"
+    landline: "040-31516696",
+    email: "pixel.inc@gmail.com",
+    address: "Hyderabad, India"
   },
-  
+
+  aboutUs: {
+    title: "About PIXEL-I",
+    description: "PIXEL-i is a pioneering creative studio at the forefront of AI-powered film production, advanced visual effects (VFX), and next-generation animation. Seamlessly blending the art of storytelling with cutting-edge artificial intelligence and revolutionary technologies, PIXEL-I crafts immersive, world-class content for cinema, television, advertising, gaming, and digital platforms. Our studio brings together visionary directors, expert VFX artists, innovative animators, and AI specialists, each driven by a passion for pushing creative and technological boundaries. With innovation as our cornerstone, we strive to redefine what's possible in visual storytelling for today's global audience.",
+    vision: "To set the global benchmark in film, animation, and visual effects by fusing creative artistry with artificial intelligence—delivering experiences that inspire, engage, and resonate long after the credits roll.",
+    mission: [
+      "Employ state-of-the-art AI technologies and advanced VFX methods to produce hyper-realistic visuals and compelling narratives.",
+      "Provide creative, cost-effective solutions tailored for filmmakers, production houses, and brands worldwide.",
+      "Cultivate original ideas and continually advance the craft of digital storytelling."
+    ]
+  },
+
   services: [
     {
-      title: "Wedding Live",
-      description: "Broadcast and share your special moment live online with friends and family from anywhere in the world!",
-      phone: "9704771222"
+      title: "Film Production",
+      description: "Realize ideas from concept to final cut, producing feature films, shorts, and branded material with cinematic sophistication."
     },
     {
-      title: "Private Party",
-      description: "Live Stream and share your special events live online with friends and family from anywhere in the world.",
-      phone: "9704771222"
+      title: "Visual Effects (VFX)",
+      description: "Develop stunning, true-to-life visuals such as CGI, motion capture, green screen compositing, matte painting, and digital doubles."
     },
     {
-      title: "Corporate Events",
-      description: "Broadcast and share your corporate events live online with staffs and clients from anywhere in the world.",
-      phone: "9704771222"
+      title: "Animation",
+      description: "Specialize in 2D, 3D, and AI-driven animation, bringing characters, worlds, and concepts to life with distinctive detail and artistry."
+    },
+    {
+      title: "Student's Lifebook",
+      description: "Calendar Selfie, Financial Literacy, AI Schools - Awareness, Discovery, Evolution, Creativity, Innovative Ideas, Aims."
+    },
+    {
+      title: "AI Integration",
+      description: "Streamline creative workflows, accelerate rendering, and design intelligent solutions using advanced AI—achieving results at the cutting edge of entertainment."
     }
   ],
 
-  liveStreamingServices: [
-    "Wedding Live Streaming",
-    "Private Party Live Streaming", 
-    "Corporate Events Live Streaming",
-    "Enterprise Live Streaming",
-    "Product Launch Live Streaming",
-    "Music Events Live Streaming",
-    "Spiritual Meetings Live Streaming",
-    "Live Conference",
-    "Educational Events Live Streaming",
-    "Sports Events Live Streaming",
-    "Government Programmes Live Streaming",
-    "Hospital Surgery Live Streaming",
-    "Birthday Party Live Streaming",
-    "Functions Live Streaming"
+  values: [
+    {
+      title: "Innovation",
+      description: "Relentlessly evolve our techniques and embrace emerging technologies."
+    },
+    {
+      title: "Creativity",
+      description: "Deliver original stories and mesmerizing visuals that make an impact."
+    },
+    {
+      title: "Excellence",
+      description: "Hold every project to the highest standards of quality."
+    },
+    {
+      title: "Collaboration",
+      description: "Partner closely with clients to ensure their vision exceeds expectations."
+    }
   ],
 
-  featuredServices: [
-    "Wedding Live",
-    "Functions Live", 
-    "Corporate Live",
-    "Events Live",
-    "Birthday Live",
-    "Music Live"
+  clients: "PIXEL-i serves a wide spectrum of clients, including global film studios, OTT platforms, advertising agencies, production houses, gaming companies, and leading corporate brands.",
+
+  whyChooseUs: [
+    "Renowned expertise in leveraging AI and advanced VFX to unlock new creative possibilities.",
+    "A passionate, multidisciplinary team devoted to cinematic brilliance.",
+    "Scalable, tailored solutions for projects of every scope and budget.",
+    "Robust infrastructure that supports seamless production in film, VFX, and animation."
   ],
+
+  studentLifebook: {
+    awareness: "Knowledge of a situation",
+    discovery: "Learning for the first time",
+    evolution: "A change happening over time",
+    creativity: "Imagination to create something new",
+    innovativeIdeas: "Transforms the way students think",
+    aims: "Intention of achieving the programme"
+  },
 
   faqs: [
     {
-      question: "How do I book an event?",
-      answer: "Call us, WhatsApp, SMS or E-Mail us to check availability, someone from our team will respond as soon as possible."
+      question: "What services does PIXEL-I offer?",
+      answer: "We specialize in AI Films, VFX, Animation, and Student's Lifebook programs, offering comprehensive creative solutions from concept to final production."
     },
     {
-      question: "Can we expect any delay in Live Streaming?",
-      answer: "Our Premium Plans comes with Ultra Low Latency Streaming Technology with ~0.5 seconds latency. Our Basic Plans has 8-12 seconds End-to-End Latency. As the live signal travels through internet, a delay of few seconds variation between live and video can be expected."
+      question: "How does AI integration work in your projects?",
+      answer: "We use state-of-the-art AI technologies to streamline workflows, accelerate rendering, and create intelligent solutions that push the boundaries of visual storytelling."
     },
     {
-      question: "How much does it cost for an event?",
-      answer: "Our pricing is based on duration and location of the event, please contact us to know more about our pricing structure."
+      question: "What makes PIXEL-I different from other studios?",
+      answer: "Our unique combination of AI-powered technology, advanced VFX expertise, and creative storytelling sets us apart in delivering world-class content that resonates with global audiences."
     },
     {
-      question: "Can I live stream the event by myself?",
-      answer: "Yes, you can live stream the event by yourself if you have a computer or mobile phone (iOS and Android) with camera and internet connection. Call us to know more!"
-    },
-    {
-      question: "Will the Live Stream Video be available online after my event?",
-      answer: "Most of our packages include free recorded video hosting up to 30 days and additional days can be purchased."
-    },
-    {
-      question: "Do you charge separately for your various event services?",
-      answer: "Some of our services come standard, others are priced separately. In order to get an idea of what your event will cost, contact us to speak with one of our event planner. They can give you a free estimate based on your individual needs."
-    },
-    {
-      question: "Can I resell your services under my brand name?",
-      answer: "Yes, you can resell our services under your brand name. We will provide you with Live Streaming Website to manage all your events under your brand name. Contact us for more information."
+      question: "Do you work with international clients?",
+      answer: "Yes, we serve a wide spectrum of clients including global film studios, OTT platforms, advertising agencies, and leading corporate brands worldwide."
     }
-  ],
-
-  aboutUs: {
-    title: "About Pixel-i",
-    description: "Professional photography and video production services.",
-    tagline: "Creative Excellence",
-    subtitle: "Delivering high-quality content for all your creative needs."
-  }
+  ]
 };
 
 export default classicGraphicsData;

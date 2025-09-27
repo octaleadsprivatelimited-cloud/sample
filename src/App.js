@@ -5,10 +5,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import AbroadShoots from './pages/work/AbroadShoots';
+import Animation from './pages/work/Animation';
 import PhotoShoot from './pages/work/PhotoShoot';
-import ProductShoot from './pages/work/ProductShoot';
-import TvCs from './pages/work/TvCs';
+import LifeBook from './pages/work/LifeBook';
+import Vfx from './pages/work/Vfx';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/work/abroad-shoots" element={<AbroadShoots />} />
-          <Route path="/work/photo-shoot" element={<PhotoShoot />} />
-          <Route path="/work/product-shoot" element={<ProductShoot />} />
-          <Route path="/work/tv-cs" element={<TvCs />} />
+              <Route path="/work/animation" element={<Animation />} />
+              <Route path="/work/photo-shoot" element={<PhotoShoot />} />
+              <Route path="/work/life-book" element={<LifeBook />} />
+              <Route path="/work/vfx" element={<Vfx />} />
         </Routes>
         <Footer />
       </div>

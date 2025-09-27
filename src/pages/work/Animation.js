@@ -1,15 +1,15 @@
 import React from 'react';
 import { abroadShootsImages } from '../../data/abroadShootsImages';
 
-const AbroadShoots = () => {
+const Animation = () => {
   return (
-    <div className="abroad-shoots-page">
+    <div className="animation-page">
       <section className="hero hero-with-image">
         <div className="hero-background">
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>Abroad Shoots</h1>
+          <h1>Animation</h1>
         </div>
       </section>
       
@@ -37,4 +37,4 @@ const AbroadShoots = () => {
   );
 };
 
-export default AbroadShoots;
+export default Animation;

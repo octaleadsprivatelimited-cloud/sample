@@ -1,6 +1,9 @@
 import React from 'react';
+import { classicGraphicsData } from '../data/externalData';
 
 const About = () => {
+  const { aboutUs, companyInfo, services, values, vision, mission, whyChooseUs, studentLifebook } = classicGraphicsData;
+
   return (
     <div className="about-page">
       <section className="hero hero-with-image">
@@ -8,11 +11,8 @@ const About = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>About Pixel-i</h1>
-          <p>
-            At Pixel-i, we are passionate about bringing creative visions to life. 
-            Specializing in TV commercials, digital films, print campaigns, events, and catalogue shoots.
-          </p>
+          <h1>{companyInfo.name}</h1>
+          <p>{companyInfo.tagline}</p>
         </div>
       </section>
       
@@ -20,47 +20,87 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Bringing Creative Visions to Life</h2>
-              <p>
-                At Pixel-i, we are passionate about bringing creative visions to life. 
-                Specializing in TV commercials, digital films, print campaigns, events, and catalogue shoots, 
-                we pride ourselves on delivering high-quality content that captivates audiences and elevates brands.
-              </p>
-              <p>
-                With a team of dedicated professionals and state-of-the-art technology, we combine innovation 
-                and expertise to produce visually stunning and impactful media. Our commitment to excellence 
-                and attention to detail ensures that every project we undertake meets the highest standards 
-                of creativity and professionalism.
-              </p>
-            </div>
-            
-            <div className="about-features">
-              <div className="feature-grid">
-                <div className="feature-item">
-                  <h3>🎬 TV Commercials</h3>
-                  <p>Professional TV commercial production with creative storytelling</p>
+              <h2>About PIXEL-I</h2>
+              <p>{aboutUs.description}</p>
+              
+              <div className="vision-mission">
+                <div className="vision">
+                  <h3>Our Vision</h3>
+                  <p>{aboutUs.vision}</p>
                 </div>
-                <div className="feature-item">
-                  <h3>📱 Digital Films</h3>
-                  <p>Engaging digital content for modern audiences</p>
-                </div>
-                <div className="feature-item">
-                  <h3>📸 Print Campaigns</h3>
-                  <p>Stunning print photography for advertising and marketing</p>
-                </div>
-                <div className="feature-item">
-                  <h3>🎉 Events</h3>
-                  <p>Complete event coverage and documentation</p>
-                </div>
-                <div className="feature-item">
-                  <h3>📦 Catalogue Shoots</h3>
-                  <p>Professional product photography for catalogues</p>
-                </div>
-                <div className="feature-item">
-                  <h3>🌍 Abroad Shoots</h3>
-                  <p>International photography and video production</p>
+                
+                <div className="mission">
+                  <h3>Our Mission</h3>
+                  <ul>
+                    {aboutUs.mission.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
+            </div>
+            
+            <div className="services-section">
+              <h2>What We Do</h2>
+              <div className="feature-grid">
+                {services.map((service, index) => (
+                  <div key={index} className="feature-item">
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="student-lifebook-section">
+              <h2>Student's Lifebook</h2>
+              <div className="lifebook-grid">
+                <div className="lifebook-item">
+                  <h4>Awareness</h4>
+                  <p>{studentLifebook.awareness}</p>
+                </div>
+                <div className="lifebook-item">
+                  <h4>Discovery</h4>
+                  <p>{studentLifebook.discovery}</p>
+                </div>
+                <div className="lifebook-item">
+                  <h4>Evolution</h4>
+                  <p>{studentLifebook.evolution}</p>
+                </div>
+                <div className="lifebook-item">
+                  <h4>Creativity</h4>
+                  <p>{studentLifebook.creativity}</p>
+                </div>
+                <div className="lifebook-item">
+                  <h4>Innovative Ideas</h4>
+                  <p>{studentLifebook.innovativeIdeas}</p>
+                </div>
+                <div className="lifebook-item">
+                  <h4>Aims</h4>
+                  <p>{studentLifebook.aims}</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="values-section">
+              <h2>Our Values</h2>
+              <div className="values-grid">
+                {values.map((value, index) => (
+                  <div key={index} className="value-item">
+                    <h3>{value.title}</h3>
+                    <p>{value.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="why-choose-us-section">
+              <h2>Why Choose PIXEL-I?</h2>
+              <ul className="why-choose-list">
+                {whyChooseUs.map((reason, index) => (
+                  <li key={index}>{reason}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

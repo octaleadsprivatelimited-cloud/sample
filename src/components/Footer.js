@@ -18,8 +18,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Pixel-i Photography</h3>
-            <p>Capturing life's beautiful moments with professional photography services.</p>
+            <h3>PIXEL-I (VISUALIZE YOUR IDEA)</h3>
+            <p>AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
           </div>
           
           <div className="footer-section">
@@ -28,10 +28,10 @@ const Footer = () => {
               <span className="footer-arrow">{isWorkOpen ? '▲' : '▼'}</span>
             </button>
             <ul className={`footer-links ${isWorkOpen ? 'open' : ''}`}>
-              <li><Link to="/work/abroad-shoots">Abroad Shoots</Link></li>
+              <li><Link to="/work/animation">Animation</Link></li>
               <li><Link to="/work/photo-shoot">Photo Shoot</Link></li>
-              <li><Link to="/work/product-shoot">Product Shoot</Link></li>
-              <li><Link to="/work/tv-cs">T V C's</Link></li>
+              <li><Link to="/work/life-book">Life Book</Link></li>
+              <li><Link to="/work/vfx">VFX</Link></li>
             </ul>
           </div>
           
@@ -50,14 +50,16 @@ const Footer = () => {
           
           <div className="footer-section contact-section">
             <h4>Contact Info</h4>
-            <p>📧 info@pixel-i.com</p>
+            <p>📧 pixel.inc@gmail.com</p>
             <p>📱 +91 97047 71222</p>
-            <p>📍 Hyderabad, Telangana, India</p>
+            <p>☎️ 040-31516696</p>
+            <p>🌐 www.pixel-i.in</p>
+            <p>📍 Hyderabad, India</p>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Pixel-i Photography. All rights reserved.</p>
+          <p>&copy; 2024 PIXEL-I Creative Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>

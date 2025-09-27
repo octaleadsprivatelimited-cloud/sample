@@ -31,7 +31,11 @@ const Navbar = () => {
         </button>
         
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          Pixel-i
+          <img 
+            src="/images/pixel_new8_V6.jpg" 
+            alt="Pixel-i Photography" 
+            className="logo-image"
+          />
         </Link>
         
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -73,11 +77,11 @@ const Navbar = () => {
             <ul className={`dropdown-menu ${isWorkDropdownOpen ? 'active' : ''}`}>
               <li>
                 <Link 
-                  to="/work/abroad-shoots" 
-                  className={location.pathname === '/work/abroad-shoots' ? 'active' : ''}
+                  to="/work/animation" 
+                  className={location.pathname === '/work/animation' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  Abroad Shoots
+                  Animation
                 </Link>
               </li>
               <li>
@@ -91,20 +95,20 @@ const Navbar = () => {
               </li>
               <li>
                 <Link 
-                  to="/work/product-shoot" 
-                  className={location.pathname === '/work/product-shoot' ? 'active' : ''}
+                  to="/work/life-book" 
+                  className={location.pathname === '/work/life-book' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  Product Shoot
+                  Life Book
                 </Link>
               </li>
               <li>
                 <Link 
-                  to="/work/tv-cs" 
-                  className={location.pathname === '/work/tv-cs' ? 'active' : ''}
+                  to="/work/vfx" 
+                  className={location.pathname === '/work/vfx' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                      T V C's
+                  VFX
                 </Link>
               </li>
             </ul>

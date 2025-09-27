@@ -18,12 +18,15 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>Pixel-i</h1>
-          <h2>Bringing Creative Visions to Life</h2>
+          <h1>PIXEL-I</h1>
+          <h2>VISUALIZE YOUR IDEA</h2>
           <p>
-            Professional photography and video production services specializing in TV commercials, 
-            digital films, print campaigns, events, and catalogue shoots. We deliver high-quality 
-            content that captivates audiences and elevates brands.
+            AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK
+          </p>
+          <p>
+            A pioneering creative studio at the forefront of AI-powered film production, advanced visual effects (VFX), 
+            and next-generation animation. We craft immersive, world-class content for cinema, television, advertising, 
+            gaming, and digital platforms.
           </p>
           <div className="hero-buttons">
             <Link to="/services" className="btn-primary">Our Services</Link>
@@ -66,31 +69,31 @@ const Home = () => {
                     </div>
                   </div>
             </div>
-            <div className="about-content-right">
-              <h2>About Pixel-i</h2>
-              <p>
-                We are a professional photography and video production company specializing in 
-                creative content that brings your vision to life. Our team combines technical 
-                expertise with artistic creativity to deliver exceptional results.
-              </p>
-              <div className="about-features">
-                <div className="feature-item">
-                  <h3>🎬 Professional Production</h3>
-                  <p>High-end equipment and experienced crew for all projects</p>
+                <div className="about-content-right">
+                  <h2>About PIXEL-I</h2>
+                  <p>
+                    We are a pioneering creative studio at the forefront of AI-powered film production, 
+                    advanced visual effects (VFX), and next-generation animation. Our team combines 
+                    cutting-edge technology with creative artistry to deliver exceptional results.
+                  </p>
+                  <div className="about-features">
+                    <div className="feature-item">
+                      <h3>🤖 AI Integration</h3>
+                      <p>State-of-the-art AI technologies for streamlined workflows</p>
+                    </div>
+                    <div className="feature-item">
+                      <h3>🎬 VFX Excellence</h3>
+                      <p>Advanced visual effects and hyper-realistic visuals</p>
+                    </div>
+                    <div className="feature-item">
+                      <h3>🎓 Student's Lifebook</h3>
+                      <p>Educational programs fostering creativity and innovation</p>
+                    </div>
+                  </div>
+                  <div className="about-cta">
+                    <Link to="/about" className="btn-primary">Learn More</Link>
+                  </div>
                 </div>
-                <div className="feature-item">
-                  <h3>🎨 Creative Excellence</h3>
-                  <p>Innovative approaches to storytelling and visual content</p>
-                </div>
-                <div className="feature-item">
-                  <h3>⚡ Fast Turnaround</h3>
-                  <p>Efficient workflow ensuring timely delivery</p>
-                </div>
-              </div>
-              <div className="about-cta">
-                <Link to="/about" className="btn-primary">Learn More</Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -100,19 +103,19 @@ const Home = () => {
       <section className="categories-section">
         <div className="carousels-full-width">
           
-          {/* Abroad Shoots */}
-          <div className="category-section">
-            <div className="category-section-header">
-              <CategoryCarousel 
-                title="Abroad Shoots"
-                images={abroadShootsImages}
-                category="abroad-shoots"
-              />
-              <Link to="/work/abroad-shoots" className="view-btn-top-right">
-                View All
-              </Link>
-            </div>
-          </div>
+              {/* Animation */}
+              <div className="category-section">
+                <div className="category-section-header">
+                  <CategoryCarousel 
+                    title="Animation"
+                    images={abroadShootsImages}
+                    category="animation"
+                  />
+                  <Link to="/work/animation" className="view-btn-top-right">
+                    View All
+                  </Link>
+                </div>
+              </div>
 
           {/* Photo Shoot */}
           <div className="category-section">
@@ -128,29 +131,29 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Product Shoot */}
-          <div className="category-section">
-            <div className="category-section-header">
-              <CategoryCarousel 
-                title="Product Shoot"
-                images={birthdayImages}
-                category="product-shoot"
-              />
-              <Link to="/work/product-shoot" className="view-btn-top-right">
-                View All
-              </Link>
-            </div>
-          </div>
+              {/* Life Book */}
+              <div className="category-section">
+                <div className="category-section-header">
+                  <CategoryCarousel 
+                    title="Life Book"
+                    images={birthdayImages}
+                    category="life-book"
+                  />
+                  <Link to="/work/life-book" className="view-btn-top-right">
+                    View All
+                  </Link>
+                </div>
+              </div>
 
-          {/* TV C's */}
+          {/* VFX */}
           <div className="category-section">
             <div className="category-section-header">
               <CategoryCarousel 
-                    title="T V C's"
+                    title="VFX"
                 images={portraitImages}
-                category="tv-cs"
+                category="vfx"
               />
-              <Link to="/work/tv-cs" className="view-btn-top-right">
+              <Link to="/work/vfx" className="view-btn-top-right">
                 View All
               </Link>
             </div>

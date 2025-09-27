@@ -1337,11 +1337,28 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #000000;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  transition: opacity 0.3s ease;
   flex-shrink: 0;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: cover;
+  object-position: center top;
+  clip-path: inset(0 0 5% 0);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -2314,8 +2331,8 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .logo {
-    font-size: 1.5rem;
+  .logo-image {
+    height: 45px;
   }
   
   .modal-nav-btn {
@@ -2375,8 +2392,8 @@ body {
     padding: 0 15px;
   }
   
-  .logo {
-    font-size: 1.3rem;
+  .logo-image {
+    height: 38px;
   }
   
   .whatsapp-btn {
@@ -2589,5 +2606,139 @@ body {
   .view-all-btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.8rem;
+  }
+}
+
+/* Enhanced About Page Styles */
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+  text-align: left;
+}
+
+.vision-mission h3 {
+  color: #333333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.vision-mission p, .vision-mission ul {
+  color: #666666;
+  line-height: 1.6;
+}
+
+.vision-mission ul {
+  padding-left: 1.5rem;
+}
+
+.vision-mission li {
+  margin-bottom: 0.5rem;
+}
+
+.services-section, .student-lifebook-section, .values-section, .why-choose-us-section {
+  margin: 3rem 0;
+}
+
+.services-section h2, .student-lifebook-section h2, .values-section h2, .why-choose-us-section h2 {
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.lifebook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.lifebook-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b35;
+}
+
+.lifebook-item h4 {
+  color: #333333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.lifebook-item p {
+  color: #666666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-item {
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+  color: #333333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.value-item p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+.why-choose-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.why-choose-list li {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.why-choose-list li::before {
+  content: "✓";
+  color: #ff6b35;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* Responsive Design for Enhanced About Page */
+@media (max-width: 768px) {
+  .vision-mission {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .lifebook-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
   }
 }

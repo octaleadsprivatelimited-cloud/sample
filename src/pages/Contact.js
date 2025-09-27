@@ -40,8 +40,8 @@ const Contact = () => {
         <div className="hero-content">
           <h1>Contact Us</h1>
           <p>
-            Ready to capture your special moments? Get in touch with us to discuss your photography needs. 
-            We're here to help make your vision a reality.
+            Ready to visualize your ideas? Get in touch with us to discuss your AI Films, VFX, Animation, and Student's Lifebook needs. 
+            We're here to help bring your creative vision to life with cutting-edge technology.
           </p>
         </div>
       </section>
@@ -52,16 +52,24 @@ const Contact = () => {
             <div className="contact-info">
               <h2>Get In Touch</h2>
               <div className="contact-item">
-                <h3>📞 Phone</h3>
+                <h3>📞 Mobile</h3>
                 <p>+91 97047 71222</p>
               </div>
               <div className="contact-item">
+                <h3>☎️ Landline</h3>
+                <p>040-31516696</p>
+              </div>
+              <div className="contact-item">
                 <h3>📧 Email</h3>
-                <p>info@pixel-i.com</p>
+                <p>pixel.inc@gmail.com</p>
+              </div>
+              <div className="contact-item">
+                <h3>🌐 Website</h3>
+                <p>www.pixel-i.in</p>
               </div>
               <div className="contact-item">
                 <h3>📍 Location</h3>
-                <p>Hyderabad, Telangana, India</p>
+                <p>Hyderabad, India</p>
               </div>
               <div className="contact-item">
                 <h3>🕒 Hours</h3>
