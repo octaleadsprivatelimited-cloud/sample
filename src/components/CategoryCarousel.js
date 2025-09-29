@@ -96,7 +96,7 @@ const CategoryCarousel = ({ title, images, category }) => {
           <div 
             className="carousel-slides"
             style={{ 
-              transform: `translateX(-${currentIndex * (isMobile ? 100 : 33.333)}%)` 
+              transform: `translateX(-${currentIndex * (isMobile ? 100 : 25)}%)` 
             }}
           >
             {images.map((image, index) => (
