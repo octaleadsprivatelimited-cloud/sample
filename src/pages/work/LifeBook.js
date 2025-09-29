@@ -1,4 +1,6 @@
 import React from 'react';
+import Gallery from '../../components/Gallery';
+import { lifeBookImages } from '../../data/images';
 
 const LifeBook = () => {
   return (
@@ -9,39 +11,11 @@ const LifeBook = () => {
         </div>
         <div className="hero-content">
           <h1>Life Book</h1>
+          <p>Student's Life Book - Capturing Memories, Milestones & Personal Growth</p>
         </div>
       </section>
       
-      <section className="gallery-section">
-        <div className="container">
-          <div className="gallery-grid">
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 1</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 2</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 3</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 4</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 5</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 6</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 7</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">Life Book 8</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Gallery images={lifeBookImages} title="Student's Life Book Portfolio" />
     </div>
   );
 };

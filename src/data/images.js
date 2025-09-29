@@ -176,3 +176,127 @@ export const natureImages = [
     description: 'Powerful Indian waterfall scene'
   }
 ];
+
+export const vfxImages = [
+  {
+    src: '/images/vfx/01.bahubal1.jpg',
+    alt: 'Baahubali VFX Work',
+    description: 'Epic VFX work from Baahubali showcasing advanced visual effects'
+  },
+  {
+    src: '/images/vfx/02.khaidi.jpg',
+    alt: 'Khaidi VFX Work',
+    description: 'Action-packed VFX sequences from Khaidi'
+  },
+  {
+    src: '/images/vfx/03.kgf_1.jpg',
+    alt: 'KGF VFX Work',
+    description: 'Stunning VFX from KGF series with cinematic excellence'
+  },
+  {
+    src: '/images/vfx/04.ruler.jpg',
+    alt: 'Ruler VFX Work',
+    description: 'High-quality VFX work from Ruler movie'
+  },
+  {
+    src: '/images/vfx/05.bigil.jpg',
+    alt: 'Bigil VFX Work',
+    description: 'Dynamic VFX sequences from Bigil'
+  },
+  {
+    src: '/images/vfx/06.valmiki_1.jpg',
+    alt: 'Valmiki VFX Work',
+    description: 'Creative VFX work from Valmiki project'
+  },
+  {
+    src: '/images/vfx/07.chichore.jpg',
+    alt: 'Chhichhore VFX Work',
+    description: 'Innovative VFX work from Chhichhore'
+  },
+  {
+    src: '/images/vfx/08a_aa.jpg',
+    alt: 'A Aa VFX Work',
+    description: 'Professional VFX work from A Aa movie'
+  }
+];
+
+export const lifeBookImages = [
+  {
+    src: '/images/life book/unnamed.jpg',
+    alt: 'Student Life Book Page 1',
+    description: 'Beautiful student life book page showcasing memories and achievements'
+  },
+  {
+    src: '/images/life book/unnamed (1).jpg',
+    alt: 'Student Life Book Page 2',
+    description: 'Creative life book layout with personal milestones and experiences'
+  },
+  {
+    src: '/images/life book/unnamed (2).jpg',
+    alt: 'Student Life Book Page 3',
+    description: 'Elegant life book design capturing precious moments and growth'
+  },
+  {
+    src: '/images/life book/unnamed (3).jpg',
+    alt: 'Student Life Book Page 4',
+    description: 'Professional life book page highlighting academic and personal journey'
+  },
+  {
+    src: '/images/life book/unnamed (4).jpg',
+    alt: 'Student Life Book Page 5',
+    description: 'Artistic life book layout with meaningful quotes and memories'
+  },
+  {
+    src: '/images/life book/unnamed (5).jpg',
+    alt: 'Student Life Book Page 6',
+    description: 'Dynamic life book design showcasing achievements and aspirations'
+  },
+  {
+    src: '/images/life book/unnamed (6).jpg',
+    alt: 'Student Life Book Page 7',
+    description: 'Inspirational life book page with personal reflections and goals'
+  },
+  {
+    src: '/images/life book/unnamed (7).jpg',
+    alt: 'Student Life Book Page 8',
+    description: 'Comprehensive life book finale celebrating the complete journey'
+  }
+];
+
+export const animationImages = [
+  {
+    src: '/images/Animation/01.The Book Of Miracle_Posters with TEXT.jpg',
+    alt: 'The Book of Miracle Animation',
+    description: 'Stunning animation poster for The Book of Miracle project showcasing creative storytelling'
+  },
+  {
+    src: '/images/Animation/02-Nilayam-Long-OPP (1).png',
+    alt: 'Nilayam Animation Project',
+    description: 'Elegant animation design for Nilayam project with cinematic visual appeal'
+  },
+  {
+    src: '/images/Animation/03 - 2025-09-29T172954.115 (1).png',
+    alt: 'Creative Animation Work',
+    description: 'Innovative animation artwork demonstrating advanced creative techniques'
+  },
+  {
+    src: '/images/Animation/04.Boy on bicycle-01-With Text-001.jpg',
+    alt: 'Boy on Bicycle Animation',
+    description: 'Charming animation scene featuring a boy on bicycle with artistic flair'
+  },
+  {
+    src: '/images/Animation/06.EARTH_ANGEL A.jpg',
+    alt: 'Earth Angel Animation',
+    description: 'Beautiful Earth Angel animation showcasing celestial and environmental themes'
+  },
+  {
+    src: '/images/Animation/Elegant Cinematic Wedding Thumbnail HD 169.jpg',
+    alt: 'Elegant Cinematic Wedding Animation',
+    description: 'Sophisticated wedding animation with cinematic quality and elegant design'
+  },
+  {
+    src: '/images/Animation/h.png',
+    alt: 'Creative Animation Design',
+    description: 'Artistic animation design demonstrating creative visual storytelling'
+  }
+];

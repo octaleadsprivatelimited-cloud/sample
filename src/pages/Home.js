@@ -6,7 +6,10 @@ import {
   eventImages, 
   birthdayImages, 
   portraitImages, 
-  natureImages 
+  natureImages,
+  vfxImages,
+  lifeBookImages,
+  animationImages 
 } from '../data/images';
 import { abroadShootsImages } from '../data/abroadShootsImages';
 
@@ -108,7 +111,7 @@ const Home = () => {
                 <div className="category-section-header">
                   <CategoryCarousel 
                     title="Animation"
-                    images={abroadShootsImages}
+                    images={animationImages}
                     category="animation"
                   />
                   <Link to="/work/animation" className="view-btn-top-right">
@@ -136,7 +139,7 @@ const Home = () => {
                 <div className="category-section-header">
                   <CategoryCarousel 
                     title="Life Book"
-                    images={birthdayImages}
+                    images={lifeBookImages}
                     category="life-book"
                   />
                   <Link to="/work/life-book" className="view-btn-top-right">
@@ -150,7 +153,7 @@ const Home = () => {
             <div className="category-section-header">
               <CategoryCarousel 
                     title="VFX"
-                images={portraitImages}
+                images={vfxImages}
                 category="vfx"
               />
               <Link to="/work/vfx" className="view-btn-top-right">

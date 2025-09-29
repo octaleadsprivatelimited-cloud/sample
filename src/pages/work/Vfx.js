@@ -1,4 +1,6 @@
 import React from 'react';
+import Gallery from '../../components/Gallery';
+import { vfxImages } from '../../data/images';
 
 const Vfx = () => {
   return (
@@ -9,39 +11,11 @@ const Vfx = () => {
         </div>
         <div className="hero-content">
           <h1>VFX</h1>
+          <p>Advanced Visual Effects & AI-Powered Cinematic Excellence</p>
         </div>
       </section>
       
-      <section className="gallery-section">
-        <div className="container">
-          <div className="gallery-grid">
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 1</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 2</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 3</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 4</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 5</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 6</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 7</div>
-            </div>
-            <div className="gallery-item">
-              <div className="gallery-placeholder">VFX 8</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Gallery images={vfxImages} title="VFX Portfolio" />
     </div>
   );
 };
