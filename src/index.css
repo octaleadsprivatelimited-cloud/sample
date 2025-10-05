@@ -3283,17 +3283,19 @@ body {
 }
 
 .contact-info {
-  background: #f8f9fa;
+  background: #000000 !important;
   padding: 2rem;
   border-radius: 8px;
   margin: 1.5rem 0;
-  border: 1px solid #e9ecef;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .contact-item {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .contact-item:last-child {
@@ -3303,7 +3305,7 @@ body {
 }
 
 .contact-item strong {
-  color: #2c3e50;
+  color: #ffffff !important;
   font-weight: 600;
   display: block;
   margin-bottom: 0.3rem;
