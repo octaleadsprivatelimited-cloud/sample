@@ -193,13 +193,22 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
-            className="mobile-menu"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
+          <>
+            <motion.div
+              className={`mobile-menu-overlay ${isMobileMenuOpen ? 'open' : ''}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <motion.div
+              className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
             <motion.div
               className="mobile-menu-content"
               initial={{ y: -20 }}
@@ -269,6 +278,7 @@ const Navbar = () => {
               </motion.div>
             </motion.div>
           </motion.div>
+          </>
         )}
       </AnimatePresence>
     </motion.nav>
