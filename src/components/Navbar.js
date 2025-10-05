@@ -77,8 +77,8 @@ const Navbar = () => {
             <ul className={`dropdown-menu ${isWorkDropdownOpen ? 'active' : ''}`}>
               <li>
                 <Link 
-                  to="/work/animation" 
-                  className={location.pathname === '/work/animation' ? 'active' : ''}
+                  to="/work/ai-film-making" 
+                  className={location.pathname === '/work/ai-film-making' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
                   AI Film Making

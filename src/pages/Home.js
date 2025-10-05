@@ -115,7 +115,7 @@ const Home = () => {
                     images={animationImages}
                     category="animation"
                   />
-                  <Link to="/work/animation" className="view-btn-top-right">
+                  <Link to="/work/ai-film-making" className="view-btn-top-right">
                     View All
                   </Link>
                 </div>

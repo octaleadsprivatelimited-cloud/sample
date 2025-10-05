@@ -24,7 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-              <Route path="/work/animation" element={<Animation />} />
+              <Route path="/work/ai-film-making" element={<Animation />} />
               <Route path="/work/photo-shoot" element={<PhotoShoot />} />
               <Route path="/work/life-book" element={<LifeBook />} />
               <Route path="/work/vfx" element={<Vfx />} />
