@@ -603,12 +603,13 @@ body {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  align-items: start;
 }
 
 .contact-form-section {
@@ -620,6 +621,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
+  height: fit-content;
 }
 
 .contact-form-section::before {
@@ -642,6 +644,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
+  height: fit-content;
 }
 
 .contact-info-section::before {
@@ -978,14 +981,16 @@ body {
 }
 
 /* Professional Responsive Design */
-@media (max-width: 768px) {
-  .contact-content {
-    padding: 4rem 0;
-  }
-  
+@media (max-width: 1024px) {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 4rem 0;
   }
   
   .contact-form-section,
