@@ -104,8 +104,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link 
-                  to="/work/photo-shoot" 
-                  className={location.pathname === '/work/photo-shoot' ? 'active' : ''}
+                  to="/work/animation" 
+                  className={location.pathname === '/work/animation' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
                   Animation

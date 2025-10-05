@@ -158,7 +158,7 @@ const Home = () => {
                 images={eventImages}
                 category="photo-shoot"
               />
-              <Link to="/work/photo-shoot" className="view-btn-top-right">
+              <Link to="/work/animation" className="view-btn-top-right">
                 View All
               </Link>
             </div>

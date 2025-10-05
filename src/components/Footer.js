@@ -32,7 +32,7 @@ const Footer = () => {
             </button>
             <ul className={`footer-links ${isWorkOpen ? 'open' : ''}`}>
               <li><Link to="/work/ai-film-making">AI Film Making</Link></li>
-              <li><Link to="/work/photo-shoot">Photo Shoot</Link></li>
+              <li><Link to="/work/animation">Animation</Link></li>
               <li><Link to="/work/life-book">Life Book</Link></li>
               <li><Link to="/work/vfx">VFX</Link></li>
             </ul>
