@@ -141,6 +141,7 @@ const Footer = () => {
               <Link to="/terms">Terms of Service</Link>
               <Link to="/cookies">Cookie Policy</Link>
               <Link to="/sitemap">Sitemap</Link>
+              <a href="https://octaleads.com" target="_blank" rel="noopener noreferrer" className="developed-by">Developed By Octaleads</a>
             </div>
           </div>
         </div>

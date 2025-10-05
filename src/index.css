@@ -2068,6 +2068,18 @@ body {
   color: #ff6b35;
 }
 
+.mega-footer .footer-links-bottom .developed-by {
+  color: #999999;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+
+.mega-footer .footer-links-bottom .developed-by:hover {
+  color: #ff6b35;
+}
+
 /* Responsive Mega Footer */
 @media (max-width: 1200px) {
   .mega-footer .footer-content {
