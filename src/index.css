@@ -3717,33 +3717,95 @@ body {
   }
 }
 
-/* Enhanced About Page Styles */
+/* Modern Vision & Mission Boxes */
 .vision-mission {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin: 3rem 0;
+  gap: 2rem;
+  margin: 4rem 0;
   text-align: left;
 }
 
-.vision-mission h3 {
-  color: #333333;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
+.vision, .mission {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.vision-mission p, .vision-mission ul {
-  color: #666666;
-  line-height: 1.6;
+.vision:hover, .mission:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.vision-mission ul {
+.vision::before, .mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  border-radius: 16px 16px 0 0;
+}
+
+.vision h3, .mission h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.vision p, .mission p, .vision ul, .mission ul {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.vision ul, .mission ul {
   padding-left: 1.5rem;
+  margin: 0;
 }
 
-.vision-mission li {
-  margin-bottom: 0.5rem;
+.vision li, .mission li {
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+}
+
+.vision li::marker, .mission li::marker {
+  color: #007AFF;
+}
+
+/* Modern decorative elements */
+.vision::after {
+  content: '👁️';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.mission::after {
+  content: '🎯';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .services-section, .student-lifebook-section, .values-section, .why-choose-us-section {
@@ -3839,11 +3901,58 @@ body {
 @media (max-width: 768px) {
   .vision-mission {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .vision, .mission {
+    padding: 2rem;
+  }
+  
+  .vision h3, .mission h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .vision p, .mission p, .vision ul, .mission ul {
+    font-size: 0.95rem;
+  }
+  
+  .vision::after, .mission::after {
+    font-size: 1.5rem;
+    top: 15px;
+    right: 15px;
   }
   
   .lifebook-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision, .mission {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .vision h3, .mission h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .vision p, .mission p, .vision ul, .mission ul {
+    font-size: 0.9rem;
+  }
+  
+  .vision::after, .mission::after {
+    font-size: 1.2rem;
+    top: 12px;
+    right: 12px;
+  }
+  
+  .vision-mission {
+    gap: 1rem;
+    margin: 2rem 0;
   }
   
   .values-grid {

@@ -25,8 +25,9 @@ const CategoryCarousel = ({ title, images, category, className }) => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
         const nextIndex = prev + 1;
-        // Reset to 0 when we reach the end of the first set of images
-        if (nextIndex >= images.length) {
+        // For mobile, show 2 images at a time, so max index is different
+        const maxIndex = isMobile ? Math.max(0, images.length - 2) : images.length;
+        if (nextIndex >= maxIndex) {
           return 0;
         }
         return nextIndex;
@@ -34,7 +35,18 @@ const CategoryCarousel = ({ title, images, category, className }) => {
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, isHovered, images.length]);
+  }, [isAutoPlaying, isHovered, images.length, isMobile]);
+
+  // Calculate number of dots needed for mobile
+  const getDotsCount = () => {
+    if (!isMobile) return 0;
+    return Math.max(1, images.length - 1); // Show dots only on mobile
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+  };
 
 
 
@@ -52,7 +64,7 @@ const CategoryCarousel = ({ title, images, category, className }) => {
           <div 
             className="carousel-slides"
             style={{ 
-              transform: `translateX(-${currentIndex * (isMobile ? 100 : 25)}%)`,
+              transform: `translateX(-${currentIndex * (isMobile ? 50 : 25)}%)`,
               transition: isAutoPlaying ? 'transform 0.5s linear' : 'none'
             }}
           >
@@ -71,6 +83,20 @@ const CategoryCarousel = ({ title, images, category, className }) => {
             ))}
           </div>
         </div>
+        
+        {/* Dots navigation for mobile */}
+        {isMobile && (
+          <div className="carousel-dots">
+            {Array.from({ length: getDotsCount() }, (_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
+                onClick={() => goToSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
         
       </div>
       
