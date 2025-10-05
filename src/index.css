@@ -3703,12 +3703,12 @@ body {
 /* Mobile responsive for category sections */
 @media (max-width: 768px) {
   .categories-section {
-    padding: 1rem 0;
+    padding: 0;
   }
   
   .category-section {
-    margin-bottom: 1rem;
-    padding: 0.5rem 0;
+    margin-bottom: 0;
+    padding: 0;
   }
   
   .view-all-btn {
@@ -3719,12 +3719,12 @@ body {
 
 @media (max-width: 480px) {
   .categories-section {
-    padding: 0.5rem 0;
+    padding: 0;
   }
   
   .category-section {
-    margin-bottom: 0.5rem;
-    padding: 0.25rem 0;
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -4516,7 +4516,7 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 22px;
-  height: 80px;
+  height: 100px;
 }
 
 .apple-logo {
@@ -4531,7 +4531,7 @@ body {
 }
 
 .apple-logo-img {
-  height: 63px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -4670,7 +4670,7 @@ body {
   height: 100vh;
   background: #ffffff;
   z-index: 1000;
-  padding-top: 80px;
+  padding-top: 100px;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -4757,30 +4757,30 @@ body {
   
   .apple-nav-container {
     padding: 0 20px;
-    height: 70px;
+    height: 85px;
   }
   
   .apple-logo-img {
-    height: 55px;
+    height: 70px;
   }
   
   .apple-navbar {
-    height: 70px;
+    height: 85px;
   }
 }
 
 @media (max-width: 480px) {
   .apple-nav-container {
     padding: 0 16px;
-    height: 65px;
+    height: 80px;
   }
   
   .apple-logo-img {
-    height: 50px;
+    height: 65px;
   }
   
   .apple-navbar {
-    height: 65px;
+    height: 80px;
   }
   
   .apple-mobile-menu {
