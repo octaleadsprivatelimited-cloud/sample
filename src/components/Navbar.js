@@ -6,6 +6,7 @@ const Navbar = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
@@ -34,11 +35,17 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Our Services', path: '/services' },
-    { name: 'AI Film Making', path: '/work/ai-film-making' },
-    { name: 'VFX', path: '/work/vfx' },
-    { name: 'Animation', path: '/work/animation' },
-    { name: 'Life Book', path: '/work/life-book' },
     { name: 'Contact', path: '/contact' }
+  ];
+
+  const workItems = [
+    { name: 'AI Film Making', path: '/work/ai-film-making' },
+    { name: 'Visual Effects (VFX)', path: '/work/vfx' },
+    { name: 'Animation', path: '/work/animation' },
+    { name: 'Student\'s Lifebook', path: '/work/life-book' },
+    { name: 'Calendar Selfie', path: '/work/calendar-selfie' },
+    { name: 'Financial Literacy', path: '/work/financial-literacy-book' },
+    { name: 'E-Learning', path: '/work/e-learning' }
   ];
 
   return (
@@ -81,6 +88,56 @@ const Navbar = () => {
               </Link>
             </motion.div>
           ))}
+          
+          {/* Work Dropdown */}
+          <motion.div
+            className="dropdown-container"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: navItems.length * 0.1 }}
+            onMouseEnter={() => setIsWorkDropdownOpen(true)}
+            onMouseLeave={() => setIsWorkDropdownOpen(false)}
+          >
+            <button className="nav-link dropdown-trigger">
+              Our Work
+              <motion.span 
+                className="dropdown-arrow"
+                animate={{ rotate: isWorkDropdownOpen ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                ▼
+              </motion.span>
+            </button>
+            
+            <AnimatePresence>
+              {isWorkDropdownOpen && (
+                <motion.div
+                  className="dropdown-menu"
+                  initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {workItems.map((item, index) => (
+                    <motion.div
+                      key={item.name}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                      whileHover={{ x: 5 }}
+                    >
+                      <Link 
+                        to={item.path}
+                        className={`dropdown-link ${location.pathname === item.path ? 'active' : ''}`}
+                      >
+                        {item.name}
+                      </Link>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -152,6 +209,33 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
+              
+              {/* Mobile Work Section */}
+              <motion.div
+                className="mobile-work-section"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: (navItems.length + 1) * 0.1 + 0.2 }}
+              >
+                <div className="mobile-work-title">Our Work</div>
+                {workItems.map((item, index) => (
+                  <motion.div
+                    key={item.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 + (navItems.length + 2) * 0.1 + 0.2 }}
+                    whileHover={{ x: 10 }}
+                  >
+                    <Link 
+                      to={item.path}
+                      className={`mobile-nav-link mobile-work-link ${location.pathname === item.path ? 'active' : ''}`}
+                      onClick={closeMobileMenu}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </motion.div>
             </motion.div>
           </motion.div>
         )}
