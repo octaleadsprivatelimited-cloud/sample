@@ -17,8 +17,17 @@ import { abroadShootsImages } from '../data/abroadShootsImages';
 const Home = () => {
   return (
     <div>
-      <section className="hero hero-with-image">
+      <section className="hero hero-with-video">
         <div className="hero-background">
+          <video 
+            className="hero-video" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+          >
+            <source src="/images/Pixell-I Logo video.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
@@ -151,7 +160,7 @@ const Home = () => {
               </div>
 
           {/* Animation */}
-          <div className="category-section">
+          <div className="category-section" data-category="animation">
             <div className="category-section-header">
               <CategoryCarousel 
                 title="Animation"
