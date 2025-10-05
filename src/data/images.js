@@ -255,24 +255,60 @@ export const lifeBookImages = [
 
 export const animationImages = [
   {
-    src: '/images/aifilmposters/1..jpg',
-    alt: 'AI Film Making Project 1',
-    description: 'Revolutionary AI-powered film production showcasing next-generation cinematic technology'
+    id: 1,
+    src: '/images/Animation/01.jpg',
+    alt: 'Animation Project 1',
+    description: 'Creative 2D animation showcasing character design and storytelling',
+    category: 'animation'
   },
   {
-    src: '/images/aifilmposters/2.jpg',
-    alt: 'AI Film Making Project 2',
-    description: 'Advanced AI film making with intelligent storytelling and automated production workflows'
+    id: 2,
+    src: '/images/Animation/02.png',
+    alt: 'Animation Project 2',
+    description: 'Dynamic 3D animation with advanced visual effects and motion graphics',
+    category: 'animation'
   },
   {
-    src: '/images/aifilmposters/3.jpg',
-    alt: 'AI Film Making Project 3',
-    description: 'Cutting-edge AI film creation demonstrating smart character development and scene generation'
+    id: 3,
+    src: '/images/Animation/03..jpg',
+    alt: 'Animation Project 3',
+    description: 'Innovative animation techniques blending traditional and digital art',
+    category: 'animation'
   },
   {
-    src: '/images/aifilmposters/4.jpg',
-    alt: 'AI Film Making Project 4',
-    description: 'Innovative AI film production featuring automated editing and intelligent post-production'
+    id: 4,
+    src: '/images/Animation/04..jpg',
+    alt: 'Animation Project 4',
+    description: 'Cinematic animation with professional lighting and composition',
+    category: 'animation'
+  },
+  {
+    id: 5,
+    src: '/images/Animation/05..jpg',
+    alt: 'Animation Project 5',
+    description: 'Character animation featuring expressive movement and personality',
+    category: 'animation'
+  },
+  {
+    id: 6,
+    src: '/images/Animation/06..jpg',
+    alt: 'Animation Project 6',
+    description: 'Environmental animation creating immersive digital worlds',
+    category: 'animation'
+  },
+  {
+    id: 7,
+    src: '/images/Animation/07..jpg',
+    alt: 'Animation Project 7',
+    description: 'Motion graphics animation with modern design principles',
+    category: 'animation'
+  },
+  {
+    id: 8,
+    src: '/images/Animation/08..jpg',
+    alt: 'Animation Project 8',
+    description: 'Advanced animation project demonstrating technical expertise',
+    category: 'animation'
   }
 ];
 
