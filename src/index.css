@@ -1027,7 +1027,17 @@ body {
 /* Hero Section with Background Image */
 .hero-with-image {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Video hero section specific height */
+.hero-with-video {
+  position: relative;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1355,6 +1365,10 @@ body {
 
 /* Responsive Design for Hero */
 @media (max-width: 768px) {
+  .hero-with-video {
+    min-height: 70vh;
+  }
+  
   .hero-content {
     padding: 6rem 2rem 0 2rem;
   }
@@ -1386,7 +1400,7 @@ body {
 /* About Us Section */
 .about-section {
   padding: 5rem 0;
-  margin-top: 70px;
+  margin-top: 0;
   background-color: #ffffff;
 }
 
@@ -3544,6 +3558,10 @@ body {
   .whatsapp-icon {
     width: 14px;
     height: 14px;
+  }
+  
+  .hero-with-video {
+    min-height: 60vh;
   }
   
   .hero-content {
