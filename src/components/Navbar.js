@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
+  const [isMobileWorkOpen, setIsMobileWorkOpen] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
@@ -29,6 +30,11 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsMobileWorkOpen(false);
+  };
+
+  const toggleMobileWork = () => {
+    setIsMobileWorkOpen(!isMobileWorkOpen);
   };
 
   const navItems = [
@@ -233,32 +239,36 @@ const Navbar = () => {
                 </motion.div>
               ))}
               
-              {/* Mobile Work Section */}
-              <motion.div
-                className="mobile-work-section"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: (navItems.length + 1) * 0.1 + 0.2 }}
-              >
-                <div className="mobile-work-title">Our Work</div>
-                {workItems.map((item, index) => (
+                  {/* Mobile Work Dropdown */}
                   <motion.div
-                    key={item.name}
+                    className={`mobile-work-dropdown ${isMobileWorkOpen ? 'open' : ''}`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 + (navItems.length + 2) * 0.1 + 0.2 }}
-                    whileHover={{ x: 10 }}
+                    transition={{ delay: (navItems.length + 1) * 0.1 + 0.2 }}
                   >
-                    <Link 
-                      to={item.path}
-                      className={`mobile-nav-link mobile-work-link ${location.pathname === item.path ? 'active' : ''}`}
-                      onClick={closeMobileMenu}
-                    >
-                      {item.name}
-                    </Link>
+                    <div className="mobile-work-trigger" onClick={toggleMobileWork}>
+                      <span>Our Work</span>
+                      <span className="mobile-dropdown-arrow">▼</span>
+                    </div>
+                    <div className="mobile-work-items">
+                      {workItems.map((item, index) => (
+                        <motion.div
+                          key={item.name}
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: index * 0.05 + (navItems.length + 2) * 0.1 + 0.2 }}
+                        >
+                          <Link 
+                            to={item.path}
+                            className={`mobile-nav-link mobile-work-link ${location.pathname === item.path ? 'active' : ''}`}
+                            onClick={closeMobileMenu}
+                          >
+                            {item.name}
+                          </Link>
+                        </motion.div>
+                      ))}
+                    </div>
                   </motion.div>
-                ))}
-              </motion.div>
               
               {/* Mobile Contact Link */}
               <motion.div
