@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CategoryCarousel from '../components/CategoryCarousel';
-import { 
-  weddingImages, 
-  eventImages, 
-  birthdayImages, 
-  portraitImages, 
+import {
+  weddingImages,
+  eventImages,
+  birthdayImages,
+  portraitImages,
   natureImages,
   vfxImages,
   lifeBookImages,
   animationImages,
-  servicesImages 
+  pureAnimationImages,
+  servicesImages
 } from '../data/images';
 import { abroadShootsImages } from '../data/abroadShootsImages';
 
@@ -164,7 +165,7 @@ const Home = () => {
             <div className="category-section-header">
               <CategoryCarousel 
                 title="Animation"
-                images={animationImages}
+                images={pureAnimationImages}
                 category="animation"
               />
               <Link to="/work/animation" className="view-btn-top-right">

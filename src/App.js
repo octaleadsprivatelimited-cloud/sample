@@ -10,6 +10,7 @@ import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
 import Sitemap from './pages/Sitemap';
 import Animation from './pages/work/Animation';
+import AiFilmMaking from './pages/work/AiFilmMaking';
 import PhotoShoot from './pages/work/PhotoShoot';
 import LifeBook from './pages/work/LifeBook';
 import Vfx from './pages/work/Vfx';
@@ -32,8 +33,8 @@ function App() {
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />
-          <Route path="/work/ai-film-making" element={<Animation />} />
-          <Route path="/work/animation" element={<PhotoShoot />} />
+          <Route path="/work/ai-film-making" element={<AiFilmMaking />} />
+          <Route path="/work/animation" element={<Animation />} />
           <Route path="/work/life-book" element={<LifeBook />} />
           <Route path="/work/vfx" element={<Vfx />} />
           <Route path="/work/calendar-selfie" element={<CalendarSelfie />} />

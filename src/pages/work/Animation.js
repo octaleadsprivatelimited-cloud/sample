@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from '../../components/Gallery';
-import { animationImages } from '../../data/images';
+import { pureAnimationImages } from '../../data/images';
 
 const Animation = () => {
   return (
@@ -10,12 +10,12 @@ const Animation = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>AI Film Making</h1>
-          <p>Next-Generation Animation & AI-Powered Creative Storytelling</p>
+          <h1>Animation</h1>
+          <p>Creative Animation & Motion Graphics Portfolio</p>
         </div>
       </section>
       
-      <Gallery images={animationImages} title="AI Film Making Portfolio" />
+      <Gallery images={pureAnimationImages} title="Animation Portfolio" />
     </div>
   );
 };
