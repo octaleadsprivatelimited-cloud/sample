@@ -3703,17 +3703,28 @@ body {
 /* Mobile responsive for category sections */
 @media (max-width: 768px) {
   .categories-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   
   .category-section {
-    margin-bottom: 2rem;
-    padding: 1rem 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
   }
   
   .view-all-btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-section {
+    padding: 0.5rem 0;
+  }
+  
+  .category-section {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
   }
 }
 
