@@ -208,16 +208,6 @@ const Sitemap = () => {
                     <p>We offer comprehensive creative and educational services using cutting-edge artificial intelligence and revolutionary technologies.</p>
                     <Link to="/services" className="info-link">View All Services</Link>
                   </div>
-                  <div className="info-block">
-                    <h3>Contact Information</h3>
-                    <div className="contact-details">
-                      <p><strong>Email:</strong> pixel.inc@gmail.com</p>
-                      <p><strong>Phone:</strong> +91 97047 71222</p>
-                      <p><strong>Location:</strong> Hyderabad, Telangana, India</p>
-                      <p><strong>Website:</strong> www.pixel-i.in</p>
-                    </div>
-                    <Link to="/contact" className="info-link">Get In Touch</Link>
-                  </div>
                 </div>
               </div>
 
