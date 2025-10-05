@@ -1,0 +1,91 @@
+{
+  "short_name": "PIXEL-I",
+  "name": "PIXEL-I (VISUALIZE YOUR IDEA) - AI Films | VFX | Animation | Student's Lifebook",
+  "description": "Pioneering creative studio specializing in AI Films, VFX, Animation, and Student's Lifebook using cutting-edge artificial intelligence and revolutionary technologies.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/pixel_new8_V6.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/pixel_new8_V6.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "entertainment"],
+  "screenshots": [
+    {
+      "src": "images/pixel_new8_V6.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our AI Films, VFX, Animation, and Student's Lifebook services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "images/pixel_new8_V6.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with PIXEL-I Creative Studio",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "images/pixel_new8_V6.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "AI Film Making",
+      "short_name": "AI Films",
+      "description": "Explore our AI Film Making portfolio",
+      "url": "/work/ai-film-making",
+      "icons": [
+        {
+          "src": "images/pixel_new8_V6.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Animation Work",
+      "short_name": "Animation",
+      "description": "View our Animation portfolio",
+      "url": "/work/animation",
+      "icons": [
+        {
+          "src": "images/pixel_new8_V6.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
