@@ -7,12 +7,11 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
-  const [isMobileWorkOpen, setIsMobileWorkOpen] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,6 +21,7 @@ const Navbar = () => {
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setIsWorkDropdownOpen(false);
   }, [location.pathname]);
 
   const toggleMobileMenu = () => {
@@ -30,17 +30,19 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-    setIsMobileWorkOpen(false);
+    setIsWorkDropdownOpen(false);
   };
 
-  const toggleMobileWork = () => {
-    setIsMobileWorkOpen(!isMobileWorkOpen);
+  const toggleWorkDropdown = () => {
+    setIsWorkDropdownOpen(!isWorkDropdownOpen);
   };
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Our Services', path: '/services' }
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Work', path: null, hasDropdown: true },
+    { name: 'Contact', path: '/contact' }
   ];
 
   const workItems = [
@@ -54,244 +56,224 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.nav 
-      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      <div className="nav-container">
-        {/* Logo */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link to="/" className="logo" onClick={closeMobileMenu}>
-            <img 
-              src="/images/pixel_new8_V6.jpg" 
-              alt="PIXEL-I Creative Studio" 
-              className="logo-image"
-            />
-          </Link>
-        </motion.div>
-
-        {/* Desktop Navigation */}
-        <div className="nav-links">
-          {navItems.map((item, index) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -2 }}
-            >
-              <Link 
-                to={item.path}
-                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
-              >
-                {item.name}
-              </Link>
-            </motion.div>
-          ))}
-          
-          {/* Work Dropdown */}
+    <>
+      {/* Apple-style Navigation */}
+      <motion.nav 
+        className={`apple-navbar ${isScrolled ? 'scrolled' : ''}`}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <div className="apple-nav-container">
+          {/* Logo */}
           <motion.div
-            className="dropdown-container"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: navItems.length * 0.1 }}
-            onMouseEnter={() => setIsWorkDropdownOpen(true)}
-            onMouseLeave={() => setIsWorkDropdownOpen(false)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <button className="nav-link dropdown-trigger">
-              Our Work
-              <motion.span 
-                className="dropdown-arrow"
-                animate={{ rotate: isWorkDropdownOpen ? 180 : 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                ▼
-              </motion.span>
-            </button>
-            
-            <AnimatePresence>
-              {isWorkDropdownOpen && (
-                <motion.div
-                  className="dropdown-menu"
-                  initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {workItems.map((item, index) => (
-                    <motion.div
-                      key={item.name}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05 }}
-                      whileHover={{ x: 5 }}
-                    >
-                      <Link 
-                        to={item.path}
-                        className={`dropdown-link ${location.pathname === item.path ? 'active' : ''}`}
-                      >
-                        {item.name}
-                      </Link>
-                    </motion.div>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </motion.div>
-          
-          {/* Contact Link */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: (navItems.length + 1) * 0.1 }}
-            whileHover={{ y: -2 }}
-          >
-            <Link 
-              to="/contact"
-              className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-            >
-              Contact
+            <Link to="/" className="apple-logo" onClick={closeMobileMenu}>
+              <img 
+                src="/images/pixel_new8_V6.jpg" 
+                alt="PIXEL-I" 
+                className="apple-logo-img"
+              />
             </Link>
           </motion.div>
-        </div>
 
-        {/* Mobile Menu Toggle */}
-        <motion.button 
-          className="mobile-menu-toggle"
-          onClick={toggleMobileMenu}
-          whileTap={{ scale: 0.95 }}
-          aria-label="Toggle mobile menu"
-        >
-          <motion.div
-            className="hamburger-icon"
-            animate={isMobileMenuOpen ? "open" : "closed"}
+          {/* Desktop Navigation */}
+          <div className="apple-nav-links">
+            {navItems.map((item, index) => (
+              <motion.div 
+                key={item.name} 
+                className="apple-nav-item"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 + 0.3 }}
+              >
+                {item.hasDropdown ? (
+                  <div 
+                    className="apple-dropdown-container"
+                    onMouseEnter={() => setIsWorkDropdownOpen(true)}
+                    onMouseLeave={() => setIsWorkDropdownOpen(false)}
+                  >
+                    <motion.button 
+                      className="apple-nav-link work-dropdown-trigger"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {item.name}
+                      <motion.span 
+                        className="work-dropdown-arrow"
+                        animate={{ rotate: isWorkDropdownOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        ▼
+                      </motion.span>
+                    </motion.button>
+                    <AnimatePresence>
+                      {isWorkDropdownOpen && (
+                        <motion.div
+                          className="apple-dropdown-menu"
+                          initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                          transition={{ duration: 0.2, ease: "easeOut" }}
+                        >
+                          {workItems.map((workItem, workIndex) => (
+                            <motion.div
+                              key={workItem.name}
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ delay: workIndex * 0.05 }}
+                            >
+                              <Link 
+                                to={workItem.path}
+                                className={`apple-dropdown-link ${location.pathname === workItem.path ? 'active' : ''}`}
+                              >
+                                {workItem.name}
+                              </Link>
+                            </motion.div>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <motion.div
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link 
+                      to={item.path}
+                      className={`apple-nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <motion.button 
+            className="apple-mobile-toggle"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+            whileTap={{ scale: 0.95 }}
           >
-            <motion.span
-              variants={{
-                closed: { rotate: 0, y: 0 },
-                open: { rotate: 45, y: 6 }
-              }}
+            <motion.span 
+              className={`hamburger-line ${isMobileMenuOpen ? 'open' : ''}`}
+              animate={isMobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3 }}
-            />
-            <motion.span
-              variants={{
-                closed: { opacity: 1 },
-                open: { opacity: 0 }
-              }}
+            ></motion.span>
+            <motion.span 
+              className={`hamburger-line ${isMobileMenuOpen ? 'open' : ''}`}
+              animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
               transition={{ duration: 0.3 }}
-            />
-            <motion.span
-              variants={{
-                closed: { rotate: 0, y: 0 },
-                open: { rotate: -45, y: -6 }
-              }}
+            ></motion.span>
+            <motion.span 
+              className={`hamburger-line ${isMobileMenuOpen ? 'open' : ''}`}
+              animate={isMobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3 }}
-            />
-          </motion.div>
-        </motion.button>
-      </div>
+            ></motion.span>
+          </motion.button>
+        </div>
+      </motion.nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            <motion.div
-              className={`mobile-menu-overlay ${isMobileMenuOpen ? 'open' : ''}`}
+            <motion.div 
+              className="apple-mobile-overlay" 
+              onClick={closeMobileMenu}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              onClick={() => setIsMobileMenuOpen(false)}
-            />
-            <motion.div
-              className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}
-              initial={{ x: '-100%' }}
+            ></motion.div>
+            <motion.div 
+              className="apple-mobile-menu"
+              initial={{ x: '100%' }}
               animate={{ x: 0 }}
-              exit={{ x: '-100%' }}
+              exit={{ x: '100%' }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-            <motion.div
-              className="mobile-menu-content"
-              initial={{ y: -20 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.1 }}
-            >
-              {navItems.map((item, index) => (
-                <motion.div
-                  key={item.name}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 + 0.2 }}
-                  whileHover={{ x: 10 }}
-                >
-                  <Link 
-                    to={item.path}
-                    className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                    onClick={closeMobileMenu}
-                  >
-                    {item.name}
-                  </Link>
-                </motion.div>
-              ))}
-              
-                  {/* Mobile Work Dropdown */}
-                  <motion.div
-                    className={`mobile-work-dropdown ${isMobileWorkOpen ? 'open' : ''}`}
-                    initial={{ opacity: 0, x: -20 }}
+              <div className="apple-mobile-content">
+                {navItems.map((item, index) => (
+                  <motion.div 
+                    key={item.name} 
+                    className="apple-mobile-item"
+                    initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: (navItems.length + 1) * 0.1 + 0.2 }}
+                    transition={{ delay: index * 0.1 + 0.2 }}
                   >
-                    <div className="mobile-work-trigger" onClick={toggleMobileWork}>
-                      <span>Our Work</span>
-                      <span className="mobile-dropdown-arrow">▼</span>
-                    </div>
-                    <div className="mobile-work-items">
-                      {workItems.map((item, index) => (
-                        <motion.div
-                          key={item.name}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: index * 0.05 + (navItems.length + 2) * 0.1 + 0.2 }}
+                    {item.hasDropdown ? (
+                      <div className="apple-mobile-dropdown">
+                        <motion.button 
+                          className="apple-mobile-nav-link"
+                          onClick={toggleWorkDropdown}
+                          whileHover={{ x: 10 }}
+                          whileTap={{ scale: 0.95 }}
                         >
-                          <Link 
-                            to={item.path}
-                            className={`mobile-nav-link mobile-work-link ${location.pathname === item.path ? 'active' : ''}`}
-                            onClick={closeMobileMenu}
-                          >
-                            {item.name}
-                          </Link>
-                        </motion.div>
-                      ))}
-                    </div>
+                          {item.name}
+                          <motion.span 
+                            className={`dropdown-arrow ${isWorkDropdownOpen ? 'open' : ''}`}
+                            animate={isWorkDropdownOpen ? { rotate: 90 } : { rotate: 0 }}
+                            transition={{ duration: 0.2 }}
+                          >›</motion.span>
+                        </motion.button>
+                        <AnimatePresence>
+                          {isWorkDropdownOpen && (
+                            <motion.div 
+                              className="apple-mobile-work-items"
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: 'auto', opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.3 }}
+                            >
+                              {workItems.map((workItem, workIndex) => (
+                                <motion.div
+                                  key={workItem.name}
+                                  initial={{ opacity: 0, x: 20 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: workIndex * 0.05 + 0.1 }}
+                                >
+                                  <Link 
+                                    to={workItem.path}
+                                    className={`apple-mobile-work-link ${location.pathname === workItem.path ? 'active' : ''}`}
+                                    onClick={closeMobileMenu}
+                                  >
+                                    {workItem.name}
+                                  </Link>
+                                </motion.div>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    ) : (
+                      <motion.div
+                        whileHover={{ x: 10 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link 
+                          to={item.path}
+                          className={`apple-mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                          onClick={closeMobileMenu}
+                        >
+                          {item.name}
+                        </Link>
+                      </motion.div>
+                    )}
                   </motion.div>
-              
-              {/* Mobile Contact Link */}
-              <motion.div
-                className="mobile-contact-section"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: (navItems.length + workItems.length + 2) * 0.1 + 0.2 }}
-                whileHover={{ x: 10 }}
-              >
-                <Link 
-                  to="/contact"
-                  className={`mobile-nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-                  onClick={closeMobileMenu}
-                >
-                  Contact
-                </Link>
-              </motion.div>
+                ))}
+              </div>
             </motion.div>
-          </motion.div>
           </>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   );
 };
 

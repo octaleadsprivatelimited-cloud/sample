@@ -98,8 +98,9 @@ body {
 }
 
 
-/* Classic White Navigation Styles */
+/* Classic White Navigation Styles - HIDDEN */
 .navbar {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -4368,5 +4369,312 @@ body {
 
   .sitemap-footer {
     padding: 2rem 1rem;
+  }
+}
+
+/* Apple-style Navigation */
+.apple-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-navbar.scrolled {
+  background: #ffffff;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.apple-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
+  height: 80px;
+}
+
+.apple-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.apple-logo:hover {
+  opacity: 0.7;
+}
+
+.apple-logo-img {
+  height: 63px;
+  width: auto;
+  object-fit: contain;
+}
+
+.apple-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.apple-nav-item {
+  position: relative;
+}
+
+.apple-nav-link {
+  color: #1d1d1f;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.apple-nav-link:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #1d1d1f;
+}
+
+.apple-nav-link.active {
+  color: #0071e3;
+}
+
+/* Work Dropdown Arrow */
+.work-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.work-dropdown-arrow {
+  font-size: 8px;
+  color: #8E8E93;
+  transition: all 0.3s ease;
+  margin-left: 2px;
+}
+
+/* Apple Dropdown */
+.apple-dropdown-container {
+  position: relative;
+}
+
+.apple-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px 0;
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.apple-dropdown-link {
+  display: block;
+  padding: 12px 20px;
+  color: #1d1d1f;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.apple-dropdown-link:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #0071e3;
+}
+
+.apple-dropdown-link.active {
+  color: #0071e3;
+}
+
+/* Apple Mobile Toggle */
+.apple-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-line {
+  width: 18px;
+  height: 1px;
+  background: #1d1d1f;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hamburger animation is now handled by framer-motion */
+
+/* Apple Mobile Menu */
+.apple-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.apple-mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 380px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1000;
+  padding-top: 80px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.apple-mobile-content {
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.apple-mobile-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.apple-mobile-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  color: #1d1d1f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.apple-mobile-nav-link:hover,
+.apple-mobile-nav-link.active {
+  background: rgba(0, 122, 255, 0.08);
+  color: #007AFF;
+}
+
+.dropdown-arrow {
+  font-size: 18px;
+  color: #8E8E93;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-arrow.open {
+  transform: rotate(90deg);
+  color: #007AFF;
+}
+
+.apple-mobile-work-items {
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.apple-mobile-work-link {
+  padding: 14px 28px 14px 56px !important;
+  font-size: 15px;
+  color: #3A3A3C;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.apple-mobile-work-link:hover,
+.apple-mobile-work-link.active {
+  background: rgba(0, 122, 255, 0.06);
+  color: #007AFF;
+  padding-left: 64px !important;
+}
+
+.apple-mobile-work-link:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .apple-nav-links {
+    display: none;
+  }
+  
+  .apple-mobile-toggle {
+    display: flex;
+  }
+  
+  .apple-nav-container {
+    padding: 0 20px;
+    height: 70px;
+  }
+  
+  .apple-logo-img {
+    height: 55px;
+  }
+  
+  .apple-navbar {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apple-nav-container {
+    padding: 0 16px;
+    height: 65px;
+  }
+  
+  .apple-logo-img {
+    height: 50px;
+  }
+  
+  .apple-navbar {
+    height: 65px;
+  }
+  
+  .apple-mobile-menu {
+    width: 90%;
+    max-width: 320px;
+  }
+  
+  .apple-mobile-nav-link {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+  
+  .apple-mobile-work-link {
+    padding: 12px 20px 12px 48px !important;
+    font-size: 14px;
   }
 }
