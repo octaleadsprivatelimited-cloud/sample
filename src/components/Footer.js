@@ -80,54 +80,6 @@ const Footer = () => {
           </div>
 
 
-          {/* Contact Information */}
-          <div className="footer-section contact-section">
-            <h4>Get In Touch</h4>
-            <div className="contact-info">
-              <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <div>
-                  <strong>Email</strong>
-                  <p>pixel.inc@gmail.com</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <div>
-                  <strong>Mobile</strong>
-                  <p>+91 97047 71222</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">☎️</span>
-                <div>
-                  <strong>Landline</strong>
-                  <p>040-31516696</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">🌐</span>
-                <div>
-                  <strong>Website</strong>
-                  <p>www.pixel-i.in</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <div>
-                  <strong>Location</strong>
-                  <p>Hyderabad, Telangana<br />India</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Business Hours */}
-            <div className="business-hours">
-              <h5>Business Hours</h5>
-              <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
-              <p>Sun: 10:00 AM - 5:00 PM</p>
-            </div>
-          </div>
         </div>
 
         {/* Footer Bottom */}

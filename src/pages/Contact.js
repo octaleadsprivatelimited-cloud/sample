@@ -49,34 +49,6 @@ const Contact = () => {
       <section className="gallery-section">
         <div className="container">
           <div className="contact-grid">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
-              <div className="contact-item">
-                <h3>📞 Mobile</h3>
-                <p>+91 97047 71222</p>
-              </div>
-              <div className="contact-item">
-                <h3>☎️ Landline</h3>
-                <p>040-31516696</p>
-              </div>
-              <div className="contact-item">
-                <h3>📧 Email</h3>
-                <p>pixel.inc@gmail.com</p>
-              </div>
-              <div className="contact-item">
-                <h3>🌐 Website</h3>
-                <p>www.pixel-i.in</p>
-              </div>
-              <div className="contact-item">
-                <h3>📍 Location</h3>
-                <p>Hyderabad, Telangana, India</p>
-              </div>
-              <div className="contact-item">
-                <h3>🕒 Hours</h3>
-                <p>Mon - Sat: 9:00 AM - 7:00 PM<br />Sun: 10:00 AM - 5:00 PM</p>
-              </div>
-            </div>
-            
             <div className="contact-form">
               <h2>Send Us a Message</h2>
               <form onSubmit={handleSubmit}>
