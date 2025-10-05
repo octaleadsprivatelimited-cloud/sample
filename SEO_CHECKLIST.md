@@ -122,5 +122,5 @@
 
 ---
 
-*Last Updated: December 19, 2024*
+*Last Updated: December 19, 2025*
 *Next Review: January 19, 2025*

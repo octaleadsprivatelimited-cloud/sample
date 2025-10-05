@@ -134,7 +134,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              <p>&copy; 2024 PIXEL-I Creative Studio. All rights reserved.</p>
+              <p>&copy; 2025 PIXEL-I Creative Studio. All rights reserved.</p>
             </div>
             <div className="footer-links-bottom">
               <Link to="/privacy">Privacy Policy</Link>
