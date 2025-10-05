@@ -604,9 +604,10 @@ body {
 .contact-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 4rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 6rem;
+  max-width: none;
+  margin: 0;
+  padding: 0 3rem;
   position: relative;
   z-index: 1;
   align-items: start;
@@ -986,7 +987,8 @@ body {
   .contact-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 4rem !important;
+    gap: 6rem !important;
+    padding: 0 4rem;
   }
 }
 
@@ -994,6 +996,7 @@ body {
   .contact-grid {
     grid-template-columns: 1fr !important;
     gap: 3rem;
+    padding: 0 2rem;
   }
 }
 
@@ -1002,10 +1005,13 @@ body {
     padding: 4rem 0;
   }
   
+  .contact-grid {
+    padding: 0 1rem;
+  }
+  
   .contact-form-section,
   .contact-info-section {
     padding: 3rem;
-    margin: 0 1rem;
   }
   
   .contact-form-section h2,
@@ -1037,10 +1043,13 @@ body {
     padding: 3rem 0;
   }
   
+  .contact-grid {
+    padding: 0 0.5rem;
+  }
+  
   .contact-form-section,
   .contact-info-section {
     padding: 2rem;
-    margin: 0 0.5rem;
   }
   
   .contact-form-section h2,
