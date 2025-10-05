@@ -1802,13 +1802,13 @@ body {
 
 .mega-footer .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
 .mega-footer .footer-company {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .mega-footer .footer-logo {
@@ -2069,12 +2069,12 @@ body {
 /* Responsive Mega Footer */
 @media (max-width: 1200px) {
   .mega-footer .footer-content {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
   }
   
   .mega-footer .footer-company {
-    grid-column: span 3;
+    grid-column: span 2;
     text-align: center;
     margin-bottom: 2rem;
   }

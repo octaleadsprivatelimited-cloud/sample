@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isWorkOpen, setIsWorkOpen] = useState(false);
   const [isCompanyOpen, setIsCompanyOpen] = useState(false);
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   const toggleServices = () => setIsServicesOpen(!isServicesOpen);
-  const toggleWork = () => setIsWorkOpen(!isWorkOpen);
   const toggleCompany = () => setIsCompanyOpen(!isCompanyOpen);
-  const toggleResources = () => setIsResourcesOpen(!isResourcesOpen);
 
   return (
     <footer className="footer mega-footer">
@@ -68,22 +64,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Work Portfolio Section */}
-          <div className="footer-section">
-            <button className="footer-toggle" onClick={toggleWork}>
-              <h4>Our Work</h4>
-              <span className="footer-arrow">{isWorkOpen ? '▲' : '▼'}</span>
-            </button>
-            <ul className={`footer-links ${isWorkOpen ? 'open' : ''}`}>
-              <li><Link to="/work/ai-film-making">AI Film Making Portfolio</Link></li>
-              <li><Link to="/work/animation">Animation Gallery</Link></li>
-              <li><Link to="/work/life-book">Life Book Projects</Link></li>
-              <li><Link to="/work/vfx">VFX Showcase</Link></li>
-              <li><Link to="/work/calendar-selfie">Calendar Selfie Gallery</Link></li>
-              <li><Link to="/work/financial-literacy-book">Financial Education</Link></li>
-              <li><Link to="/work/e-learning">E-Learning Platform</Link></li>
-            </ul>
-          </div>
 
           {/* Company Section */}
           <div className="footer-section">
@@ -102,22 +82,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources Section */}
-          <div className="footer-section">
-            <button className="footer-toggle" onClick={toggleResources}>
-              <h4>Resources</h4>
-              <span className="footer-arrow">{isResourcesOpen ? '▲' : '▼'}</span>
-            </button>
-            <ul className={`footer-links ${isResourcesOpen ? 'open' : ''}`}>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#case-studies">Case Studies</a></li>
-              <li><a href="#tutorials">Tutorials</a></li>
-              <li><a href="#downloads">Downloads</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#support">Support</a></li>
-              <li><a href="#documentation">Documentation</a></li>
-            </ul>
-          </div>
 
           {/* Contact Information */}
           <div className="footer-section contact-section">
