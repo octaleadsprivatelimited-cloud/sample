@@ -69,7 +69,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <h3>📍 Location</h3>
-                <p>Hyderabad, India</p>
+                <p>Hyderabad, Telangana, India</p>
               </div>
               <div className="contact-item">
                 <h3>🕒 Hours</h3>
@@ -116,12 +116,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                   >
-                    <option value="">Select Event Type</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="event">Corporate Event</option>
-                    <option value="birthday">Birthday Party</option>
-                    <option value="portrait">Portrait Session</option>
-                    <option value="nature">Nature Photography</option>
+                    <option value="">Select Service Type</option>
+                    <option value="ai-film-making">AI Film Making</option>
+                    <option value="vfx">Visual Effects (VFX)</option>
+                    <option value="animation">Animation</option>
+                    <option value="life-book">Student's Lifebook</option>
+                    <option value="calendar-selfie">Calendar Selfie</option>
+                    <option value="financial-literacy">Financial Literacy Book</option>
+                    <option value="e-learning">E-Learning Solutions</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -136,7 +138,7 @@ const Contact = () => {
                 <div className="form-group">
                   <textarea
                     name="message"
-                    placeholder="Tell us about your photography needs..."
+                    placeholder="Tell us about your creative project needs..."
                     value={formData.message}
                     onChange={handleChange}
                     rows="5"
