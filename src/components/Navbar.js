@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -6,10 +6,30 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsWorkDropdownOpen(false);
+  }, [location.pathname]);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && !event.target.closest('.navbar')) {
+        setIsMobileMenuOpen(false);
+        setIsWorkDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [isMobileMenuOpen]);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    // Close dropdown when mobile menu is toggled
-    setIsWorkDropdownOpen(false);
+    if (isMobileMenuOpen) {
+      setIsWorkDropdownOpen(false);
+    }
   };
 
   const closeMobileMenu = () => {
@@ -17,34 +37,50 @@ const Navbar = () => {
     setIsWorkDropdownOpen(false);
   };
 
-  const toggleWorkDropdown = () => {
+  const toggleWorkDropdown = (e) => {
+    e.stopPropagation();
     setIsWorkDropdownOpen(!isWorkDropdownOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="nav-container">
+        {/* Mobile Menu Toggle */}
         <button 
           className="mobile-menu-toggle"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
+          aria-expanded={isMobileMenuOpen}
         >
-          ☰
+          <span className="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
         
+        {/* Logo */}
         <Link to="/" className="logo" onClick={closeMobileMenu}>
           <img 
             src="/images/pixel_new8_V6.jpg" 
             alt="PIXEL-I Creative Studio" 
             className="logo-image"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
           />
+          <div className="logo-fallback" style={{display: 'none'}}>
+            PIXEL-I
+          </div>
         </Link>
         
+        {/* Navigation Links */}
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li>
             <Link 
               to="/" 
-              className={location.pathname === '/' ? 'active' : ''}
+              className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
               onClick={closeMobileMenu}
             >
               Home
@@ -53,7 +89,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/about" 
-              className={location.pathname === '/about' ? 'active' : ''}
+              className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
               onClick={closeMobileMenu}
             >
               About Us
@@ -62,16 +98,20 @@ const Navbar = () => {
           <li>
             <Link 
               to="/services" 
-              className={location.pathname === '/services' ? 'active' : ''}
+              className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}
               onClick={closeMobileMenu}
             >
               Our Services
             </Link>
           </li>
+          
+          {/* Work Dropdown */}
           <li className="dropdown">
             <button 
               className={`dropdown-toggle ${isWorkDropdownOpen ? 'active' : ''}`}
               onClick={toggleWorkDropdown}
+              aria-expanded={isWorkDropdownOpen}
+              aria-haspopup="true"
             >
               Work
               <span className="dropdown-arrow">▼</span>
@@ -80,7 +120,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/ai-film-making" 
-                  className={location.pathname === '/work/ai-film-making' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/ai-film-making' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   AI Film Making
@@ -89,7 +129,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/vfx" 
-                  className={location.pathname === '/work/vfx' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/vfx' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   VFX
@@ -98,7 +138,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/life-book" 
-                  className={location.pathname === '/work/life-book' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/life-book' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   Life Book
@@ -107,7 +147,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/animation" 
-                  className={location.pathname === '/work/animation' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/animation' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   Animation
@@ -116,7 +156,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/calendar-selfie" 
-                  className={location.pathname === '/work/calendar-selfie' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/calendar-selfie' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   Calendar Selfie
@@ -125,7 +165,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/financial-literacy-book" 
-                  className={location.pathname === '/work/financial-literacy-book' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/financial-literacy-book' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   Financial Literacy Book
@@ -134,7 +174,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/work/e-learning" 
-                  className={location.pathname === '/work/e-learning' ? 'active' : ''}
+                  className={`dropdown-link ${location.pathname === '/work/e-learning' ? 'active' : ''}`}
                   onClick={closeMobileMenu}
                 >
                   E-Learning
@@ -142,10 +182,11 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
+          
           <li>
             <Link 
               to="/contact" 
-              className={location.pathname === '/contact' ? 'active' : ''}
+              className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
               onClick={closeMobileMenu}
             >
               Contact
