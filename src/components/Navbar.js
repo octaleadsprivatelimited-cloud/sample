@@ -6,13 +6,15 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isWorkDropdownOpen, setIsWorkDropdownOpen] = useState(false);
 
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    // Close dropdown when mobile menu is toggled
+    setIsWorkDropdownOpen(false);
   };
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsWorkDropdownOpen(false);
   };
 
   const toggleWorkDropdown = () => {
@@ -33,7 +35,7 @@ const Navbar = () => {
         <Link to="/" className="logo" onClick={closeMobileMenu}>
           <img 
             src="/images/pixel_new8_V6.jpg" 
-            alt="Pixel-i Photography" 
+            alt="PIXEL-I Creative Studio" 
             className="logo-image"
           />
         </Link>
@@ -129,15 +131,15 @@ const Navbar = () => {
                   Financial Literacy Book
                 </Link>
               </li>
-               <li>
-                 <Link 
-                   to="/work/e-learning" 
-                   className={location.pathname === '/work/e-learning' ? 'active' : ''}
-                   onClick={closeMobileMenu}
-                 >
-                   E-Learning
-                 </Link>
-               </li>
+              <li>
+                <Link 
+                  to="/work/e-learning" 
+                  className={location.pathname === '/work/e-learning' ? 'active' : ''}
+                  onClick={closeMobileMenu}
+                >
+                  E-Learning
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
