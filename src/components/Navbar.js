@@ -81,16 +81,16 @@ const Navbar = () => {
                   className={location.pathname === '/work/animation' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  Animation
+                  AI Film Making
                 </Link>
               </li>
               <li>
                 <Link 
-                  to="/work/photo-shoot" 
-                  className={location.pathname === '/work/photo-shoot' ? 'active' : ''}
+                  to="/work/vfx" 
+                  className={location.pathname === '/work/vfx' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  Photo Shoot
+                  VFX
                 </Link>
               </li>
               <li>
@@ -104,13 +104,40 @@ const Navbar = () => {
               </li>
               <li>
                 <Link 
-                  to="/work/vfx" 
-                  className={location.pathname === '/work/vfx' ? 'active' : ''}
+                  to="/work/photo-shoot" 
+                  className={location.pathname === '/work/photo-shoot' ? 'active' : ''}
                   onClick={closeMobileMenu}
                 >
-                  VFX
+                  Animation
                 </Link>
               </li>
+              <li>
+                <Link 
+                  to="/work/calendar-selfie" 
+                  className={location.pathname === '/work/calendar-selfie' ? 'active' : ''}
+                  onClick={closeMobileMenu}
+                >
+                  Calendar Selfie
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/work/financial-literacy-book" 
+                  className={location.pathname === '/work/financial-literacy-book' ? 'active' : ''}
+                  onClick={closeMobileMenu}
+                >
+                  Financial Literacy Book
+                </Link>
+              </li>
+               <li>
+                 <Link 
+                   to="/work/e-learning" 
+                   className={location.pathname === '/work/e-learning' ? 'active' : ''}
+                   onClick={closeMobileMenu}
+                 >
+                   E-Learning
+                 </Link>
+               </li>
             </ul>
           </li>
           <li>

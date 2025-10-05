@@ -1,0 +1,221 @@
+/* Sliding carousel with zoom effect */
+.zoom-carousel-container {
+  width: 100%;
+  margin: 3rem 0;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+.zoom-carousel-track {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoom-carousel-wrapper {
+  display: flex;
+  width: 300%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom-card {
+  flex: 0 0 33.333%;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  margin: 0 1rem;
+  opacity: 0.6;
+  transform: scale(0.8);
+}
+
+.zoom-card.active {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-card.prev,
+.zoom-card.next {
+  opacity: 0.8;
+  transform: scale(0.9);
+  z-index: 5;
+}
+
+.zoom-card:hover {
+  opacity: 0.9;
+  transform: scale(0.95);
+}
+
+.zoom-card.active:hover {
+  transform: scale(1.15);
+}
+
+.card-header {
+  padding: 24px 24px 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.service-number {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  border: none;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.card-content {
+  padding: 16px 24px;
+}
+
+.service-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #6e6e73;
+  margin: 0;
+  font-weight: 400;
+}
+
+.card-footer {
+  padding: 16px 24px 24px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.service-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .zoom-card {
+    margin: 0 0.5rem;
+  }
+  
+  .zoom-card.active {
+    transform: scale(1.05);
+  }
+  
+  .zoom-card.active:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-header {
+    padding: 20px 20px 12px 20px;
+  }
+  
+  .service-title {
+    font-size: 18px;
+  }
+  
+  .card-content {
+    padding: 12px 20px;
+  }
+  
+  .service-description {
+    font-size: 14px;
+  }
+  
+  .card-footer {
+    padding: 12px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .zoom-card {
+    margin: 0 0.25rem;
+  }
+  
+  .zoom-card.active {
+    transform: scale(1.02);
+  }
+  
+  .zoom-card.active:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-header {
+    padding: 16px 16px 8px 16px;
+  }
+  
+  .service-title {
+    font-size: 16px;
+  }
+  
+  .card-content {
+    padding: 8px 16px;
+  }
+  
+  .service-description {
+    font-size: 13px;
+  }
+  
+  .card-footer {
+    padding: 8px 16px 16px 16px;
+  }
+}
+
+/* Navigation Dots */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  z-index: 20;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}

@@ -10,12 +10,12 @@ const Animation = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>Animation</h1>
+          <h1>AI Film Making</h1>
           <p>Next-Generation Animation & AI-Powered Creative Storytelling</p>
         </div>
       </section>
       
-      <Gallery images={animationImages} title="Animation Portfolio" />
+      <Gallery images={animationImages} title="AI Film Making Portfolio" />
     </div>
   );
 };

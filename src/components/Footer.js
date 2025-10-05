@@ -17,8 +17,11 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>PIXEL-I (VISUALIZE YOUR IDEA)</h3>
+          <div className="footer-section footer-logo-section">
+            <div className="footer-logo">
+              <img src="/images/pixel_new8_V6.jpg" alt="PIXEL- i Logo" className="footer-logo-img" />
+            </div>
+            <h3>PIXEL- i (VISUALIZE YOUR IDEA)</h3>
             <p>AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
           </div>
           
@@ -59,7 +62,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 PIXEL-I Creative Studio. All rights reserved.</p>
+          <p>&copy; 2024 PIXEL- i Creative Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>

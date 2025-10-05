@@ -1,5 +1,6 @@
 import React from 'react';
 import { classicGraphicsData } from '../data/externalData';
+import ServicesCarousel from '../components/ServicesCarousel';
 
 const About = () => {
   const { aboutUs, companyInfo, services, values, vision, mission, whyChooseUs, studentLifebook } = classicGraphicsData;
@@ -20,7 +21,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>About PIXEL-I</h2>
+              <h2>About PIXEL- i</h2>
               <p>{aboutUs.description}</p>
               
               <div className="vision-mission">
@@ -42,14 +43,7 @@ const About = () => {
             
             <div className="services-section">
               <h2>What We Do</h2>
-              <div className="feature-grid">
-                {services.map((service, index) => (
-                  <div key={index} className="feature-item">
-                    <h3>{service.title}</h3>
-                    <p>{service.description}</p>
-                  </div>
-                ))}
-              </div>
+              <ServicesCarousel services={services} />
             </div>
 
             <div className="student-lifebook-section">
@@ -95,7 +89,7 @@ const About = () => {
             </div>
 
             <div className="why-choose-us-section">
-              <h2>Why Choose PIXEL-I?</h2>
+              <h2>Why Choose PIXEL- i?</h2>
               <ul className="why-choose-list">
                 {whyChooseUs.map((reason, index) => (
                   <li key={index}>{reason}</li>

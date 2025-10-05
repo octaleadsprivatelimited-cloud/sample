@@ -100,7 +100,7 @@ body {
 /* Navigation Styles */
 .navbar {
   background-color: #ffffff;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -291,19 +291,19 @@ body {
 }
 
 .service-photo.tvc {
-  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-image: url('https://picsum.photos/600/400?random=901');
 }
 
 .service-photo.digital {
-  background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-image: url('https://picsum.photos/600/400?random=902');
 }
 
 .service-photo.print {
-  background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-image: url('https://picsum.photos/600/400?random=903');
 }
 
 .service-photo.events {
-  background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-image: url('https://picsum.photos/600/400?random=904');
 }
 
 .service-info h3 {
@@ -604,7 +604,7 @@ body {
 /* Hero Social Media Icons */
 .hero-social-icons {
   position: absolute;
-  right: 2rem;
+  left: 2rem;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -617,14 +617,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -636,8 +637,8 @@ body {
 }
 
 .social-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   transition: all 0.3s ease;
 }
 
@@ -664,18 +665,18 @@ body {
 /* Responsive Social Icons */
 @media (max-width: 768px) {
   .hero-social-icons {
-    right: 1rem;
+    left: 1rem;
     gap: 0.8rem;
   }
   
   .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   
   .social-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -948,7 +949,7 @@ body {
 /* Our Services Section */
 .services-section {
   padding: 0;
-  background-color: #f8f9fa;
+  background: transparent;
 }
 
 .services-header {
@@ -1146,7 +1147,7 @@ body {
 /* Our Clients Section */
 .clients-section {
   padding: 0;
-  background-color: #ffffff;
+  background: transparent;
   overflow: hidden;
 }
 
@@ -1349,11 +1350,11 @@ body {
 }
 
 .logo-image {
-  height: 50px;
+  height: 60px;
   width: auto;
   object-fit: cover;
-  object-position: center top;
-  clip-path: inset(0 0 5% 0);
+  object-position: center center;
+  clip-path: inset(15% 0 15% 0);
   transition: transform 0.3s ease;
 }
 
@@ -1497,11 +1498,21 @@ body {
   overflow: hidden;
   border-radius: 8px;
   aspect-ratio: 4/3;
-  background-color: #222222;
+  background-color: #f5f5f5;
   transition: transform 0.3s ease;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Life Book specific styling with 1:1 aspect ratio */
+.life-book-page .gallery-item {
+  aspect-ratio: 1/1;
+}
+
+/* VFX specific styling with 16:9 aspect ratio */
+.vfx-page .gallery-item {
+  aspect-ratio: 16/9;
 }
 
 .gallery-item:hover {
@@ -1511,8 +1522,9 @@ body {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: opacity 0.3s ease;
+  background-color: #f5f5f5;
 }
 
 .gallery-item:hover img {
@@ -1582,6 +1594,26 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.footer-logo-section {
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.05);
 }
 
 .footer-section h3 {
@@ -1918,11 +1950,13 @@ body {
 
 .image-modal-content {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  outline: none;
 }
 
 .modal-close-btn {
@@ -1983,16 +2017,23 @@ body {
 
 .modal-image-container {
   position: relative;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 95vw;
+  max-height: 95vh;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-image {
-  max-width: 100%;
-  max-height: 80vh;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
 }
 
 .modal-image-info {
@@ -2149,7 +2190,8 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   }
   
   .nav-links.active {
@@ -2332,7 +2374,7 @@ body {
   }
   
   .logo-image {
-    height: 45px;
+    height: 50px;
   }
   
   .modal-nav-btn {
@@ -2393,7 +2435,7 @@ body {
   }
   
   .logo-image {
-    height: 38px;
+    height: 45px;
   }
   
   .whatsapp-btn {
@@ -2517,7 +2559,7 @@ body {
 /* Category Carousels Section */
 .categories-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: transparent;
 }
 
 .carousels-full-width {
@@ -2558,6 +2600,7 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
   z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 

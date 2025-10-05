@@ -222,81 +222,193 @@ export const vfxImages = [
 
 export const lifeBookImages = [
   {
-    src: '/images/life book/unnamed.jpg',
-    alt: 'Student Life Book Page 1',
-    description: 'Beautiful student life book page showcasing memories and achievements'
+    src: '/images/life book/lifebook_01.jpg',
+    alt: 'Student Academic Journey',
+    description: 'Comprehensive documentation of student academic milestones and achievements'
   },
   {
-    src: '/images/life book/unnamed (1).jpg',
-    alt: 'Student Life Book Page 2',
-    description: 'Creative life book layout with personal milestones and experiences'
+    src: '/images/life book/lifebook_02.jpg',
+    alt: 'Personal Growth Portfolio',
+    description: 'Interactive life book showcasing personal development and learning experiences'
   },
   {
-    src: '/images/life book/unnamed (2).jpg',
-    alt: 'Student Life Book Page 3',
-    description: 'Elegant life book design capturing precious moments and growth'
+    src: '/images/life book/lifebook_03.jpg',
+    alt: 'Memory Preservation',
+    description: 'Beautiful preservation of precious moments and meaningful experiences'
   },
   {
-    src: '/images/life book/unnamed (3).jpg',
-    alt: 'Student Life Book Page 4',
-    description: 'Professional life book page highlighting academic and personal journey'
+    src: '/images/life book/lifebook_04.jpg',
+    alt: 'Educational Milestones',
+    description: 'Documentation of educational achievements and learning progress'
   },
   {
-    src: '/images/life book/unnamed (4).jpg',
-    alt: 'Student Life Book Page 5',
-    description: 'Artistic life book layout with meaningful quotes and memories'
+    src: '/images/life book/lifebook_05.jpg',
+    alt: 'Creative Life Story',
+    description: 'Artistic representation of student life journey with creative storytelling'
   },
   {
-    src: '/images/life book/unnamed (5).jpg',
-    alt: 'Student Life Book Page 6',
-    description: 'Dynamic life book design showcasing achievements and aspirations'
-  },
-  {
-    src: '/images/life book/unnamed (6).jpg',
-    alt: 'Student Life Book Page 7',
-    description: 'Inspirational life book page with personal reflections and goals'
-  },
-  {
-    src: '/images/life book/unnamed (7).jpg',
-    alt: 'Student Life Book Page 8',
-    description: 'Comprehensive life book finale celebrating the complete journey'
+    src: '/images/life book/lifebook_07jpg.jpg',
+    alt: 'Digital Life Book',
+    description: 'Modern digital life book with interactive elements and multimedia content'
   }
 ];
 
 export const animationImages = [
   {
-    src: '/images/Animation/01.The Book Of Miracle_Posters with TEXT.jpg',
-    alt: 'The Book of Miracle Animation',
-    description: 'Stunning animation poster for The Book of Miracle project showcasing creative storytelling'
+    src: '/images/aifilmposters/1..jpg',
+    alt: 'AI Film Making Project 1',
+    description: 'Revolutionary AI-powered film production showcasing next-generation cinematic technology'
   },
   {
-    src: '/images/Animation/02-Nilayam-Long-OPP (1).png',
-    alt: 'Nilayam Animation Project',
-    description: 'Elegant animation design for Nilayam project with cinematic visual appeal'
+    src: '/images/aifilmposters/2.jpg',
+    alt: 'AI Film Making Project 2',
+    description: 'Advanced AI film making with intelligent storytelling and automated production workflows'
   },
   {
-    src: '/images/Animation/03 - 2025-09-29T172954.115 (1).png',
-    alt: 'Creative Animation Work',
-    description: 'Innovative animation artwork demonstrating advanced creative techniques'
+    src: '/images/aifilmposters/3.jpg',
+    alt: 'AI Film Making Project 3',
+    description: 'Cutting-edge AI film creation demonstrating smart character development and scene generation'
   },
   {
-    src: '/images/Animation/04.Boy on bicycle-01-With Text-001.jpg',
-    alt: 'Boy on Bicycle Animation',
-    description: 'Charming animation scene featuring a boy on bicycle with artistic flair'
+    src: '/images/aifilmposters/4.jpg',
+    alt: 'AI Film Making Project 4',
+    description: 'Innovative AI film production featuring automated editing and intelligent post-production'
+  }
+];
+
+export const calendarSelfieImages = [
+  {
+    src: 'https://picsum.photos/600/400?random=301',
+    alt: 'AI Calendar Selfie Creation',
+    description: 'Revolutionary AI-powered calendar generation with personalized selfie integration'
   },
   {
-    src: '/images/Animation/06.EARTH_ANGEL A.jpg',
-    alt: 'Earth Angel Animation',
-    description: 'Beautiful Earth Angel animation showcasing celestial and environmental themes'
+    src: 'https://picsum.photos/600/400?random=302',
+    alt: 'Smart Calendar Design',
+    description: 'Intelligent calendar layouts with automatic date and event integration'
   },
   {
-    src: '/images/Animation/Elegant Cinematic Wedding Thumbnail HD 169.jpg',
-    alt: 'Elegant Cinematic Wedding Animation',
-    description: 'Sophisticated wedding animation with cinematic quality and elegant design'
+    src: 'https://picsum.photos/600/400?random=303',
+    alt: 'Personalized Calendar Pages',
+    description: 'Custom calendar pages featuring user photos and important dates'
   },
   {
-    src: '/images/Animation/h.png',
-    alt: 'Creative Animation Design',
-    description: 'Artistic animation design demonstrating creative visual storytelling'
+    src: 'https://picsum.photos/600/400?random=304',
+    alt: 'Digital Calendar Creation',
+    description: 'Modern digital calendar solutions with AI-enhanced personalization'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=305',
+    alt: 'Calendar Selfie Integration',
+    description: 'Seamless integration of personal photos into calendar designs'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=306',
+    alt: 'Interactive Calendar Features',
+    description: 'Advanced calendar features with smart reminders and event management'
+  }
+];
+
+export const financialLiteracyImages = [
+  {
+    src: 'https://picsum.photos/600/400?random=401',
+    alt: 'Financial Literacy Book Cover',
+    description: 'Comprehensive financial education book designed for modern learners'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=402',
+    alt: 'Money Management Guide',
+    description: 'Interactive guide to personal finance and money management strategies'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=403',
+    alt: 'Investment Education Content',
+    description: 'Educational content covering investment basics and financial planning'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=404',
+    alt: 'Budget Planning Tools',
+    description: 'Practical tools and templates for effective budget planning and tracking'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=405',
+    alt: 'Financial Goal Setting',
+    description: 'Interactive content helping users set and achieve financial goals'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=406',
+    alt: 'Digital Financial Education',
+    description: 'Modern digital learning platform for financial literacy education'
+  }
+];
+
+export const digitalEducationImages = [
+  {
+    src: 'https://picsum.photos/600/400?random=501',
+    alt: 'AI-Enhanced Learning Platform',
+    description: 'Next-generation digital education platform powered by artificial intelligence'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=502',
+    alt: 'Interactive Learning Modules',
+    description: 'Engaging interactive modules designed for effective digital learning'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=503',
+    alt: 'Virtual Classroom Experience',
+    description: 'Immersive virtual classroom environments for remote education'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=504',
+    alt: 'Educational Content Creation',
+    description: 'Professional educational content development and multimedia integration'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=505',
+    alt: 'Student Assessment Tools',
+    description: 'Advanced assessment and progress tracking tools for digital education'
+  },
+  {
+    src: 'https://picsum.photos/600/400?random=506',
+    alt: 'Learning Management System',
+    description: 'Comprehensive learning management system with AI-powered features'
+  }
+];
+
+export const servicesImages = [
+  {
+    src: '/images/ourservises/01..jpg',
+    alt: 'AI Film Making Service',
+    description: 'Revolutionary AI-powered film production with cutting-edge technology'
+  },
+  {
+    src: '/images/ourservises/02..jpg',
+    alt: 'VFX Service',
+    description: 'Advanced visual effects and post-production services'
+  },
+  {
+    src: '/images/ourservises/03..jpg',
+    alt: 'Life Book Service',
+    description: 'Student life documentation and educational content creation'
+  },
+  {
+    src: '/images/ourservises/04..jpg',
+    alt: 'Animation Service',
+    description: 'Creative animation services spanning 2D, 3D, and motion graphics'
+  },
+  {
+    src: '/images/ourservises/05..jpg',
+    alt: 'Calendar Selfie Service',
+    description: 'AI-powered personal calendar creation with smart selfie integration'
+  },
+  {
+    src: '/images/ourservises/06..jpg',
+    alt: 'Financial Literacy Service',
+    description: 'Interactive educational content for financial awareness'
+  },
+  {
+    src: '/images/ourservises/07..jpg',
+    alt: 'E-Learning Service',
+    description: 'Next-generation learning solutions with AI-enhanced content'
   }
 ];

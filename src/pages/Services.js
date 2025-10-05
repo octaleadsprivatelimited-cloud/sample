@@ -21,17 +21,24 @@ const Services = () => {
             {/* Row 1: Image left, text right */}
             <div className="service-row">
               <div className="service-media left">
-                <div className="service-photo tvc"></div>
+                <div 
+                  className="service-photo" 
+                  style={{
+                    backgroundImage: "url('/images/ourservises/01..jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
               </div>
               <div className="service-info right">
-                <h3>TV Commercials</h3>
-                <p>Professional TV commercial production with creative storytelling, high-end cinematography, and compelling narratives that engage audiences and drive brand awareness.</p>
+                <h3>AI Film Making</h3>
+                <p>Revolutionary AI-powered film production that combines cutting-edge artificial intelligence with creative storytelling to produce next-generation cinematic content.</p>
                 <ul>
-                  <li>Concept Development</li>
-                  <li>Script Writing</li>
-                  <li>Pre-production Planning</li>
-                  <li>Professional Shooting</li>
-                  <li>Post-production & Editing</li>
+                  <li>AI Script Generation</li>
+                  <li>Automated Storyboarding</li>
+                  <li>Smart Character Creation</li>
+                  <li>AI-Powered Editing</li>
+                  <li>Intelligent Post-Production</li>
                 </ul>
               </div>
             </div>
@@ -39,17 +46,24 @@ const Services = () => {
             {/* Row 2: Text left, image right */}
             <div className="service-row reverse">
               <div className="service-media right">
-                <div className="service-photo digital"></div>
+                <div 
+                  className="service-photo" 
+                  style={{
+                    backgroundImage: "url('/images/ourservises/02..jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
               </div>
               <div className="service-info left">
-                <h3>Digital Films</h3>
-                <p>Engaging digital content for modern audiences across social media platforms, web, and digital marketing campaigns.</p>
+                <h3>VFX</h3>
+                <p>Advanced visual effects and post-production services that bring impossible worlds to life with state-of-the-art VFX technology and creative expertise.</p>
                 <ul>
-                  <li>Social Media Content</li>
-                  <li>Web Series</li>
-                  <li>Digital Marketing Videos</li>
-                  <li>Brand Storytelling</li>
-                  <li>Interactive Content</li>
+                  <li>3D Modeling & Animation</li>
+                  <li>Compositing & Green Screen</li>
+                  <li>Motion Graphics</li>
+                  <li>Special Effects</li>
+                  <li>Color Grading</li>
                 </ul>
               </div>
             </div>
@@ -57,17 +71,24 @@ const Services = () => {
             {/* Row 3: Image left, text right */}
             <div className="service-row">
               <div className="service-media left">
-                <div className="service-photo print"></div>
+                <div 
+                  className="service-photo" 
+                  style={{
+                    backgroundImage: "url('/images/ourservises/03..jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
               </div>
               <div className="service-info right">
-                <h3>Print Campaigns</h3>
-                <p>Stunning print photography for advertising, marketing materials, billboards, magazines, and promotional content.</p>
+                <h3>Life Book</h3>
+                <p>Comprehensive student life documentation and educational content creation that captures academic journeys, achievements, and personal growth stories.</p>
                 <ul>
-                  <li>Fashion Photography</li>
-                  <li>Lifestyle Shoots</li>
-                  <li>Product Photography</li>
-                  <li>Editorial Work</li>
-                  <li>Brand Campaigns</li>
+                  <li>Student Portfolio Creation</li>
+                  <li>Academic Journey Documentation</li>
+                  <li>Personal Growth Stories</li>
+                  <li>Educational Content</li>
+                  <li>Memory Preservation</li>
                 </ul>
               </div>
             </div>
@@ -75,17 +96,24 @@ const Services = () => {
             {/* Row 4: Text left, image right */}
             <div className="service-row reverse">
               <div className="service-media right">
-                <div className="service-photo events"></div>
+                <div 
+                  className="service-photo" 
+                  style={{
+                    backgroundImage: "url('/images/ourservises/04..jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
               </div>
               <div className="service-info left">
-                <h3>Events</h3>
-                <p>Complete event coverage and documentation for corporate events, weddings, conferences, and special occasions.</p>
+                <h3>Animation</h3>
+                <p>Creative animation services spanning 2D, 3D, and motion graphics to bring characters, stories, and concepts to life with artistic excellence.</p>
                 <ul>
-                  <li>Corporate Events</li>
-                  <li>Wedding Photography</li>
-                  <li>Conferences & Seminars</li>
-                  <li>Product Launches</li>
-                  <li>Live Streaming</li>
+                  <li>2D Animation</li>
+                  <li>3D Character Animation</li>
+                  <li>Motion Graphics</li>
+                  <li>Explainer Videos</li>
+                  <li>Interactive Animations</li>
                 </ul>
               </div>
             </div>
