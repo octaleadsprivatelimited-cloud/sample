@@ -602,14 +602,15 @@ body {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
   gap: 4rem;
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
   align-items: start;
+  width: 100%;
 }
 
 .contact-form-section {
@@ -981,9 +982,17 @@ body {
 }
 
 /* Professional Responsive Design */
+@media (min-width: 1025px) {
+  .contact-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4rem !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 3rem;
   }
 }
