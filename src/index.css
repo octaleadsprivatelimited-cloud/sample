@@ -249,10 +249,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   font-weight: 600;
   color: #000000;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   border-bottom: 1px solid #e2e8f0;
 }
@@ -278,8 +278,8 @@ body {
 }
 
 .mobile-work-link {
-  padding: 0.75rem 0 !important;
-  font-size: 0.9rem;
+  padding: 0.5rem 0 !important;
+  font-size: 0.85rem;
   color: #666666;
   margin: 0;
   border-bottom: 1px solid #f0f0f0;
@@ -337,7 +337,7 @@ body {
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
   position: fixed;
-  top: 50px;
+  top: 45px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -356,7 +356,7 @@ body {
 /* Clean Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 50px;
+  top: 45px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -365,7 +365,7 @@ body {
   overflow-y: auto;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-  max-width: 300px;
+  max-width: 280px;
 }
 
 .mobile-menu.open {
@@ -373,7 +373,7 @@ body {
 }
 
 .mobile-menu-content {
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -391,8 +391,8 @@ body {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
-  padding: 1.5rem 0;
+  font-size: 1rem;
+  padding: 1rem 0;
   border-bottom: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   position: relative;
@@ -425,8 +425,8 @@ body {
 
 @media (max-width: 768px) {
   .nav-container {
-    padding: 0 1.5rem;
-    height: 50px;
+    padding: 0 1rem;
+    height: 45px;
   }
 
   .nav-links {
@@ -438,18 +438,18 @@ body {
   }
 
   .logo-image {
-    height: 35px;
+    height: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .nav-container {
-    padding: 0 1rem;
-    height: 50px;
+    padding: 0 0.75rem;
+    height: 45px;
   }
 
   .logo-image {
-    height: 30px;
+    height: 25px;
   }
 
   .mobile-menu-content {
@@ -464,13 +464,13 @@ body {
 
 @media (max-width: 768px) {
   .App {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
 @media (max-width: 480px) {
   .App {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
