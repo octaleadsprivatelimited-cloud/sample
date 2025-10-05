@@ -155,8 +155,8 @@ const Home = () => {
             <div className="category-section-header">
               <CategoryCarousel 
                 title="Animation"
-                images={eventImages}
-                category="photo-shoot"
+                images={animationImages}
+                category="animation"
               />
               <Link to="/work/animation" className="view-btn-top-right">
                 View All
