@@ -1131,7 +1131,7 @@ body {
   text-align: center;
   color: #ffffff;
   max-width: 800px;
-  padding: 0 2rem;
+  padding: 8rem 2rem 0 2rem;
 }
 
 .hero-content h1 {
@@ -1355,6 +1355,10 @@ body {
 
 /* Responsive Design for Hero */
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 6rem 2rem 0 2rem;
+  }
+  
   .hero-content h1 {
     font-size: 2.5rem;
   }
@@ -1382,6 +1386,7 @@ body {
 /* About Us Section */
 .about-section {
   padding: 5rem 0;
+  margin-top: 70px;
   background-color: #ffffff;
 }
 
@@ -3541,6 +3546,10 @@ body {
     height: 14px;
   }
   
+  .hero-content {
+    padding: 5rem 1rem 0 1rem;
+  }
+  
   .hero-content h1 {
     font-size: 1.8rem;
   }
@@ -4526,6 +4535,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 70px;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -4544,7 +4554,7 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 22px;
-  height: 100px;
+  height: 70px;
 }
 
 .apple-logo {
@@ -4559,7 +4569,7 @@ body {
 }
 
 .apple-logo-img {
-  height: 80px;
+  height: 120px;
   width: auto;
   object-fit: contain;
 }
@@ -4698,7 +4708,7 @@ body {
   height: 100vh;
   background: #ffffff;
   z-index: 1000;
-  padding-top: 100px;
+  padding-top: 70px;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -4785,15 +4795,15 @@ body {
   
   .apple-nav-container {
     padding: 0 20px;
-    height: 85px;
+    height: 60px;
   }
   
   .apple-logo-img {
-    height: 70px;
+    height: 100px;
   }
   
   .apple-navbar {
-    height: 85px;
+    height: 60px;
   }
 }
 
@@ -4811,15 +4821,15 @@ body {
 @media (max-width: 480px) {
   .apple-nav-container {
     padding: 0 16px;
-    height: 80px;
+    height: 55px;
   }
   
   .apple-logo-img {
-    height: 65px;
+    height: 90px;
   }
   
   .apple-navbar {
-    height: 80px;
+    height: 55px;
   }
   
   .apple-mobile-menu {
