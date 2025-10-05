@@ -1515,6 +1515,15 @@ body {
   aspect-ratio: 16/9;
 }
 
+/* Animation specific styling with 16:9 aspect ratio */
+.photo-shoot-page .gallery-item {
+  aspect-ratio: 16/9;
+}
+
+.photo-shoot-page .gallery-item img {
+  object-fit: cover;
+}
+
 .gallery-item:hover {
   transform: scale(1.02);
 }
