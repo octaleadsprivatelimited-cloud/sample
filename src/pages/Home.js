@@ -26,7 +26,7 @@ const Home = () => {
             loop 
             playsInline
           >
-            <source src="/images/Pixell-I Logo video.mp4" type="video/mp4" />
+            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
