@@ -59,7 +59,7 @@ const Contact = () => {
         </section>
 
         <section className="contact-content">
-          <div className="container">
+          <div className="contact-container">
             <div className="contact-grid">
               {/* Contact Form */}
               <div className="contact-form-section">
