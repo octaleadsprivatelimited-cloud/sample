@@ -34,8 +34,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Our Services', path: '/services' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Our Services', path: '/services' }
   ];
 
   const workItems = [
@@ -138,6 +137,21 @@ const Navbar = () => {
               )}
             </AnimatePresence>
           </motion.div>
+          
+          {/* Contact Link */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: (navItems.length + 1) * 0.1 }}
+            whileHover={{ y: -2 }}
+          >
+            <Link 
+              to="/contact"
+              className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
+            >
+              Contact
+            </Link>
+          </motion.div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -235,6 +249,23 @@ const Navbar = () => {
                     </Link>
                   </motion.div>
                 ))}
+              </motion.div>
+              
+              {/* Mobile Contact Link */}
+              <motion.div
+                className="mobile-contact-section"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: (navItems.length + workItems.length + 2) * 0.1 + 0.2 }}
+                whileHover={{ x: 10 }}
+              >
+                <Link 
+                  to="/contact"
+                  className={`mobile-nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
+                  onClick={closeMobileMenu}
+                >
+                  Contact
+                </Link>
               </motion.div>
             </motion.div>
           </motion.div>
