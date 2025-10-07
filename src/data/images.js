@@ -411,34 +411,44 @@ export const financialLiteracyImages = [
 
 export const digitalEducationImages = [
   {
-    src: 'https://picsum.photos/600/400?random=501',
-    alt: 'AI-Enhanced Learning Platform',
-    description: 'Next-generation digital education platform powered by artificial intelligence'
+    src: '/images/E-learning/1.jpg',
+    alt: 'E-Learning Platform 1',
+    description: 'Next-generation digital education platform'
   },
   {
-    src: 'https://picsum.photos/600/400?random=502',
-    alt: 'Interactive Learning Modules',
-    description: 'Engaging interactive modules designed for effective digital learning'
+    src: '/images/E-learning/2.jpg',
+    alt: 'E-Learning Platform 2',
+    description: 'Interactive learning modules and content'
   },
   {
-    src: 'https://picsum.photos/600/400?random=503',
-    alt: 'Virtual Classroom Experience',
-    description: 'Immersive virtual classroom environments for remote education'
+    src: '/images/E-learning/3.jpg',
+    alt: 'E-Learning Platform 3',
+    description: 'Virtual classroom experience'
   },
   {
-    src: 'https://picsum.photos/600/400?random=504',
-    alt: 'Educational Content Creation',
-    description: 'Professional educational content development and multimedia integration'
+    src: '/images/E-learning/4.jpg',
+    alt: 'E-Learning Platform 4',
+    description: 'Educational content creation'
   },
   {
-    src: 'https://picsum.photos/600/400?random=505',
-    alt: 'Student Assessment Tools',
-    description: 'Advanced assessment and progress tracking tools for digital education'
+    src: '/images/E-learning/5.jpg',
+    alt: 'E-Learning Platform 5',
+    description: 'Student assessment and tracking'
   },
   {
-    src: 'https://picsum.photos/600/400?random=506',
-    alt: 'Learning Management System',
-    description: 'Comprehensive learning management system with AI-powered features'
+    src: '/images/E-learning/6.jpg',
+    alt: 'E-Learning Platform 6',
+    description: 'Learning management system'
+  },
+  {
+    src: '/images/E-learning/7.jpg',
+    alt: 'E-Learning Platform 7',
+    description: 'Digital education tools'
+  },
+  {
+    src: '/images/E-learning/8.jpg',
+    alt: 'E-Learning Platform 8',
+    description: 'AI-powered learning solutions'
   }
 ];
 

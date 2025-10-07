@@ -42,6 +42,27 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Quick Links Section */}
+          <div className="footer-section footer-links-section">
+            <div className="footer-links-block">
+              <h4 className="footer-links-title">Quick Links</h4>
+              <div className="footer-links-grid">
+                <Link to="/" className="footer-grid-link">Home</Link>
+                <Link to="/about" className="footer-grid-link">About Us</Link>
+                <Link to="/services" className="footer-grid-link">Our Services</Link>
+                <Link to="/contact" className="footer-grid-link">Contact Us</Link>
+                <Link to="/work/ai-film-making" className="footer-grid-link">AI Film Making</Link>
+                <Link to="/work/vfx" className="footer-grid-link">Visual Effects (VFX)</Link>
+                <Link to="/work/animation" className="footer-grid-link">Animation</Link>
+                <Link to="/work/life-book" className="footer-grid-link">Student's Lifebook</Link>
+                <Link to="/work/calendar-selfie" className="footer-grid-link">Calendar Selfie</Link>
+                <Link to="/work/financial-literacy-book" className="footer-grid-link">Financial Literacy</Link>
+                <Link to="/work/e-learning" className="footer-grid-link">E-Learning</Link>
+                <Link to="/portfolio" className="footer-grid-link">Portfolio</Link>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Footer Bottom */}
