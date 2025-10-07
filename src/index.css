@@ -69,21 +69,21 @@ body {
   }
 }
 
-/* Apply animations to key elements */
+/* Apply animations to key elements - DISABLED for smoother loading */
 .hero-content {
-  animation: fadeIn 1s ease-out;
+  /* animation: fadeIn 1s ease-out; */
 }
 
 .about-section {
-  animation: slideInFromLeft 0.8s ease-out;
+  /* animation: slideInFromLeft 0.8s ease-out; */
 }
 
 .services-section {
-  animation: slideInFromRight 0.8s ease-out;
+  /* animation: slideInFromRight 0.8s ease-out; */
 }
 
 .clients-section {
-  animation: fadeIn 1s ease-out;
+  /* animation: fadeIn 1s ease-out; */
 }
 
 #root {

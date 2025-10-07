@@ -33,7 +33,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/ourservises/01..jpg')",
+                    backgroundImage: "url('/images/aifilmposters/aifilm.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
@@ -52,17 +52,24 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Row 2: Text left, image right */}
+            {/* Row 2: Text left, video right */}
             <div className="service-row reverse">
               <div className="service-media right">
-                <div 
-                  className="service-photo" 
-                  style={{
-                    backgroundImage: "url('/images/ourservises/02..jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                ></div>
+                <div className="service-photo">
+                  <video 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  >
+                    <source src="/images/vfx/Mystical_Cave_VFX_Video_Generation.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div className="service-info left">
                 <h3>VFX</h3>
