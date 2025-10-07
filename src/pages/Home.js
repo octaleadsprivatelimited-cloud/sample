@@ -63,8 +63,7 @@ const Home = () => {
           <div className="about-grid">
             <div className="about-content-left">
                   <div className="about-image">
-                    <div className="image-placeholder">
-                    </div>
+                    <img src="/images/home_about.jpg" alt="About Pixel-i" />
                   </div>
             </div>
                 <div className="about-content-right">
