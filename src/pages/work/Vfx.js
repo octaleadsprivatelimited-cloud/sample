@@ -35,7 +35,6 @@ const Vfx = () => {
                 <li><strong>Paint & Cleanup</strong><br/>Removes unwanted elements from live footage (e.g., wires, rigs, markers).</li>
                 <li><strong>Matchmove / Camera Tracking</strong><br/>Tracks the real camera's movement so CG can match perfectly with live footage.</li>
                 <li><strong>Matte Painting / Environment</strong><br/>Creates 2D or 2.5D digital backgrounds or set extensions.</li>
-                <li><strong>Compositing</strong><br/>Combines rendered CG elements with live-action footage into seamless shots.<br/>Tasks: Keying, Rotoscoping, Color correction, Integration.</li>
               </ul>
             </div>
             <div className="vfx-info-block">
@@ -43,6 +42,7 @@ const Vfx = () => {
               <ul>
                 <li><strong>Lighting</strong><br/>Places lights and matches the lighting of CGI elements to live-action footage.<br/>Artists: Lighting TD, Lighter.</li>
                 <li><strong>Rendering</strong><br/>Converts 3D scenes into final 2D images with lighting, textures, and effects.</li>
+                <li><strong>Compositing</strong><br/>Combines rendered CG elements with live-action footage into seamless shots.<br/>Tasks: Keying, Rotoscoping, Color correction, Integration.</li>
               </ul>
             </div>
           </div>

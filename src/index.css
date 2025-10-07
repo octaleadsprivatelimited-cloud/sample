@@ -5305,7 +5305,7 @@ body {
 }
 
 .apple-logo-img {
-  height: 120px;
+  height: 90px;
   width: auto;
   object-fit: contain;
 }
@@ -5535,7 +5535,7 @@ body {
   }
   
   .apple-logo-img {
-    height: 100px;
+    height: 75px;
   }
   
   .apple-navbar {
@@ -5557,7 +5557,7 @@ body {
   }
   
   .apple-logo-img {
-    height: 90px;
+    height: 68px;
   }
   
   .apple-navbar {
