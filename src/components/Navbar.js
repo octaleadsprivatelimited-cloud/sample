@@ -73,7 +73,7 @@ const Navbar = () => {
             <Link to="/" className="apple-logo" onClick={closeMobileMenu}>
               <img 
                 src="/images/Untitled_design.png" 
-                alt="PIXEL-I" 
+                alt="Pixel-i" 
                 className="apple-logo-img"
               />
             </Link>

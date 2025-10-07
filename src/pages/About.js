@@ -19,9 +19,8 @@ const About = () => {
           </video>
           <div className="hero-overlay"></div>
         </div>
-        <div className="hero-content">
-          <h1>{companyInfo.name}</h1>
-          <p>{companyInfo.tagline}</p>
+        <div className="hero-content about-hero-content">
+          <p className="about-tagline">{companyInfo.tagline}</p>
         </div>
       </section>
       
@@ -29,7 +28,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>About PIXEL- i</h2>
+              <h2>About Pixel-i</h2>
               <p>{aboutUs.description}</p>
               
               <div className="vision-mission">
@@ -104,7 +103,7 @@ const About = () => {
             </div>
 
             <div className="why-choose-us-section">
-              <h2>Why Choose PIXEL- i?</h2>
+              <h2>Why Choose Pixel-i?</h2>
               <ul className="why-choose-list">
                 {whyChooseUs.map((reason, index) => (
                   <li key={index}>{reason}</li>

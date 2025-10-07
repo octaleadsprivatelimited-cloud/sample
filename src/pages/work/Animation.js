@@ -5,8 +5,17 @@ import { pureAnimationImages } from '../../data/images';
 const Animation = () => {
   return (
     <div className="animation-page">
-      <section className="hero hero-with-image">
+      <section className="hero hero-with-video">
         <div className="hero-background">
+          <video 
+            className="hero-video" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+          >
+            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">

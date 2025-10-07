@@ -7,12 +7,12 @@ const Sitemap = () => {
     {
       title: "Home",
       url: "/",
-      description: "PIXEL-I Creative Studio homepage - AI Films, VFX, Animation, and Student's Lifebook services"
+      description: "Pixel-i Creative Studio homepage - AI Films, VFX, Animation, and Student's Lifebook services"
     },
     {
       title: "About Us",
       url: "/about",
-      description: "Learn about PIXEL-I Creative Studio - our vision, mission, and expertise in AI Films, VFX, and Animation"
+      description: "Learn about Pixel-i Creative Studio - our vision, mission, and expertise in AI Films, VFX, and Animation"
     },
     {
       title: "Our Services",
@@ -22,7 +22,7 @@ const Sitemap = () => {
     {
       title: "Contact Us",
       url: "/contact",
-      description: "Get in touch with PIXEL-I Creative Studio for your AI Films, VFX, and Animation projects"
+      description: "Get in touch with Pixel-i Creative Studio for your AI Films, VFX, and Animation projects"
     }
   ];
 
@@ -68,33 +68,33 @@ const Sitemap = () => {
     {
       title: "Privacy Policy",
       url: "/privacy",
-      description: "Privacy Policy for PIXEL-I Creative Studio - data protection and privacy information"
+      description: "Privacy Policy for Pixel-i Creative Studio - data protection and privacy information"
     },
     {
       title: "Terms of Service",
       url: "/terms",
-      description: "Terms of Service for PIXEL-I Creative Studio - terms and conditions for using our services"
+      description: "Terms of Service for Pixel-i Creative Studio - terms and conditions for using our services"
     },
     {
       title: "Cookie Policy",
       url: "/cookies",
-      description: "Cookie Policy for PIXEL-I Creative Studio - information about cookies and tracking technologies"
+      description: "Cookie Policy for Pixel-i Creative Studio - information about cookies and tracking technologies"
     },
     {
       title: "Sitemap",
       url: "/sitemap",
-      description: "Complete sitemap of PIXEL-I Creative Studio website structure and navigation"
+      description: "Complete sitemap of Pixel-i Creative Studio website structure and navigation"
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>Sitemap - PIXEL-I Creative Studio</title>
-        <meta name="description" content="Complete sitemap of PIXEL-I Creative Studio website. Find all pages including AI Films, VFX, Animation services, and company information." />
-        <meta name="keywords" content="sitemap, website navigation, PIXEL-I, creative studio, AI films, VFX, animation, student lifebook, site structure" />
-        <meta property="og:title" content="Sitemap - PIXEL-I Creative Studio" />
-        <meta property="og:description" content="Complete sitemap of PIXEL-I Creative Studio website. Find all pages and services." />
+        <title>Sitemap - Pixel-i Creative Studio</title>
+        <meta name="description" content="Complete sitemap of Pixel-i Creative Studio website. Find all pages including AI Films, VFX, Animation services, and company information." />
+        <meta name="keywords" content="sitemap, website navigation, Pixel-i, creative studio, AI films, VFX, animation, student lifebook, site structure" />
+        <meta property="og:title" content="Sitemap - Pixel-i Creative Studio" />
+        <meta property="og:description" content="Complete sitemap of Pixel-i Creative Studio website. Find all pages and services." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.pixel-i.in/sitemap" />
         <link rel="canonical" href="https://www.pixel-i.in/sitemap" />
@@ -107,7 +107,7 @@ const Sitemap = () => {
           </div>
           <div className="hero-content">
             <h1>Sitemap</h1>
-            <p>Navigate through all pages and services of PIXEL-I Creative Studio</p>
+            <p>Navigate through all pages and services of Pixel-i Creative Studio</p>
           </div>
         </section>
 
@@ -117,7 +117,7 @@ const Sitemap = () => {
               <div className="sitemap-intro">
                 <h2>Website Structure</h2>
                 <p>
-                  Welcome to the PIXEL-I Creative Studio sitemap. This page provides a comprehensive overview of all pages and sections available on our website. Use this sitemap to easily navigate to any section or service you're interested in.
+                  Welcome to the Pixel-i Creative Studio sitemap. This page provides a comprehensive overview of all pages and sections available on our website. Use this sitemap to easily navigate to any section or service you're interested in.
                 </p>
                 <p>
                   Our website is organized into main sections covering our core services: AI Films, VFX, Animation, and Student's Lifebook, along with essential company information and legal pages.
@@ -199,8 +199,8 @@ const Sitemap = () => {
                 <h2>Company Information</h2>
                 <div className="company-info">
                   <div className="info-block">
-                    <h3>About PIXEL-I</h3>
-                    <p>PIXEL-I (VISUALIZE YOUR IDEA) is a pioneering creative studio specializing in AI Films, VFX, Animation, and Student's Lifebook services.</p>
+                    <h3>About Pixel-i</h3>
+                    <p>Pixel-i (VISUALIZE YOUR IDEA) is a pioneering creative studio specializing in AI Films, VFX, Animation, and Student's Lifebook services.</p>
                     <Link to="/about" className="info-link">Learn More About Us</Link>
                   </div>
                   <div className="info-block">

@@ -1,7 +1,7 @@
 // External data from Pixel-i Creative Studio
 export const classicGraphicsData = {
   companyInfo: {
-    name: "PIXEL- i (VISUALIZE YOUR IDEA)",
+    name: "Pixel-i (VISUALIZE YOUR IDEA)",
     tagline: "AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK",
     website: "www.pixel-i.in",
     phone: "9704771222",
@@ -11,8 +11,8 @@ export const classicGraphicsData = {
   },
 
   aboutUs: {
-    title: "About PIXEL- i",
-    description: "PIXEL- i is a pioneering creative studio at the forefront of AI Films, advanced visual effects (VFX), and next-generation animation. Seamlessly blending the art of storytelling with cutting-edge artificial intelligence and revolutionary technologies, PIXEL- i crafts immersive, world-class content for cinema, television, advertising, gaming, and digital platforms. Our studio brings together visionary directors, expert VFX artists, innovative animators, and AI specialists, each driven by a passion for pushing creative and technological boundaries. With innovation as our cornerstone, we strive to redefine what's possible in visual storytelling for today's global audience.",
+    title: "About Pixel-i",
+    description: "Pixel-i is a pioneering creative studio at the forefront of AI Films, advanced visual effects (VFX), and next-generation animation. Seamlessly blending the art of storytelling with cutting-edge artificial intelligence and revolutionary technologies, Pixel-i crafts immersive, world-class content for cinema, television, advertising, gaming, and digital platforms. Our studio brings together visionary directors, expert VFX artists, innovative animators, and AI specialists, each driven by a passion for pushing creative and technological boundaries. With innovation as our cornerstone, we strive to redefine what's possible in visual storytelling for today's global audience.",
     vision: "To set the global benchmark in film, animation, and visual effects by fusing creative artistry with artificial intelligence—delivering experiences that inspire, engage, and resonate long after the credits roll.",
     mission: [
       "Employ state-of-the-art AI technologies and advanced VFX methods to produce hyper-realistic visuals and compelling narratives.",
@@ -87,7 +87,7 @@ export const classicGraphicsData = {
 
   faqs: [
     {
-      question: "What services does PIXEL- i offer?",
+      question: "What services does Pixel-i offer?",
       answer: "We specialize in AI Films, VFX, Animation, and Student's Lifebook programs, offering comprehensive creative solutions from concept to final production."
     },
     {
@@ -95,7 +95,7 @@ export const classicGraphicsData = {
       answer: "We use state-of-the-art AI technologies to streamline workflows, accelerate rendering, and create intelligent solutions that push the boundaries of visual storytelling."
     },
     {
-      question: "What makes PIXEL- i different from other studios?",
+      question: "What makes Pixel-i different from other studios?",
       answer: "Our unique combination of AI-powered technology, advanced VFX expertise, and creative storytelling sets us apart in delivering world-class content that resonates with global audiences."
     },
     {

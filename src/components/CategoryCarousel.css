@@ -37,6 +37,21 @@
   flex: 0 0 25%; /* Show 4 images on desktop */
   padding: 0 0.5rem;
   box-sizing: border-box;
+  position: relative;
+}
+
+
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(0, 122, 255, 0.4), rgba(88, 86, 214, 0.4), rgba(175, 82, 222, 0.4));
+  border-radius: 8px 8px 0 0;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .carousel-image {
@@ -45,6 +60,9 @@
   object-fit: contain;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 /* Images maintain their natural aspect ratios */
@@ -130,6 +148,11 @@
     padding: 0 0.25rem;
   }
   
+  /* VFX and Animation sliders show 1 image on mobile */
+  .category-carousel[data-mobile-slides="1"] .carousel-slide {
+    flex: 0 0 100%;
+  }
+  
   .carousel-image {
     aspect-ratio: 1/1;
     border-radius: 6px;
@@ -139,6 +162,12 @@
   .category-section[data-category="animation"] .carousel-image {
     aspect-ratio: 16/9;
     object-fit: cover;
+  }
+  
+  /* VFX slider maintains natural aspect ratio on mobile */
+  .category-carousel[data-mobile-slides="1"] .carousel-image {
+    aspect-ratio: auto;
+    object-fit: contain;
   }
   
   .category-title {

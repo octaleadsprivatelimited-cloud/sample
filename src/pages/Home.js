@@ -32,10 +32,6 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <div className="hero-buttons">
-            <Link to="/services" className="btn-primary">Our Services</Link>
-            <Link to="/about" className="btn-secondary">About Us</Link>
-          </div>
         </div>
         
         {/* Social Media Icons */}
@@ -74,7 +70,7 @@ const Home = () => {
                   </div>
             </div>
                 <div className="about-content-right">
-                  <h2>About PIXEL- i</h2>
+                  <h2>About Pixel-i</h2>
                   <p>
                     We are a pioneering creative studio at the forefront of AI Films, 
                     advanced visual effects (VFX), and next-generation animation. Our team combines 
@@ -129,6 +125,7 @@ const Home = () => {
                 images={vfxImages}
                 category="vfx"
                 className="vfx-carousel"
+                mobileSlides={1}
               />
               <Link to="/work/vfx" className="view-btn-top-right">
                 View All
@@ -157,6 +154,7 @@ const Home = () => {
                 title="Animation"
                 images={pureAnimationImages}
                 category="animation"
+                mobileSlides={1}
               />
               <Link to="/work/animation" className="view-btn-top-right">
                 View All

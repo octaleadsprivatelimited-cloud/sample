@@ -772,7 +772,7 @@ body {
 
 .about-text h2,
 .work-description h2 {
-  color: #ff6b35;
+  color: #E67451;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -881,29 +881,96 @@ body {
   background-image: url('https://picsum.photos/600/400?random=904');
 }
 
+.service-info-box {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-info-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+.service-info-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
 .service-info h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .service-info p {
-  color: #cccccc;
-  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .service-info ul {
   padding-left: 1.2rem;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.85);
+  list-style: none;
 }
 
 .service-info li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-info li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
   .service-photo {
     height: 320px;
+  }
+  
+  .service-info-box {
+    padding: 1.8rem;
+    height: 320px;
+  }
+  
+  .service-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .service-info p {
+    font-size: 0.9rem;
+  }
+  
+  .service-info li {
+    font-size: 0.85rem;
   }
 }
 
@@ -913,6 +980,24 @@ body {
   }
   .service-photo {
     height: 260px;
+  }
+  
+  .service-info-box {
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 260px;
+  }
+  
+  .service-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .service-info p {
+    font-size: 0.85rem;
+  }
+  
+  .service-info li {
+    font-size: 0.8rem;
   }
 }
 
@@ -1131,7 +1216,7 @@ body {
 
 .hero-content {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -1140,6 +1225,20 @@ body {
   width: 100%;
   max-width: 800px;
   padding: 0 2rem;
+}
+
+.about-page .about-hero-content {
+  bottom: 3rem;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content h1 {
@@ -1368,8 +1467,17 @@ body {
   }
   
   .hero-content {
-    bottom: 3rem;
+    bottom: 1.5rem;
     padding: 0 2rem;
+  }
+  
+  .about-page .about-hero-content {
+    bottom: 2rem;
+  }
+  
+  .about-tagline {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
   }
   
   .hero-content h1 {
@@ -3566,8 +3674,17 @@ body {
   }
   
   .hero-content {
-    bottom: 2rem;
+    bottom: 1rem;
     padding: 0 1rem;
+  }
+  
+  .about-page .about-hero-content {
+    bottom: 1.5rem;
+  }
+  
+  .about-tagline {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
   }
   
   .hero-content h1 {
@@ -3902,11 +4019,19 @@ body {
 .service-item {
   text-align: center;
   padding: 2rem;
-  background: #ffffff;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%);
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .service-item::before {
@@ -3921,20 +4046,20 @@ body {
 }
 
 .service-item h3 {
-  color: #333333;
+  color: #ffffff;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .service-item p {
-  color: #666666;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
 .services-section h2, .student-lifebook-section h2, .values-section h2, .why-choose-us-section h2 {
-  color: #ffffff;
+  color: #E67451;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -3992,11 +4117,19 @@ body {
 .value-item {
   text-align: center;
   padding: 2rem;
-  background: #ffffff;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%);
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .value-item::before {
@@ -4011,14 +4144,14 @@ body {
 }
 
 .value-item h3 {
-  color: #333333;
+  color: #ffffff;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .value-item p {
-  color: #666666;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
 }
 

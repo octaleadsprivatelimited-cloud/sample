@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CategoryCarousel.css';
 
-const CategoryCarousel = ({ title, images, category, className }) => {
+const CategoryCarousel = ({ title, images, category, className, slidesToShow = 4, mobileSlides = 2 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -25,8 +25,8 @@ const CategoryCarousel = ({ title, images, category, className }) => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
         const nextIndex = prev + 1;
-        // For mobile, show 2 images at a time, so max index is different
-        const maxIndex = isMobile ? Math.max(0, images.length - 2) : images.length;
+        // For mobile, adjust max index based on mobileSlides prop
+        const maxIndex = isMobile ? Math.max(0, images.length - mobileSlides) : images.length;
         if (nextIndex >= maxIndex) {
           return 0;
         }
@@ -40,7 +40,9 @@ const CategoryCarousel = ({ title, images, category, className }) => {
   // Calculate number of dots needed for mobile
   const getDotsCount = () => {
     if (!isMobile) return 0;
-    return Math.max(1, images.length - 1); // Show dots only on mobile
+    // For sliders showing 1 image on mobile, show all images as dots
+    if (mobileSlides === 1) return images.length;
+    return Math.max(1, images.length - 1); // Show dots only on mobile for others
   };
 
   const goToSlide = (index) => {
@@ -52,7 +54,7 @@ const CategoryCarousel = ({ title, images, category, className }) => {
 
 
   return (
-    <div className={`category-carousel ${className || ''}`}>
+    <div className={`category-carousel ${className || ''}`} data-mobile-slides={mobileSlides}>
       <h3 className="category-title">{title}</h3>
       <div 
         className="carousel-container"
@@ -64,7 +66,7 @@ const CategoryCarousel = ({ title, images, category, className }) => {
           <div 
             className="carousel-slides"
             style={{ 
-              transform: `translateX(-${currentIndex * (isMobile ? 50 : 25)}%)`,
+              transform: `translateX(-${currentIndex * (isMobile ? (100 / mobileSlides) : 25)}%)`,
               transition: isAutoPlaying ? 'transform 0.5s linear' : 'none'
             }}
           >

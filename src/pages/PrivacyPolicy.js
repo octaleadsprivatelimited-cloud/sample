@@ -5,11 +5,11 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - PIXEL-I Creative Studio</title>
-        <meta name="description" content="Privacy Policy for PIXEL-I Creative Studio. Learn how we collect, use, and protect your personal information when you use our AI Films, VFX, and Animation services." />
-        <meta name="keywords" content="privacy policy, data protection, GDPR, personal information, PIXEL-I, creative studio, AI films, VFX, animation" />
-        <meta property="og:title" content="Privacy Policy - PIXEL-I Creative Studio" />
-        <meta property="og:description" content="Privacy Policy for PIXEL-I Creative Studio. Learn how we collect, use, and protect your personal information." />
+        <title>Privacy Policy - Pixel-i Creative Studio</title>
+        <meta name="description" content="Privacy Policy for Pixel-i Creative Studio. Learn how we collect, use, and protect your personal information when you use our AI Films, VFX, and Animation services." />
+        <meta name="keywords" content="privacy policy, data protection, GDPR, personal information, Pixel-i, creative studio, AI films, VFX, animation" />
+        <meta property="og:title" content="Privacy Policy - Pixel-i Creative Studio" />
+        <meta property="og:description" content="Privacy Policy for Pixel-i Creative Studio. Learn how we collect, use, and protect your personal information." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.pixel-i.in/privacy" />
         <link rel="canonical" href="https://www.pixel-i.in/privacy" />
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           </div>
           <div className="hero-content">
             <h1>Privacy Policy</h1>
-            <p>Your privacy is important to us. Learn how PIXEL-I Creative Studio protects your personal information.</p>
+            <p>Your privacy is important to us. Learn how Pixel-i Creative Studio protects your personal information.</p>
           </div>
         </section>
 
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
               <div className="section">
                 <h2>1. Introduction</h2>
                 <p>
-                  PIXEL-I Creative Studio ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.pixel-i.in">www.pixel-i.in</a> or use our services.
+                  Pixel-i Creative Studio ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.pixel-i.in">www.pixel-i.in</a> or use our services.
                 </p>
                 <p>
                   We specialize in AI Films, VFX, Animation, and Student's Lifebook services. By using our website and services, you agree to the collection and use of information in accordance with this policy.
@@ -202,7 +202,7 @@ const PrivacyPolicy = () => {
                 
                 <div className="contact-info">
                   <div className="contact-item">
-                    <strong>PIXEL-I Creative Studio</strong><br />
+                    <strong>Pixel-i Creative Studio</strong><br />
                     Hyderabad, Telangana, India
                   </div>
                   <div className="contact-item">

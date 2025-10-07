@@ -5,11 +5,11 @@ const TermsOfService = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - PIXEL-I Creative Studio</title>
-        <meta name="description" content="Terms of Service for PIXEL-I Creative Studio. Read our terms and conditions for using our AI Films, VFX, Animation, and Student's Lifebook services." />
-        <meta name="keywords" content="terms of service, terms and conditions, user agreement, PIXEL-I, creative studio, AI films, VFX, animation, legal terms" />
-        <meta property="og:title" content="Terms of Service - PIXEL-I Creative Studio" />
-        <meta property="og:description" content="Terms of Service for PIXEL-I Creative Studio. Read our terms and conditions for using our services." />
+        <title>Terms of Service - Pixel-i Creative Studio</title>
+        <meta name="description" content="Terms of Service for Pixel-i Creative Studio. Read our terms and conditions for using our AI Films, VFX, Animation, and Student's Lifebook services." />
+        <meta name="keywords" content="terms of service, terms and conditions, user agreement, Pixel-i, creative studio, AI films, VFX, animation, legal terms" />
+        <meta property="og:title" content="Terms of Service - Pixel-i Creative Studio" />
+        <meta property="og:description" content="Terms of Service for Pixel-i Creative Studio. Read our terms and conditions for using our services." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.pixel-i.in/terms" />
         <link rel="canonical" href="https://www.pixel-i.in/terms" />
@@ -36,7 +36,7 @@ const TermsOfService = () => {
               <div className="section">
                 <h2>1. Agreement to Terms</h2>
                 <p>
-                  By accessing and using the website and services of PIXEL-I Creative Studio ("Company," "we," "us," or "our"), you accept and agree to be bound by the terms and provision of this agreement.
+                  By accessing and using the website and services of Pixel-i Creative Studio ("Company," "we," "us," or "our"), you accept and agree to be bound by the terms and provision of this agreement.
                 </p>
                 <p>
                   These Terms of Service ("Terms") govern your use of our website located at <a href="https://www.pixel-i.in">www.pixel-i.in</a> and our services including AI Films, VFX, Animation, and Student's Lifebook.
@@ -45,7 +45,7 @@ const TermsOfService = () => {
 
               <div className="section">
                 <h2>2. Description of Services</h2>
-                <p>PIXEL-I Creative Studio provides the following services:</p>
+                <p>Pixel-i Creative Studio provides the following services:</p>
                 
                 <h3>2.1 AI Film Making</h3>
                 <ul>
@@ -105,7 +105,7 @@ const TermsOfService = () => {
                 
                 <h3>4.1 Our Intellectual Property</h3>
                 <ul>
-                  <li>All content, designs, logos, and materials on our website are owned by PIXEL-I Creative Studio</li>
+                  <li>All content, designs, logos, and materials on our website are owned by Pixel-i Creative Studio</li>
                   <li>Our proprietary software, algorithms, and methodologies are protected by intellectual property laws</li>
                   <li>You may not copy, modify, or distribute our intellectual property without written permission</li>
                 </ul>
@@ -201,7 +201,7 @@ const TermsOfService = () => {
               <div className="section">
                 <h2>9. Limitation of Liability</h2>
                 <p>
-                  TO THE MAXIMUM EXTENT PERMITTED BY LAW, PIXEL-I CREATIVE STUDIO SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+                  TO THE MAXIMUM EXTENT PERMITTED BY LAW, Pixel-i CREATIVE STUDIO SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
                 </p>
                 <p>
                   Our total liability to you for any claims arising from or relating to these Terms or our services shall not exceed the amount you paid us for the specific service giving rise to the claim.
@@ -211,7 +211,7 @@ const TermsOfService = () => {
               <div className="section">
                 <h2>10. Indemnification</h2>
                 <p>
-                  You agree to indemnify and hold harmless PIXEL-I Creative Studio, its officers, directors, employees, and agents from and against any claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including attorney's fees) arising from:
+                  You agree to indemnify and hold harmless Pixel-i Creative Studio, its officers, directors, employees, and agents from and against any claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including attorney's fees) arising from:
                 </p>
                 <ul>
                   <li>Your use of our services</li>
@@ -285,7 +285,7 @@ const TermsOfService = () => {
                 
                 <div className="contact-info">
                   <div className="contact-item">
-                    <strong>PIXEL-I Creative Studio</strong><br />
+                    <strong>Pixel-i Creative Studio</strong><br />
                     Hyderabad, Telangana, India
                   </div>
                   <div className="contact-item">
@@ -303,7 +303,7 @@ const TermsOfService = () => {
               <div className="section">
                 <h2>17. Entire Agreement</h2>
                 <p>
-                  These Terms, together with our Privacy Policy and any additional terms for specific services, constitute the entire agreement between you and PIXEL-I Creative Studio regarding the use of our website and services.
+                  These Terms, together with our Privacy Policy and any additional terms for specific services, constitute the entire agreement between you and Pixel-i Creative Studio regarding the use of our website and services.
                 </p>
               </div>
             </div>

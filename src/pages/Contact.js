@@ -34,11 +34,11 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - PIXEL-I Creative Studio</title>
-        <meta name="description" content="Get in touch with PIXEL-I Creative Studio for AI Films, VFX, Animation, and Student's Lifebook services. Located in Hyderabad, Telangana." />
-        <meta name="keywords" content="contact, PIXEL-I, AI films, VFX, animation, Hyderabad, creative studio" />
-        <meta property="og:title" content="Contact Us - PIXEL-I Creative Studio" />
-        <meta property="og:description" content="Get in touch with PIXEL-I Creative Studio for your creative projects." />
+        <title>Contact Us - Pixel-i Creative Studio</title>
+        <meta name="description" content="Get in touch with Pixel-i Creative Studio for AI Films, VFX, Animation, and Student's Lifebook services. Located in Hyderabad, Telangana." />
+        <meta name="keywords" content="contact, Pixel-i, AI films, VFX, animation, Hyderabad, creative studio" />
+        <meta property="og:title" content="Contact Us - Pixel-i Creative Studio" />
+        <meta property="og:description" content="Get in touch with Pixel-i Creative Studio for your creative projects." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.pixel-i.in/contact" />
         <link rel="canonical" href="https://www.pixel-i.in/contact" />
@@ -207,7 +207,7 @@ const Contact = () => {
                       allowFullScreen=""
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="PIXEL-I Location Map"
+                      title="Pixel-i Location Map"
                     ></iframe>
                   </div>
                 </div>
