@@ -345,34 +345,19 @@ export const pureAnimationImages = [
 
 export const calendarSelfieImages = [
   {
-    src: 'https://picsum.photos/600/400?random=301',
-    alt: 'AI Calendar Selfie Creation',
-    description: 'Revolutionary AI-powered calendar generation with personalized selfie integration'
+    src: '/images/calender/1.jpg',
+    alt: 'Calendar Selfie 1',
+    description: 'AI-powered calendar with personalized selfie integration'
   },
   {
-    src: 'https://picsum.photos/600/400?random=302',
-    alt: 'Smart Calendar Design',
-    description: 'Intelligent calendar layouts with automatic date and event integration'
+    src: '/images/calender/2.jpg',
+    alt: 'Calendar Selfie 2',
+    description: 'Smart calendar design with custom photos'
   },
   {
-    src: 'https://picsum.photos/600/400?random=303',
-    alt: 'Personalized Calendar Pages',
-    description: 'Custom calendar pages featuring user photos and important dates'
-  },
-  {
-    src: 'https://picsum.photos/600/400?random=304',
-    alt: 'Digital Calendar Creation',
-    description: 'Modern digital calendar solutions with AI-enhanced personalization'
-  },
-  {
-    src: 'https://picsum.photos/600/400?random=305',
-    alt: 'Calendar Selfie Integration',
-    description: 'Seamless integration of personal photos into calendar designs'
-  },
-  {
-    src: 'https://picsum.photos/600/400?random=306',
-    alt: 'Interactive Calendar Features',
-    description: 'Advanced calendar features with smart reminders and event management'
+    src: '/images/calender/3.jpg',
+    alt: 'Calendar Selfie 3',
+    description: 'Personalized calendar creation with selfie features'
   }
 ];
 

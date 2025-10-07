@@ -2420,6 +2420,8 @@ body {
 
 /* Calendar Selfie specific styling */
 .calendar-selfie-page .gallery-item {
+  height: auto;
+  aspect-ratio: auto !important;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -2449,6 +2451,9 @@ body {
 
 .calendar-selfie-page .gallery-item img {
   display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Financial Literacy specific styling */
