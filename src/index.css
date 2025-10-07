@@ -1130,12 +1130,16 @@ body {
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
   color: #ffffff;
+  width: 100%;
   max-width: 800px;
-  padding: 8rem 2rem 0 2rem;
+  padding: 0 2rem;
 }
 
 .hero-content h1 {
@@ -1164,21 +1168,21 @@ body {
 
 .hero-buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hero-buttons .btn-primary,
 .hero-buttons .btn-secondary {
-  padding: 1.2rem 2.5rem;
-  font-size: 1.1rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   display: inline-block;
-  min-width: 160px;
+  min-width: 120px;
   text-align: center;
 }
 
@@ -1364,7 +1368,8 @@ body {
   }
   
   .hero-content {
-    padding: 6rem 2rem 0 2rem;
+    bottom: 3rem;
+    padding: 0 2rem;
   }
   
   .hero-content h1 {
@@ -1380,14 +1385,16 @@ body {
   }
   
   .hero-buttons {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
   }
   
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    width: 100%;
-    max-width: 300px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.75rem;
+    min-width: 100px;
   }
 }
 
@@ -3559,7 +3566,8 @@ body {
   }
   
   .hero-content {
-    padding: 5rem 1rem 0 1rem;
+    bottom: 2rem;
+    padding: 0 1rem;
   }
   
   .hero-content h1 {
@@ -3575,16 +3583,16 @@ body {
   }
   
   .hero-buttons {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0.6rem;
+    flex-wrap: nowrap;
   }
   
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    width: 100%;
-    max-width: 250px;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.7rem;
+    min-width: 85px;
   }
   
   .service-photo {
@@ -4934,14 +4942,10 @@ body {
   }
 }
 
-/* Tablet - Show toggle but hide mobile menu */
+/* Tablet - Mobile menu enabled */
 @media (min-width: 481px) and (max-width: 768px) {
-  .apple-mobile-overlay {
-    display: none !important;
-  }
-  
   .apple-mobile-menu {
-    display: none !important;
+    width: 320px;
   }
 }
 

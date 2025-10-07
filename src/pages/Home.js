@@ -32,16 +32,6 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1>PIXEL- i</h1>
-          <h2>VISUALIZE YOUR IDEA</h2>
-          <p>
-            AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK
-          </p>
-          <p>
-            A pioneering creative studio at the forefront of AI Films, advanced visual effects (VFX), 
-            and next-generation animation. We craft immersive, world-class content for cinema, television, advertising, 
-            gaming, and digital platforms.
-          </p>
           <div className="hero-buttons">
             <Link to="/services" className="btn-primary">Our Services</Link>
             <Link to="/about" className="btn-secondary">About Us</Link>
