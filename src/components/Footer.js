@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isCompanyOpen, setIsCompanyOpen] = useState(false);
-
-  const toggleServices = () => setIsServicesOpen(!isServicesOpen);
-  const toggleCompany = () => setIsCompanyOpen(!isCompanyOpen);
-
   return (
     <footer className="footer mega-footer">
       <div className="container">
@@ -15,16 +9,18 @@ const Footer = () => {
         <div className="footer-content">
           {/* Company Info Section */}
           <div className="footer-section footer-company">
-            <div className="footer-logo">
-              <img src="/images/pixel_new8_V6.jpg" alt="Pixel-i Logo" className="footer-logo-img" />
+            <div className="footer-logo-block">
+              <div className="footer-logo">
+                <img src="/images/pixel_new8_V6.jpg" alt="Pixel-i Logo" className="footer-logo-img" />
+              </div>
+              <h3>Pixel-i (Visualize Your Idea)</h3>
+              <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
+              <p className="footer-description">
+                Pioneering creative studio at the forefront of AI Films, VFX, and Animation. 
+                We craft immersive, world-class content using cutting-edge artificial intelligence 
+                and revolutionary technologies.
+              </p>
             </div>
-            <h3>Pixel-i (VISUALIZE YOUR IDEA)</h3>
-            <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
-            <p className="footer-description">
-              Pioneering creative studio at the forefront of AI Films, VFX, and Animation. 
-              We craft immersive, world-class content using cutting-edge artificial intelligence 
-              and revolutionary technologies.
-            </p>
             
             {/* Social Media Links */}
             <div className="footer-social">
@@ -45,40 +41,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* Services Section */}
-          <div className="footer-section">
-            <button className="footer-toggle" onClick={toggleServices}>
-              <h4>Our Services</h4>
-              <span className="footer-arrow">{isServicesOpen ? '▲' : '▼'}</span>
-            </button>
-            <ul className={`footer-links ${isServicesOpen ? 'open' : ''}`}>
-              <li><Link to="/services">All Services</Link></li>
-              <li><Link to="/work/ai-film-making">AI Film Making</Link></li>
-              <li><Link to="/work/vfx">Visual Effects (VFX)</Link></li>
-              <li><Link to="/work/animation">Animation</Link></li>
-              <li><Link to="/work/life-book">Student's Lifebook</Link></li>
-              <li><Link to="/work/calendar-selfie">Calendar Selfie</Link></li>
-              <li><Link to="/work/financial-literacy-book">Financial Literacy</Link></li>
-              <li><Link to="/work/e-learning">E-Learning</Link></li>
-            </ul>
-          </div>
-
-
-          {/* Company Section */}
-          <div className="footer-section">
-            <button className="footer-toggle" onClick={toggleCompany}>
-              <h4>Company</h4>
-              <span className="footer-arrow">{isCompanyOpen ? '▲' : '▼'}</span>
-            </button>
-            <ul className={`footer-links ${isCompanyOpen ? 'open' : ''}`}>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/services">Our Services</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/">Home</Link></li>
-            </ul>
-          </div>
-
 
         </div>
 

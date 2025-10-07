@@ -7,24 +7,28 @@ const SideNavigation = () => {
 
   const navItems = [
     {
-      name: 'Demos AI',
-      path: '/work/ai-film-making',
-      icon: '🤖'
-    },
-    {
       name: 'Life book',
       path: '/work/life-book',
-      icon: '📚'
+      icon: '📚',
+      image: '/images/toggle/Screenshot_20251006-155007_Gallery.jpg'
+    },
+    {
+      name: 'Demos AI',
+      path: '/work/ai-film-making',
+      icon: '🤖',
+      image: '/images/toggle/aitoggle.jpg'
     },
     {
       name: 'Animation',
       path: '/work/animation',
-      icon: '🎬'
+      icon: '🎬',
+      image: '/images/toggle/animation.jpg'
     },
     {
       name: 'Promo',
       path: '/services',
-      icon: '🎯'
+      icon: '🎯',
+      image: '/images/toggle/Screenshot_20251006-154750_Gallery.jpg'
     }
   ];
 
@@ -51,7 +55,15 @@ const SideNavigation = () => {
                 className="side-nav-link logo-only"
                 title={item.name}
               >
-                <span className="side-nav-icon">{item.icon}</span>
+                {item.image ? (
+                  <img 
+                    src={item.image} 
+                    alt={item.name}
+                    className="side-nav-image"
+                  />
+                ) : (
+                  <span className="side-nav-icon">{item.icon}</span>
+                )}
               </Link>
             </motion.div>
           ))}

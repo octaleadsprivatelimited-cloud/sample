@@ -6,8 +6,8 @@
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
-  width: 50px;
-  max-height: 200px;
+  width: 65px;
+  max-height: 280px;
   background: #ffffff;
   z-index: 1001;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
@@ -22,42 +22,46 @@
 }
 
 .side-nav-content {
-  padding: 0.375rem 0;
+  padding: 0.25rem 0;
 }
 
 /* Side Navigation Menu */
 .side-nav-menu {
-  padding: 0 0.125rem;
+  padding: 0 0.1rem;
 }
 
 .side-nav-item {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.15rem;
 }
 
 .side-nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.375rem;
+  padding: 0.25rem;
   text-decoration: none;
   color: #1d1d1f;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
-  width: 32px;
-  height: 32px;
+  width: 54px;
+  height: 54px;
   margin: 0 auto;
 }
 
 .side-nav-link:hover {
   background: #f5f5f7;
-  border-color: #e5e5e7;
+  border-color: #007AFF;
   transform: scale(1.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.side-nav-link:hover .side-nav-image {
+  border: 2px solid #007AFF;
 }
 
 .side-nav-link.logo-only {
-  padding: 0.375rem;
+  padding: 0.25rem;
 }
 
 .side-nav-icon {
@@ -68,6 +72,13 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.side-nav-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .side-nav-text {
@@ -81,18 +92,19 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .side-nav-panel {
-    width: 42px;
-    max-height: 160px;
+    width: 55px;
+    max-height: 220px;
     right: 10px;
   }
 
   .side-nav-menu {
-    padding: 0 0.1rem;
+    padding: 0 0.08rem;
   }
 
   .side-nav-link {
-    width: 28px;
-    height: 28px;
+    width: 46px;
+    height: 46px;
+    padding: 0.2rem;
   }
 
   .side-nav-icon {
@@ -102,18 +114,19 @@
 
 @media (max-width: 480px) {
   .side-nav-panel {
-    width: 38px;
-    max-height: 140px;
+    width: 46px;
+    max-height: 184px;
     right: 8px;
   }
 
   .side-nav-menu {
-    padding: 0 0.1rem;
+    padding: 0 0.08rem;
   }
 
   .side-nav-link {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
+    padding: 0.15rem;
   }
 
   .side-nav-icon {

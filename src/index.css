@@ -1368,6 +1368,12 @@ body {
   color: #E4405F;
 }
 
+.social-instagram-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .social-youtube {
   color: #FF0000;
 }
@@ -2303,20 +2309,212 @@ body {
 /* Life Book specific styling with 1:1 aspect ratio */
 .life-book-page .gallery-item {
   aspect-ratio: 1/1;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.life-book-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.life-book-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.life-book-page .gallery-item img {
+  display: block;
 }
 
 /* VFX specific styling with 16:9 aspect ratio */
 .vfx-page .gallery-item {
   aspect-ratio: 16/9;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.vfx-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.vfx-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.vfx-page .gallery-item img {
+  display: block;
 }
 
 /* Animation specific styling with 16:9 aspect ratio */
+.animation-page .gallery-item {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.animation-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.animation-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.animation-page .gallery-item img {
+  object-fit: cover;
+  display: block;
+}
+
+/* Photo Shoot specific styling with 16:9 aspect ratio */
 .photo-shoot-page .gallery-item {
   aspect-ratio: 16/9;
 }
 
 .photo-shoot-page .gallery-item img {
   object-fit: cover;
+}
+
+/* Calendar Selfie specific styling */
+.calendar-selfie-page .gallery-item {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.calendar-selfie-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.calendar-selfie-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.calendar-selfie-page .gallery-item img {
+  display: block;
+}
+
+/* Financial Literacy specific styling */
+.financial-literacy-page .gallery-item {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.financial-literacy-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.financial-literacy-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.financial-literacy-page .gallery-item img {
+  display: block;
+}
+
+/* E-Learning specific styling */
+.e-learning-page .gallery-item {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.e-learning-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.e-learning-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.e-learning-page .gallery-item img {
+  display: block;
 }
 
 .gallery-item:hover {
@@ -2623,6 +2821,34 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
 
+.footer-logo-block {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 50%, rgba(175, 82, 222, 0.1) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-logo-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  border-radius: 12px 12px 0 0;
+}
+
+.footer-logo-block:hover {
+  border-color: rgba(0, 122, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.2);
+  transform: translateY(-2px);
+}
+
 .mega-footer h3 {
   color: #ffffff;
   font-size: 1.4rem;
@@ -2641,13 +2867,255 @@ body {
 
 .mega-footer .footer-description {
   color: #cccccc;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.footer-logo-block .footer-description {
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.footer-links-section {
+  flex: 1.5;
+}
+
+.footer-links-block {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.08) 0%, rgba(88, 86, 214, 0.08) 50%, rgba(175, 82, 222, 0.08) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-links-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  border-radius: 12px 12px 0 0;
+}
+
+.footer-links-block:hover {
+  border-color: rgba(0, 122, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.footer-links-title {
+  color: #ffffff;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem 1.5rem;
+}
+
+.footer-grid-link {
+  color: #cccccc;
+  text-decoration: none;
   font-size: 0.85rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  display: block;
+}
+
+.footer-grid-link:hover {
+  color: #007AFF;
+  background: rgba(0, 122, 255, 0.1);
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .footer-grid-link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
 
 .mega-footer .footer-social {
   margin-top: 1.5rem;
+}
+
+/* AI Film Making Content Section */
+.ai-film-making-page .gallery-item {
+  height: auto;
+  aspect-ratio: auto !important;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 40, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ai-film-making-page .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  z-index: 10;
+}
+
+.ai-film-making-page .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+  border-color: rgba(0, 122, 255, 0.5);
+}
+
+.ai-film-making-page .gallery-item img {
+  aspect-ratio: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ai-content-section,
+.vfx-content-section {
+  padding: 4rem 0;
+  background: #000000;
+}
+
+.ai-content-section .section-title,
+.vfx-content-section .section-title {
+  text-align: center;
+  color: #E67451;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.ai-blocks-container,
+.vfx-blocks-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ai-info-block,
+.vfx-info-block {
+  flex: 1;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.ai-info-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007AFF, #5856D6, #AF52DE);
+  border-radius: 16px 16px 0 0;
+}
+
+.ai-info-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+  border-color: rgba(0, 123, 255, 0.5);
+}
+
+.ai-info-block h3,
+.vfx-info-block h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ai-info-block ul,
+.vfx-info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-info-block li,
+.vfx-info-block li {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.ai-info-block li::before,
+.vfx-info-block li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ai-info-block li:hover,
+.vfx-info-block li:hover {
+  color: #ffffff;
+  padding-left: 2rem;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .ai-blocks-container,
+  .vfx-blocks-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .ai-content-section .section-title,
+  .vfx-content-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ai-info-block,
+  .vfx-info-block {
+    padding: 1.5rem;
+  }
+  
+  .ai-info-block h3,
+  .vfx-info-block h3 {
+    font-size: 1.3rem;
+  }
+  
+  .ai-info-block li,
+  .vfx-info-block li {
+    font-size: 0.9rem;
+  }
 }
 
 .mega-footer .footer-social h4 {

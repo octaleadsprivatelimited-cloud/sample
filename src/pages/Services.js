@@ -29,7 +29,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/aifilmposters/aifilm.png')",
+                    backgroundImage: "url('/images/aifilmposters/ai_films.jpg')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
@@ -117,7 +117,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/ourservises/04..jpg')",
+                    backgroundImage: "url('/images/Animation/pixel.jpg')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
