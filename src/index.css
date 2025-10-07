@@ -1097,13 +1097,7 @@ body {
 }
 
 /* Specific hero backgrounds for different pages - High Quality Portrait Images */
-.about-page .hero-background {
-  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-}
-
-.services-page .hero-background {
-  background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-}
+/* Background images removed for pages using video backgrounds */
 
 .contact-page .hero-background {
   background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
@@ -3874,12 +3868,65 @@ body {
   z-index: 1;
 }
 
+/* Lifebook item top border accent */
+.lifebook-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  border-radius: 16px 16px 0 0;
+}
+
 .services-section, .student-lifebook-section, .values-section, .why-choose-us-section {
   margin: 3rem 0;
 }
 
-.services-section h2, .student-lifebook-section h2, .values-section h2, .why-choose-us-section h2 {
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  border-radius: 10px 10px 0 0;
+}
+
+.service-item h3 {
   color: #333333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.service-item p {
+  color: #666666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.services-section h2, .student-lifebook-section h2, .values-section h2, .why-choose-us-section h2 {
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -3895,23 +3942,36 @@ body {
 
 .lifebook-item {
   text-align: center;
-  padding: 1.5rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border-left: 4px solid #ff6b35;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.lifebook-item:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .lifebook-item h4 {
-  color: #333333;
+  color: #ffffff;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .lifebook-item p {
-  color: #666666;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .values-grid {
@@ -3927,6 +3987,19 @@ body {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  border-radius: 10px 10px 0 0;
 }
 
 .value-item h3 {
@@ -3993,6 +4066,24 @@ body {
   .lifebook-grid {
     grid-template-columns: 1fr;
   }
+  
+  .lifebook-item {
+    padding: 2rem;
+  }
+  
+  .lifebook-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .lifebook-item p {
+    font-size: 0.9rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -4021,7 +4112,25 @@ body {
     margin: 2rem 0;
   }
   
+  .lifebook-item {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .lifebook-item h4 {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .lifebook-item p {
+    font-size: 0.85rem;
+  }
+  
   .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }

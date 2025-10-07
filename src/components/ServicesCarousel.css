@@ -37,6 +37,18 @@
   transform: scale(0.8);
 }
 
+.zoom-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  border-radius: 16px 16px 0 0;
+  z-index: 1;
+}
+
 .zoom-card.active {
   opacity: 1;
   transform: scale(1.1);

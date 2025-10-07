@@ -1,14 +1,22 @@
 import React from 'react';
 import { classicGraphicsData } from '../data/externalData';
-import ServicesCarousel from '../components/ServicesCarousel';
 
 const About = () => {
   const { aboutUs, companyInfo, services, values, vision, mission, whyChooseUs, studentLifebook } = classicGraphicsData;
 
   return (
     <div className="about-page">
-      <section className="hero hero-with-image">
+      <section className="hero hero-with-video">
         <div className="hero-background">
+          <video 
+            className="hero-video" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+          >
+            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
@@ -43,7 +51,14 @@ const About = () => {
             
             <div className="services-section">
               <h2>What We Do</h2>
-              <ServicesCarousel services={services} />
+              <div className="services-grid">
+                {services.map((service, index) => (
+                  <div key={index} className="service-item">
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="student-lifebook-section">

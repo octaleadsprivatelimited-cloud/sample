@@ -256,28 +256,28 @@ export const lifeBookImages = [
 export const animationImages = [
   {
     id: 1,
-    src: '/images/aifilmposters/ai1.jpg?v=5',
+    src: '/images/aifilmposters/Ai1.jpg?v=6',
     alt: 'AI Film Making Project 1',
     description: 'Revolutionary AI-powered film creation showcasing cutting-edge technology',
     category: 'animation'
   },
   {
     id: 2,
-    src: '/images/aifilmposters/ai2.jpg?v=5',
+    src: '/images/aifilmposters/Ai2.jpg?v=6',
     alt: 'AI Film Making Project 2',
     description: 'Advanced AI algorithms creating stunning visual narratives and storytelling',
     category: 'animation'
   },
   {
     id: 3,
-    src: '/images/aifilmposters/ai3.jpg?v=5',
+    src: '/images/aifilmposters/Ai3.jpg?v=6',
     alt: 'AI Film Making Project 3',
     description: 'Next-generation AI film production with intelligent character generation',
     category: 'animation'
   },
   {
     id: 4,
-    src: '/images/aifilmposters/ai4.jpg?v=5',
+    src: '/images/aifilmposters/Ai4.jpg?v=6',
     alt: 'AI Film Making Project 4',
     description: 'Pioneering AI-driven cinematic experiences with immersive storytelling',
     category: 'animation'
