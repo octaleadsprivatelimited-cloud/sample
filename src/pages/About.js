@@ -11,11 +11,10 @@ const About = () => {
           <video 
             className="hero-video" 
             autoPlay 
-            muted 
             loop 
             playsInline
           >
-            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
+            <source src="/images/a.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>

@@ -23,15 +23,18 @@ const Home = () => {
           <video 
             className="hero-video" 
             autoPlay 
-            muted 
             loop 
             playsInline
           >
-            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
+            <source src="/images/a.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
+          <div className="hero-buttons">
+            <Link to="/services" className="btn-primary hero-btn">Our Services</Link>
+            <Link to="/about" className="btn-primary hero-btn">About Us</Link>
+          </div>
         </div>
         
         {/* Social Media Icons */}
@@ -62,7 +65,7 @@ const Home = () => {
         <div className="container">
           <div className="about-grid">
             <div className="about-content-left">
-                  <div className="about-image">
+                  <div className="about-image" style={{ marginTop: '20px' }}>
                     <img src="/images/home_about.jpg" alt="About Pixel-i" />
                   </div>
             </div>
@@ -75,7 +78,7 @@ const Home = () => {
                   </p>
                   <div className="about-features">
                     <div className="feature-item">
-                      <h3>🤖 AI Integration</h3>
+                      <h3>🤖 Ai Film integration</h3>
                       <p>State-of-the-art AI technologies for streamlined workflows</p>
                     </div>
                     <div className="feature-item">
@@ -88,7 +91,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="about-cta">
-                    <Link to="/about" className="btn-primary">Learn More</Link>
+                    <Link to="/about" className="btn-primary">View More</Link>
                   </div>
                 </div>
           </div>

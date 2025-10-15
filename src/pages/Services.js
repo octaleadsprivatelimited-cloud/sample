@@ -8,11 +8,10 @@ const Services = () => {
           <video 
             className="hero-video" 
             autoPlay 
-            muted 
             loop 
             playsInline
           >
-            <source src="/images/Pixell-I-Logo-video-compressed.mp4" type="video/mp4" />
+            <source src="/images/a.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
@@ -74,11 +73,11 @@ const Services = () => {
                   <h3>VFX</h3>
                   <p>Advanced visual effects and post-production services that bring impossible worlds to life with state-of-the-art VFX technology and creative expertise.</p>
                   <ul>
-                    <li>3D Modeling & Animation</li>
-                    <li>Compositing & Green Screen</li>
-                    <li>Motion Graphics</li>
-                    <li>Special Effects</li>
-                    <li>Color Grading</li>
+                    <li>Rotoscoping</li>
+                    <li>Paint & Cleanup</li>
+                    <li>Matchmove / Camera Tracking</li>
+                    <li>Matte Painting / Environment</li>
+                    <li>Compositing</li>
                   </ul>
                 </div>
               </div>
@@ -117,7 +116,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/Animation/pixel.jpg')",
+                    backgroundImage: "url('/images/Animation/Animation_service.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
