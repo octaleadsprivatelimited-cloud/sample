@@ -1,9 +1,37 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Gallery from '../../components/Gallery';
 import { animationImages } from '../../data/images';
 
 const AiFilmMaking = () => {
   return (
+    <div className="ai-film-making-page">
+      <Helmet>
+        <title>AI Film Making - Revolutionary AI-Powered Film Production | PIXEL-I</title>
+        <meta name="description" content="Explore PIXEL-I's AI Film Making portfolio. Revolutionary AI-powered film production combining artificial intelligence with creative storytelling for next-generation cinematic content." />
+        <meta name="keywords" content="AI Film Making, AI Films, AI Movie Production, Artificial Intelligence Films, AI Script Generation, AI Editing, AI Storyboarding, PIXEL-I" />
+        <link rel="canonical" href="https://www.pixel-i.in/work/ai-film-making" />
+        
+        <meta property="og:title" content="AI Film Making Portfolio | PIXEL-I" />
+        <meta property="og:description" content="Revolutionary AI-powered film production combining artificial intelligence with creative storytelling" />
+        <meta property="og:url" content="https://www.pixel-i.in/work/ai-film-making" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.pixel-i.in/images/wp 03 (5).png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": "AI Film Making Portfolio",
+            "description": "Portfolio of AI-powered film production projects",
+            "creator": {
+              "@type": "Organization",
+              "name": "PIXEL-I Creative Studio"
+            },
+            "genre": "AI Films"
+          })}
+        </script>
+      </Helmet>
     <div className="ai-film-making-page">
       <section className="hero hero-with-video">
         <div className="hero-background">

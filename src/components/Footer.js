@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-section footer-company">
             <div className="footer-logo-block">
               <div className="footer-logo">
-                <img src="/images/pixel_new8_V6.jpg" alt="Pixel-i Logo" className="footer-logo-img" />
+                <img src="/images/footer_logo.png" alt="Pixel-i Logo" className="footer-logo-img" />
               </div>
               <h3>Pixel-i (Visualize Your Idea)</h3>
               <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>

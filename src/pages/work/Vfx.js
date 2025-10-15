@@ -1,9 +1,41 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Gallery from '../../components/Gallery';
 import { vfxImages } from '../../data/images';
 
 const Vfx = () => {
   return (
+    <div className="vfx-page">
+      <Helmet>
+        <title>VFX Services - Rotoscoping, Compositing, Matte Painting | PIXEL-I</title>
+        <meta name="description" content="Professional VFX services including Rotoscoping, Paint & Cleanup, Matchmove/Camera Tracking, Matte Painting, and Compositing. View our portfolio of visual effects projects." />
+        <meta name="keywords" content="VFX Services, Rotoscoping, Paint Cleanup, Matchmove, Camera Tracking, Matte Painting, Compositing, Visual Effects, Post Production" />
+        <link rel="canonical" href="https://www.pixel-i.in/work/vfx" />
+        
+        <meta property="og:title" content="VFX Services Portfolio | PIXEL-I" />
+        <meta property="og:description" content="Professional VFX services: Rotoscoping, Compositing, Matte Painting, and more" />
+        <meta property="og:url" content="https://www.pixel-i.in/work/vfx" />
+        <meta property="og:type" content="website" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "VFX Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "PIXEL-I Creative Studio"
+            },
+            "offers": [
+              "Rotoscoping",
+              "Paint & Cleanup",
+              "Matchmove / Camera Tracking",
+              "Matte Painting / Environment",
+              "Compositing"
+            ]
+          })}
+        </script>
+      </Helmet>
     <div className="vfx-page">
       <section className="hero hero-with-video">
         <div className="hero-background">

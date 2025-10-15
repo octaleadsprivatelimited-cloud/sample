@@ -1,7 +1,67 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
   return (
+    <div className="services-page">
+      <Helmet>
+        <title>Our Services - AI Film Making, VFX, Animation, Life Book | PIXEL-I</title>
+        <meta name="description" content="PIXEL-I offers AI Film Making, VFX, Animation, Student's Life Book, and E-Learning services. Revolutionary AI-powered production with cutting-edge technology." />
+        <meta name="keywords" content="AI Film Making Services, VFX Services, Animation Services, Life Book, E-Learning, Rotoscoping, Paint Cleanup, Matchmove, Matte Painting, Compositing" />
+        <link rel="canonical" href="https://www.pixel-i.in/services" />
+        
+        <meta property="og:title" content="Our Services - AI Films, VFX, Animation | PIXEL-I" />
+        <meta property="og:description" content="Professional AI Film Making, VFX, Animation, and Educational Content Services" />
+        <meta property="og:url" content="https://www.pixel-i.in/services" />
+        <meta property="og:type" content="website" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Creative Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "PIXEL-I Creative Studio"
+            },
+            "areaServed": "IN",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Creative Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Film Making"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "VFX Services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Animation"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Life Book"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
     <div className="services-page">
       <section className="hero hero-with-video">
         <div className="hero-background">
@@ -28,7 +88,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/aifilmposters/ai_films.jpg')",
+                    backgroundImage: "url('/images/wp 03 (5).png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
@@ -89,7 +149,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   style={{
-                    backgroundImage: "url('/images/vfx/lifebook.jpg')",
+                    backgroundImage: "url('/images/lifebook.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}

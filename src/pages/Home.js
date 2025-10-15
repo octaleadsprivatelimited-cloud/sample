@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import CategoryCarousel from '../components/CategoryCarousel';
 import {
   weddingImages,
@@ -17,6 +18,42 @@ import { abroadShootsImages } from '../data/abroadShootsImages';
 
 const Home = () => {
   return (
+    <div>
+      <Helmet>
+        <title>PIXEL-I - AI Films | VFX | Animation | Student's Lifebook | Creative Studio Hyderabad</title>
+        <meta name="description" content="PIXEL-I is a pioneering creative studio in Hyderabad specializing in AI Films, VFX, Animation, and Student's Lifebook. We craft immersive, world-class content using cutting-edge artificial intelligence." />
+        <meta name="keywords" content="AI Films, VFX, Animation, Student Lifebook, Visual Effects, Creative Studio Hyderabad, AI Film Making, Digital Content, Motion Graphics, 3D Animation" />
+        <link rel="canonical" href="https://www.pixel-i.in/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="PIXEL-I - AI Films | VFX | Animation | Student's Lifebook" />
+        <meta property="og:description" content="Pioneering creative studio specializing in AI Films, VFX, Animation, and Student's Lifebook using cutting-edge artificial intelligence." />
+        <meta property="og:url" content="https://www.pixel-i.in/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.pixel-i.in/images/home_about.jpg" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PIXEL-I - AI Films | VFX | Animation" />
+        <meta name="twitter:description" content="Pioneering creative studio specializing in AI Films, VFX, and Animation" />
+        <meta name="twitter:image" content="https://www.pixel-i.in/images/home_about.jpg" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "PIXEL-I Creative Studio - Home",
+            "description": "Professional creative studio offering AI Films, VFX, Animation, and educational content services",
+            "url": "https://www.pixel-i.in/",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "PIXEL-I Creative Studio",
+              "url": "https://www.pixel-i.in"
+            }
+          })}
+        </script>
+      </Helmet>
     <div>
       <section className="hero hero-with-video">
         <div className="hero-background">
@@ -57,6 +94,26 @@ const Home = () => {
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </a>
+        </div>
+      </section>
+
+      {/* Meet the Founder Section */}
+      <section className="founder-section">
+        <div className="container">
+          <h2 className="section-title">Meet the Founder</h2>
+          <div className="founder-content">
+            <div className="founder-image">
+              <img src="/images/founder.jpg" alt="Founder" />
+            </div>
+            <div className="founder-info">
+              <h3>Founder Name</h3>
+              <p className="founder-title">CEO & Founder</p>
+              <p className="founder-bio">
+                Visionary leader with a passion for innovation in AI Films, VFX, and creative storytelling. 
+                Dedicated to pushing the boundaries of technology and artistry to create extraordinary content.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

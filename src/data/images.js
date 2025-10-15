@@ -355,7 +355,7 @@ export const calendarSelfieImages = [
     description: 'Smart calendar design with custom photos'
   },
   {
-    src: '/images/calender/3.jpg',
+    src: '/images/calender/3.png',
     alt: 'Calendar Selfie 3',
     description: 'Personalized calendar creation with selfie features'
   }
@@ -439,38 +439,58 @@ export const digitalEducationImages = [
 
 export const servicesImages = [
   {
-    src: '/images/ourservises/01..jpg',
-    alt: 'AI Film Making Service',
-    description: 'Revolutionary AI-powered film production with cutting-edge technology'
+    src: '/images/footer_services/1.png',
+    alt: 'Service 1',
+    description: 'Service 1'
   },
   {
-    src: '/images/ourservises/02..jpg',
-    alt: 'VFX Service',
-    description: 'Advanced visual effects and post-production services'
+    src: '/images/footer_services/2.webp',
+    alt: 'Service 2',
+    description: 'Service 2'
   },
   {
-    src: '/images/ourservises/03..jpg',
-    alt: 'Life Book Service',
-    description: 'Student life documentation and educational content creation'
+    src: '/images/footer_services/3.jpg',
+    alt: 'Service 3',
+    description: 'Service 3'
   },
   {
-    src: '/images/ourservises/04..jpg',
-    alt: 'Animation Service',
-    description: 'Creative animation services spanning 2D, 3D, and motion graphics'
+    src: '/images/footer_services/4.webp',
+    alt: 'Service 4',
+    description: 'Service 4'
   },
   {
-    src: '/images/ourservises/05..jpg',
-    alt: 'Calendar Selfie Service',
-    description: 'AI-powered personal calendar creation with smart selfie integration'
+    src: '/images/footer_services/5.png',
+    alt: 'Service 5',
+    description: 'Service 5'
   },
   {
-    src: '/images/ourservises/06..jpg',
-    alt: 'Financial Literacy Service',
-    description: 'Interactive educational content for financial awareness'
+    src: '/images/footer_services/6.png',
+    alt: 'Service 6',
+    description: 'Service 6'
   },
   {
-    src: '/images/ourservises/07..jpg',
-    alt: 'E-Learning Service',
-    description: 'Next-generation learning solutions with AI-enhanced content'
+    src: '/images/footer_services/7.webp',
+    alt: 'Service 7',
+    description: 'Service 7'
+  },
+  {
+    src: '/images/footer_services/8.png',
+    alt: 'Service 8',
+    description: 'Service 8'
+  },
+  {
+    src: '/images/footer_services/9.png',
+    alt: 'Service 9',
+    description: 'Service 9'
+  },
+  {
+    src: '/images/footer_services/10.png',
+    alt: 'Service 10',
+    description: 'Service 10'
+  },
+  {
+    src: '/images/footer_services/10 (A).png',
+    alt: 'Service 11',
+    description: 'Service 11'
   }
 ];
