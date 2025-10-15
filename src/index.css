@@ -1171,12 +1171,14 @@ body {
 /* Responsive video styles */
 @media (max-width: 768px) {
   .hero-video {
+    object-fit: contain;
     object-position: center center;
   }
 }
 
 @media (max-width: 480px) {
   .hero-video {
+    object-fit: contain;
     object-position: center center;
   }
 }
