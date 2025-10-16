@@ -62,7 +62,6 @@ const Services = () => {
           })}
         </script>
       </Helmet>
-    <div className="services-page">
       <section className="hero hero-with-video">
         <div className="hero-background">
           <video 

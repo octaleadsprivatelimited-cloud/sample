@@ -28,7 +28,6 @@ const About = () => {
           })}
         </script>
       </Helmet>
-    <div className="about-page">
       <section className="hero hero-with-video">
         <div className="hero-background">
           <video 

@@ -32,7 +32,6 @@ const AiFilmMaking = () => {
           })}
         </script>
       </Helmet>
-    <div className="ai-film-making-page">
       <section className="hero hero-with-video">
         <div className="hero-background">
           <video 
