@@ -213,6 +213,7 @@ const Home = () => {
             images={servicesImages}
             category="services"
             className="services-carousel"
+            slidesToShow={4}
             mobileSlides={1}
           />
         </div>

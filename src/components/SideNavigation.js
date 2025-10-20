@@ -7,16 +7,16 @@ const SideNavigation = () => {
 
   const navItems = [
     {
-      name: 'AI Film Making',
-      path: '/work/ai-film-making',
-      icon: '🤖',
-      image: '/images/toggle/aitoggle.jpg'
-    },
-    {
       name: 'Life Book',
-      path: '/work/life-book',
+      path: '/work/ai-film-making',
       icon: '📚',
       image: '/images/toggle/Screenshot_20251006-155007_Gallery.jpg'
+    },
+    {
+      name: 'AI Film Making',
+      path: '/work/life-book',
+      icon: '🤖',
+      image: '/images/toggle/aitoggle.jpg'
     },
     {
       name: 'Animation',
