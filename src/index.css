@@ -1479,8 +1479,9 @@ body {
   
   .hero-background {
     position: relative;
+    width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
     overflow: hidden;
   }
   
@@ -1495,7 +1496,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
   }
   
   .hero-content {
@@ -4382,8 +4383,9 @@ body {
   
   .hero-background {
     position: relative;
+    width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
     overflow: hidden;
   }
   
@@ -4398,7 +4400,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
   }
   
   .hero-content {
