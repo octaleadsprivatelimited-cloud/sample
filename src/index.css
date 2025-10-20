@@ -1276,8 +1276,8 @@ body {
 
 .hero-buttons .btn-primary,
 .hero-buttons .btn-secondary {
-  padding: 0.6rem 1.4rem;
-  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
@@ -1533,9 +1533,9 @@ body {
   
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    padding: 0.55rem 1.1rem;
-    font-size: 0.75rem;
-    min-width: 100px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.7rem;
+    min-width: 90px;
   }
 }
 
@@ -4437,9 +4437,9 @@ body {
   
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    padding: 0.45rem 0.9rem;
-    font-size: 0.7rem;
-    min-width: 85px;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.65rem;
+    min-width: 80px;
   }
   
   .service-photo {
