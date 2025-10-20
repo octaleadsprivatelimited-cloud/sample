@@ -38,6 +38,8 @@
   padding: 0 0.5rem;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -57,7 +59,7 @@
 .carousel-image {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
   border: 3px solid rgba(255, 255, 255, 0.3);
@@ -107,6 +109,15 @@
 .category-section[data-category="animation"] .carousel-image {
   aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+/* Services carousel specific styling with 16:9 aspect ratio */
+.services-carousel .carousel-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 

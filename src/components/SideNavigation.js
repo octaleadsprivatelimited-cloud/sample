@@ -7,16 +7,16 @@ const SideNavigation = () => {
 
   const navItems = [
     {
-      name: 'Life book',
-      path: '/work/life-book',
-      icon: '📚',
-      image: '/images/toggle/Screenshot_20251006-155007_Gallery.jpg'
-    },
-    {
-      name: 'Demos AI',
+      name: 'AI Film Making',
       path: '/work/ai-film-making',
       icon: '🤖',
       image: '/images/toggle/aitoggle.jpg'
+    },
+    {
+      name: 'Life Book',
+      path: '/work/life-book',
+      icon: '📚',
+      image: '/images/toggle/Screenshot_20251006-155007_Gallery.jpg'
     },
     {
       name: 'Animation',
@@ -25,7 +25,7 @@ const SideNavigation = () => {
       image: '/images/toggle/animation.jpg'
     },
     {
-      name: 'Promo',
+      name: 'Services',
       path: '/services',
       icon: '🎯',
       image: '/images/toggle/Screenshot_20251006-154750_Gallery.jpg'

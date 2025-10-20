@@ -439,58 +439,53 @@ export const digitalEducationImages = [
 
 export const servicesImages = [
   {
-    src: '/images/footer_services/1.png',
-    alt: 'Service 1',
-    description: 'Service 1'
+    src: '/images/footer_services/01.png',
+    alt: 'AI Film Making',
+    description: 'Revolutionary AI-powered film production'
   },
   {
-    src: '/images/footer_services/2.webp',
-    alt: 'Service 2',
-    description: 'Service 2'
+    src: '/images/footer_services/02.png',
+    alt: 'VFX Services',
+    description: 'Advanced visual effects and post-production'
   },
   {
-    src: '/images/footer_services/3.jpg',
-    alt: 'Service 3',
-    description: 'Service 3'
+    src: '/images/footer_services/03.png',
+    alt: 'Animation',
+    description: 'Creative 2D, 3D and motion graphics'
   },
   {
-    src: '/images/footer_services/4.webp',
-    alt: 'Service 4',
-    description: 'Service 4'
+    src: '/images/footer_services/04.png',
+    alt: 'Life Book',
+    description: 'Student life documentation and education'
   },
   {
-    src: '/images/footer_services/5.png',
-    alt: 'Service 5',
-    description: 'Service 5'
+    src: '/images/footer_services/05.png',
+    alt: 'Calendar Selfie',
+    description: 'AI-powered personalized calendar creation'
   },
   {
-    src: '/images/footer_services/6.png',
-    alt: 'Service 6',
-    description: 'Service 6'
+    src: '/images/footer_services/06.png',
+    alt: 'Financial Literacy',
+    description: 'Interactive educational content'
   },
   {
-    src: '/images/footer_services/7.webp',
-    alt: 'Service 7',
-    description: 'Service 7'
+    src: '/images/footer_services/07.png',
+    alt: 'E-Learning',
+    description: 'Next-generation learning solutions'
   },
   {
-    src: '/images/footer_services/8.png',
-    alt: 'Service 8',
-    description: 'Service 8'
+    src: '/images/footer_services/08.png',
+    alt: 'Digital Content',
+    description: 'Professional digital content creation'
   },
   {
-    src: '/images/footer_services/9.png',
-    alt: 'Service 9',
-    description: 'Service 9'
+    src: '/images/footer_services/09.png',
+    alt: 'Creative Solutions',
+    description: 'Innovative creative and technical solutions'
   },
   {
     src: '/images/footer_services/10.png',
-    alt: 'Service 10',
-    description: 'Service 10'
-  },
-  {
-    src: '/images/footer_services/10 (A).png',
-    alt: 'Service 11',
-    description: 'Service 11'
+    alt: 'Consulting Services',
+    description: 'Expert consulting and project management'
   }
 ];

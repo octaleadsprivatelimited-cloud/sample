@@ -74,13 +74,13 @@ const About = () => {
               <h2>Meet Our Founder</h2>
               <div className="founder-content">
                 <div className="founder-image">
-                  <img src="/images/founder.webp" alt="Mr. Ramaiah Raju - Founder of PIXEL-I" />
+                  <img src="/images/founder.webp" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I" />
                 </div>
                 <div className="founder-text">
-                  <h3>Mr. Ramaiah Raju</h3>
+                  <h3>Mr. Ramaiah Raju (B A Raju)</h3>
                   <h4>Founder & Visionary Leader</h4>
                   <p>
-                    Mr. Ramaiah Raju holds a B.Sc. and specialized training in Marine Engineering from Hindustan Shipyard, Visakhapatnam. With over 23 years in education and entertainment, he excels in creative direction, operations, and digital filmmaking.
+                    Mr. Ramaiah Raju (B A Raju) holds a B.Sc. and specialized training in Marine Engineering from Hindustan Shipyard, Visakhapatnam. With over 23 years in education and entertainment, he excels in creative direction, operations, and digital filmmaking.
                   </p>
                   <p>
                     His expertise spans animation, VFX, e-learning, and multimedia, delivering innovative projects with strategic and creative excellence. Having worked with Pentafour Software and the Sri Sathya Sai Organisation, he gained strong experience in managing large-scale 2D/3D productions and global film markets.
