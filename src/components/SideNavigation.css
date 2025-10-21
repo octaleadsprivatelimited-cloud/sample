@@ -4,7 +4,7 @@
 .side-nav-panel {
   position: fixed;
   top: 50%;
-  right: 8px;
+  right: 6px;
   transform: translateY(-50%);
   width: 50px;
   max-height: 220px;
@@ -16,6 +16,7 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  pointer-events: none;
 }
 
 .side-nav-panel.always-open {
@@ -25,6 +26,7 @@
 
 .side-nav-content {
   padding: 4px 0;
+  pointer-events: all;
 }
 
 /* Side Navigation Menu */
@@ -49,6 +51,7 @@
   width: 42px;
   height: 42px;
   margin: 0 auto;
+  pointer-events: all;
 }
 
 .side-nav-link:hover {
@@ -97,7 +100,7 @@
   .side-nav-panel {
     width: 44px;
     max-height: 190px;
-    right: 6px;
+    right: 5px;
     border-radius: 22px;
   }
 
@@ -129,7 +132,7 @@
   .side-nav-panel {
     width: 40px;
     max-height: 170px;
-    right: 5px;
+    right: 4px;
     border-radius: 20px;
   }
 
@@ -166,7 +169,7 @@
   .side-nav-panel {
     width: 36px;
     max-height: 155px;
-    right: 4px;
+    right: 3px;
     border-radius: 18px;
   }
 

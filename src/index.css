@@ -97,19 +97,6 @@ body {
   padding: 0 20px;
 }
 
-/* Ensure content doesn't overlap with side nav */
-@media (min-width: 769px) {
-  .container {
-    padding-right: max(20px, calc((100vw - 1200px) / 2));
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-right: 20px;
-  }
-}
-
 
 /* Classic White Navigation Styles - HIDDEN */
 .navbar {

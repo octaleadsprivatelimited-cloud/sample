@@ -1,8 +1,9 @@
 .scroll-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 75px;
+  bottom: 20px;
+  right: 20px;
   z-index: 998;
+  pointer-events: none;
 }
 
 .scroll-top-button {
@@ -19,6 +20,7 @@
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
   transition: all 0.3s ease;
   animation: fadeIn 0.3s ease;
+  pointer-events: all;
 }
 
 .scroll-top-button:hover {
@@ -50,13 +52,14 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
   .scroll-to-top {
-    bottom: 20px;
-    right: 60px;
+    bottom: 15px;
+    left: 15px;
+    right: auto;
   }
 
   .scroll-top-button {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
   }
 
   .scroll-top-button svg {
@@ -67,8 +70,8 @@
 
 @media (max-width: 480px) {
   .scroll-to-top {
-    bottom: 15px;
-    right: 55px;
+    bottom: 12px;
+    left: 12px;
   }
 
   .scroll-top-button {
@@ -84,8 +87,8 @@
 
 @media (max-width: 360px) {
   .scroll-to-top {
-    bottom: 12px;
-    right: 48px;
+    bottom: 10px;
+    left: 10px;
   }
 
   .scroll-top-button {
