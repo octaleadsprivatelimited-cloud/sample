@@ -19,7 +19,6 @@ import CalendarSelfie from './pages/work/CalendarSelfie';
 import FinancialLiteracyBook from './pages/work/FinancialLiteracyBook';
 import ELearning from './pages/work/ELearning';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -44,7 +43,6 @@ function App() {
           <Route path="/work/financial-literacy-book" element={<FinancialLiteracyBook />} />
           <Route path="/work/e-learning" element={<ELearning />} />
         </Routes>
-        <ScrollToTop />
         <Footer />
       </div>
     </Router>
