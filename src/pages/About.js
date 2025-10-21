@@ -8,15 +8,17 @@ const About = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About PIXEL-I - Leading AI Films, VFX & Animation Studio in Hyderabad</title>
-        <meta name="description" content="Learn about PIXEL-I Creative Studio. We are pioneers in AI Films, VFX, Animation, and Student's Lifebook, combining cutting-edge technology with creative artistry." />
-        <meta name="keywords" content="About PIXEL-I, Creative Studio Hyderabad, AI Film Studio, VFX Company, Animation Studio India, Student Lifebook" />
+        <title>About PIXEL-I Hyderabad - 23+ Years in AI Films, VFX & Animation | Ramaiah Raju Founder</title>
+        <meta name="description" content="PIXEL-I Hyderabad: Founded by Mr. Ramaiah Raju with 23+ years experience in AI Films, VFX & Animation. Leading creative studio in Telangana offering Rotoscoping, Compositing, Student's Lifebook. Serving HITEC City, Gachibowli, Madhapur since 2014." />
+        <meta name="keywords" content="PIXEL-I Hyderabad about, Ramaiah Raju founder, VFX studio Hyderabad history, animation company Telangana, creative studio HITEC City, Gachibowli VFX company, AI film making Hyderabad, visual effects studio India, 23 years experience VFX, Hyderabad animation studio" />
         <link rel="canonical" href="https://www.pixel-i.in/about" />
         
-        <meta property="og:title" content="About PIXEL-I - AI Films, VFX & Animation Studio" />
-        <meta property="og:description" content="Pioneers in AI Films, VFX, and Animation combining cutting-edge technology with creative artistry" />
+        <meta property="og:title" content="About PIXEL-I - Leading AI Films, VFX & Animation Studio in Hyderabad" />
+        <meta property="og:description" content="Founded by Mr. Ramaiah Raju. 23+ years experience in AI Films, VFX & Animation. Top creative studio in Hyderabad, Telangana serving clients worldwide." />
         <meta property="og:url" content="https://www.pixel-i.in/about" />
         <meta property="og:type" content="website" />
+        <meta property="og:locality" content="Hyderabad" />
+        <meta property="og:region" content="Telangana" />
         
         <script type="application/ld+json">
           {JSON.stringify({

@@ -5,15 +5,17 @@ const Services = () => {
   return (
     <div className="services-page">
       <Helmet>
-        <title>Our Services - AI Film Making, VFX, Animation, Life Book | PIXEL-I</title>
-        <meta name="description" content="PIXEL-I offers AI Film Making, VFX, Animation, Student's Life Book, and E-Learning services. Revolutionary AI-powered production with cutting-edge technology." />
-        <meta name="keywords" content="AI Film Making Services, VFX Services, Animation Services, Life Book, E-Learning, Rotoscoping, Paint Cleanup, Matchmove, Matte Painting, Compositing" />
+        <title>VFX, AI Film & Animation Services in Hyderabad | Rotoscoping, Compositing, Matte Painting | PIXEL-I</title>
+        <meta name="description" content="Professional VFX Services in Hyderabad: Rotoscoping, Paint & Cleanup, Matchmove, Matte Painting, Compositing. AI Film Making, 2D/3D Animation, Student's Lifebook. HITEC City, Gachibowli, Madhapur. ⭐4.8 Rating. 📞 9704771222" />
+        <meta name="keywords" content="VFX services Hyderabad, rotoscoping Hyderabad, compositing services Hyderabad, matte painting Hyderabad, matchmove Hyderabad, paint cleanup Hyderabad, AI film making services Hyderabad, animation services Hyderabad, 2D animation Hyderabad, 3D animation Hyderabad, student lifebook Hyderabad, e-learning Hyderabad, post production Hyderabad, visual effects Telangana, HITEC City VFX, Gachibowli animation services" />
         <link rel="canonical" href="https://www.pixel-i.in/services" />
         
-        <meta property="og:title" content="Our Services - AI Films, VFX, Animation | PIXEL-I" />
-        <meta property="og:description" content="Professional AI Film Making, VFX, Animation, and Educational Content Services" />
+        <meta property="og:title" content="VFX, AI Film & Animation Services Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:description" content="Expert VFX Services: Rotoscoping, Compositing, Matte Painting, Matchmove. AI Films, 2D/3D Animation. Serving Hyderabad, HITEC City, Gachibowli." />
         <meta property="og:url" content="https://www.pixel-i.in/services" />
         <meta property="og:type" content="website" />
+        <meta property="og:locality" content="Hyderabad" />
+        <meta property="og:region" content="Telangana" />
         
         <script type="application/ld+json">
           {JSON.stringify({

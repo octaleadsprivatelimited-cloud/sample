@@ -61,9 +61,17 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Pixel-i Creative Studio | Global AI Films & VFX</title>
-        <meta name="description" content="Contact Pixel-i for world-class AI Films, VFX, and Animation services. Serving clients globally from Hyderabad, India." />
-        <meta name="keywords" content="contact Pixel-i, AI films, VFX services, animation studio, global creative services" />
+        <title>Contact PIXEL-I Hyderabad | AI Film, VFX & Animation Studio in HITEC City, Telangana</title>
+        <meta name="description" content="Contact PIXEL-I Creative Studio: 📍 HITEC City, Hyderabad, Telangana 500081. 📞 +91-9704771222, ☎️ 040-31516696. ✉️ pixel.inc@gmail.com. AI Films, VFX, Animation, Rotoscoping services. Serving Gachibowli, Madhapur, Secunderabad & across India." />
+        <meta name="keywords" content="contact PIXEL-I Hyderabad, VFX studio Hyderabad address, animation studio Hyderabad phone, HITEC City creative studio, Gachibowli VFX contact, Madhapur animation studio, AI film making Hyderabad contact, visual effects studio Telangana, rotoscoping services Hyderabad contact, compositing studio Hyderabad" />
+        <link rel="canonical" href="https://www.pixel-i.in/contact" />
+        
+        <meta property="og:title" content="Contact PIXEL-I - AI Film, VFX & Animation Studio Hyderabad" />
+        <meta property="og:description" content="Get in touch with PIXEL-I: HITEC City, Hyderabad. Phone: +91-9704771222. AI Films, VFX, Animation services." />
+        <meta property="og:url" content="https://www.pixel-i.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locality" content="Hyderabad" />
+        <meta property="og:region" content="Telangana" />
       </Helmet>
 
       <div className="modern-contact-page">

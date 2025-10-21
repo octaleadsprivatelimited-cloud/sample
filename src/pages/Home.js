@@ -20,22 +20,25 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>PIXEL-I - AI Films | VFX | Animation | Student's Lifebook | Creative Studio Hyderabad</title>
-        <meta name="description" content="PIXEL-I is a pioneering creative studio in Hyderabad specializing in AI Films, VFX, Animation, and Student's Lifebook. We craft immersive, world-class content using cutting-edge artificial intelligence." />
-        <meta name="keywords" content="AI Films, VFX, Animation, Student Lifebook, Visual Effects, Creative Studio Hyderabad, AI Film Making, Digital Content, Motion Graphics, 3D Animation" />
+        <title>Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I Telangana - Animation, Rotoscoping Services</title>
+        <meta name="description" content="⭐ Top-rated AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting, 2D/3D Animation. Serving HITEC City, Gachibowli, Madhapur, Secunderabad. Student's Lifebook & E-Learning. 📞 9704771222" />
+        <meta name="keywords" content="best AI film making Hyderabad, top VFX studio Hyderabad, animation studio Telangana, rotoscoping services Hyderabad, compositing studio Hyderabad, matte painting Hyderabad, 3D animation Hyderabad, student lifebook Hyderabad, e-learning Hyderabad, HITEC City VFX, Gachibowli animation, Madhapur creative studio, Secunderabad film production, post production Hyderabad, AI technology Hyderabad, visual effects Telangana" />
         <link rel="canonical" href="https://www.pixel-i.in/" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="PIXEL-I - AI Films | VFX | Animation | Student's Lifebook" />
-        <meta property="og:description" content="Pioneering creative studio specializing in AI Films, VFX, Animation, and Student's Lifebook using cutting-edge artificial intelligence." />
+        <meta property="og:title" content="Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:description" content="Top-rated AI Film Making, VFX & Animation Studio in Hyderabad. Expert Rotoscoping, Compositing, Matte Painting. 23+ years experience. Serving HITEC City, Gachibowli & across India." />
         <meta property="og:url" content="https://www.pixel-i.in/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.pixel-i.in/images/home_about.jpg" />
+        <meta property="og:locality" content="Hyderabad" />
+        <meta property="og:region" content="Telangana" />
+        <meta property="og:country-name" content="India" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PIXEL-I - AI Films | VFX | Animation" />
-        <meta name="twitter:description" content="Pioneering creative studio specializing in AI Films, VFX, and Animation" />
+        <meta name="twitter:title" content="PIXEL-I Hyderabad - AI Film, VFX & Animation Studio" />
+        <meta name="twitter:description" content="Leading AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting services." />
         <meta name="twitter:image" content="https://www.pixel-i.in/images/home_about.jpg" />
         
         {/* Structured Data */}

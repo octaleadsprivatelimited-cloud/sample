@@ -7,15 +7,17 @@ const Vfx = () => {
   return (
     <div className="vfx-page">
       <Helmet>
-        <title>VFX Services - Rotoscoping, Compositing, Matte Painting | PIXEL-I</title>
-        <meta name="description" content="Professional VFX services including Rotoscoping, Paint & Cleanup, Matchmove/Camera Tracking, Matte Painting, and Compositing. View our portfolio of visual effects projects." />
-        <meta name="keywords" content="VFX Services, Rotoscoping, Paint Cleanup, Matchmove, Camera Tracking, Matte Painting, Compositing, Visual Effects, Post Production" />
+        <title>VFX Services Hyderabad - Rotoscoping, Compositing, Matte Painting | PIXEL-I Telangana</title>
+        <meta name="description" content="Expert VFX Services in Hyderabad: Rotoscoping, Paint & Cleanup, Matchmove/Camera Tracking, Matte Painting, Compositing. Worked on Baahubali, KGF, Bigil. HITEC City, Gachibowli. Portfolio of 100+ projects. 📞 9704771222" />
+        <meta name="keywords" content="VFX services Hyderabad, rotoscoping Hyderabad, compositing Hyderabad, matte painting Hyderabad, matchmove Hyderabad, camera tracking Hyderabad, paint cleanup Hyderabad, visual effects Hyderabad, post production Hyderabad, VFX portfolio Hyderabad, Baahubali VFX, KGF VFX, HITEC City VFX, Gachibowli visual effects" />
         <link rel="canonical" href="https://www.pixel-i.in/work/vfx" />
         
-        <meta property="og:title" content="VFX Services Portfolio | PIXEL-I" />
-        <meta property="og:description" content="Professional VFX services: Rotoscoping, Compositing, Matte Painting, and more" />
+        <meta property="og:title" content="VFX Services Hyderabad - Rotoscoping, Compositing | PIXEL-I" />
+        <meta property="og:description" content="Professional VFX services in Hyderabad: Rotoscoping, Compositing, Matte Painting. Portfolio includes Baahubali, KGF, Bigil." />
         <meta property="og:url" content="https://www.pixel-i.in/work/vfx" />
         <meta property="og:type" content="website" />
+        <meta property="og:locality" content="Hyderabad" />
+        <meta property="og:region" content="Telangana" />
         
         <script type="application/ld+json">
           {JSON.stringify({
