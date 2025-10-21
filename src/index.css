@@ -967,19 +967,26 @@ body {
   
   .service-info-box {
     padding: 1.8rem;
-    height: 320px;
+    height: auto;
+    min-height: 320px;
   }
   
   .service-info h3 {
     font-size: 1.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .service-info p {
     font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .service-info li {
     font-size: 0.85rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
@@ -994,19 +1001,26 @@ body {
   .service-info-box {
     padding: 1.5rem;
     border-radius: 10px;
-    height: 260px;
+    height: auto;
+    min-height: auto;
   }
   
   .service-info h3 {
     font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .service-info p {
     font-size: 0.85rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .service-info li {
     font-size: 0.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
