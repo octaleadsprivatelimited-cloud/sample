@@ -3703,6 +3703,22 @@ body {
   
   .mega-footer .social-links {
     justify-content: center;
+    gap: 0.6rem;
+  }
+  
+  /* Show only icons on mobile */
+  .mega-footer .social-link {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    font-size: 0;
+    border-radius: 50%;
+  }
+  
+  .mega-footer .social-link svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -3715,6 +3731,40 @@ body {
   
   .mega-footer .contact-section {
     padding: 1rem;
+  }
+  
+  /* Even smaller icons on very small screens */
+  .mega-footer .social-link {
+    width: 36px;
+    height: 36px;
+    padding: 0.4rem;
+  }
+  
+  .mega-footer .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .mega-footer .social-links {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Extra small devices - minimal icons */
+  .mega-footer .social-link {
+    width: 32px;
+    height: 32px;
+    padding: 0.3rem;
+  }
+  
+  .mega-footer .social-link svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .mega-footer .social-links {
+    gap: 0.4rem;
   }
 }
 
