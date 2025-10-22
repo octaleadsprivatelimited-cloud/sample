@@ -87,7 +87,6 @@ const Services = () => {
         <div className="container">
           <div className="section-header">
             <h2>Our Services</h2>
-            <p>AI Films | VFX | Animation | Student's Lifebook</p>
           </div>
           <div className="services-content">
             {/* Row 1: Image left, text right */}
