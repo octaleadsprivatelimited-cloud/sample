@@ -1298,16 +1298,21 @@ body {
 }
 
 .hero-buttons .btn-primary,
-.hero-buttons .btn-secondary {
-  padding: 0.4rem 1rem;
-  font-size: 0.75rem;
+.hero-buttons .btn-secondary,
+.hero-buttons .hero-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
   transition: all 0.3s ease;
   display: inline-block;
-  min-width: 120px;
+  min-width: 130px;
+  max-width: 130px;
+  width: 130px;
   text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .hero-buttons .btn-primary {
@@ -1557,14 +1562,17 @@ body {
   }
   
   .hero-buttons .btn-primary,
-  .hero-buttons .btn-secondary {
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-    min-width: 120px;
-    max-width: 120px;
-    width: 120px;
-    flex: 0 0 120px;
+  .hero-buttons .btn-secondary,
+  .hero-buttons .hero-btn {
+    padding: 0.55rem 1rem !important;
+    font-size: 0.75rem !important;
+    min-width: 130px !important;
+    max-width: 130px !important;
+    width: 130px !important;
+    flex: 0 0 130px !important;
     text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
 }
 
@@ -4517,14 +4525,17 @@ body {
   }
   
   .hero-buttons .btn-primary,
-  .hero-buttons .btn-secondary {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.7rem;
-    min-width: 110px;
-    max-width: 110px;
-    width: 110px;
-    flex: 0 0 110px;
+  .hero-buttons .btn-secondary,
+  .hero-buttons .hero-btn {
+    padding: 0.5rem 0.7rem !important;
+    font-size: 0.7rem !important;
+    min-width: 115px !important;
+    max-width: 115px !important;
+    width: 115px !important;
+    flex: 0 0 115px !important;
     text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
   
   .service-photo {
@@ -4598,13 +4609,17 @@ body {
   }
   
   .hero-buttons .btn-primary,
-  .hero-buttons .btn-secondary {
-    padding: 0.45rem 0.6rem;
-    font-size: 0.65rem;
-    min-width: 100px;
-    max-width: 100px;
-    width: 100px;
-    flex: 0 0 100px;
+  .hero-buttons .btn-secondary,
+  .hero-buttons .hero-btn {
+    padding: 0.5rem 0.6rem !important;
+    font-size: 0.65rem !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
+    width: 105px !important;
+    flex: 0 0 105px !important;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
   
   .service-photo {
