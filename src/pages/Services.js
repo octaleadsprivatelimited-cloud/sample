@@ -78,6 +78,8 @@ const Services = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
+          <h1>Our Services</h1>
+          <p>AI Films | VFX | Animation | Student's Lifebook</p>
         </div>
       </section>
       
