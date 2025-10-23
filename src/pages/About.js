@@ -76,7 +76,7 @@ const About = () => {
               <h2>Meet Our Founder</h2>
               <div className="founder-content">
                 <div className="founder-image">
-                  <img src="/images/founder.webp" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I" />
+                  <img src="/images/founder.jpg" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I" />
                 </div>
                 <div className="founder-text">
                   <h3>Mr. Ramaiah Raju (B A Raju)</h3>

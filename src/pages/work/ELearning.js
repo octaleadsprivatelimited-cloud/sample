@@ -24,7 +24,16 @@ const ELearning = () => {
         </div>
       </section>
       
-      <Gallery images={digitalEducationImages} title="E-Learning Portfolio" />
+      <section className="ip-development-section">
+        <div className="container">
+          <div className="ip-development-content">
+            <h2>EDUTAINMENT & DIGITAL LEARNING</h2>
+            <p>Developing interactive learning content for children, schools, and corporate training.</p>
+          </div>
+        </div>
+      </section>
+      
+      <Gallery images={digitalEducationImages} />
     </div>
   );
 };

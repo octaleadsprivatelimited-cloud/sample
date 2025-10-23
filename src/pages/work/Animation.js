@@ -24,7 +24,16 @@ const Animation = () => {
         </div>
       </section>
       
-      <Gallery images={pureAnimationImages} title="Animation Portfolio" />
+      <section className="ip-development-section">
+        <div className="container">
+          <div className="ip-development-content">
+            <h2>IP DEVELOPMENT & PARTNERSHIPS</h2>
+            <p>Developing, original IPs with strategic partners licensing, and co-producing</p>
+          </div>
+        </div>
+      </section>
+      
+      <Gallery images={pureAnimationImages} />
     </div>
   );
 };
