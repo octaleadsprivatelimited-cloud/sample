@@ -1,0 +1,271 @@
+.category-carousel {
+  margin: 0;
+  padding: 1rem;
+  background: transparent;
+  position: relative;
+  width: 100%;
+}
+
+.category-title {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.carousel-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 25%; /* Show 4 images on desktop */
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(0, 122, 255, 0.4), rgba(88, 86, 214, 0.4), rgba(175, 82, 222, 0.4));
+  border-radius: 8px 8px 0 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Images maintain their natural aspect ratios */
+
+/* No hover effects - images are display only */
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-slide:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-description {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Navigation arrows removed */
+
+/* Indicators removed */
+
+/* All indicator styles removed */
+
+/* Life Book carousel specific styling with 1:1 aspect ratio */
+.category-section[data-category="life-book"] .carousel-image {
+  aspect-ratio: 1/1;
+}
+
+/* Animation slider specific styling with 16:9 aspect ratio */
+.category-section[data-category="animation"] .carousel-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Services carousel specific styling with 16:9 aspect ratio */
+.services-carousel .carousel-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+/* Carousel Dots Navigation */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0;
+  padding: 0.25rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+}
+
+.carousel-dot.active {
+  background: #ffffff;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 50%; /* Show 2 images on mobile */
+    padding: 0 0.25rem;
+  }
+  
+  /* VFX and Animation sliders show 1 image on mobile */
+  .category-carousel[data-mobile-slides="1"] .carousel-slide {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-image {
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+  }
+  
+  /* Animation slider maintains 16:9 on mobile */
+  .category-section[data-category="animation"] .carousel-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  
+  /* VFX slider maintains natural aspect ratio on mobile */
+  .category-carousel[data-mobile-slides="1"] .carousel-image {
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+  
+  .category-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Life Book exception - keep more spacing */
+  .category-section[data-category="life-book"] .category-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Animation slider - remove gap completely */
+  .category-section[data-category="animation"] .category-title {
+    margin-bottom: 0;
+  }
+  
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  
+  .carousel-prev {
+    left: 5px;
+  }
+  
+  .carousel-next {
+    right: 5px;
+  }
+  
+  .carousel-dots {
+    margin-top: 0;
+    gap: 6px;
+    padding: 0.15rem;
+  }
+  
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-carousel {
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+  }
+  
+  .category-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  /* Life Book exception - keep more spacing */
+  .category-section[data-category="life-book"] .category-title {
+    margin-bottom: 0.4rem;
+  }
+  
+  /* Animation slider - remove gap completely */
+  .category-section[data-category="animation"] .category-title {
+    margin-bottom: 0;
+  }
+  
+  .carousel-slide {
+    padding: 0 0.2rem;
+  }
+  
+  .carousel-image {
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+  }
+  
+  /* Animation slider maintains 16:9 on small mobile */
+  .category-section[data-category="animation"] .carousel-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  
+  .carousel-dots {
+    margin-top: 0;
+    gap: 5px;
+    padding: 0.1rem;
+  }
+  
+  .carousel-dot {
+    width: 7px;
+    height: 7px;
+  }
+}
