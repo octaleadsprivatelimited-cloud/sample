@@ -21,44 +21,32 @@ const Services = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Creative Services",
+            "name": "VFX, AI Film & Animation Services",
+            "description": "Professional creative services including AI Film Making, VFX, Animation, and educational content in Hyderabad.",
             "provider": {
               "@type": "Organization",
-              "name": "PIXEL-I Creative Studio"
+              "name": "PIXEL-I Creative Studio",
+              "url": "https://www.pixel-istudios.com/"
             },
-            "areaServed": "IN",
+            "areaServed": {
+              "@type": "State",
+              "name": "Telangana"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pixel-istudios.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.pixel-istudios.com/services" }
+              ]
+            },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Creative Services",
+              "name": "Creative Services Catalog",
               "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "AI Film Making"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "VFX Services"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Animation"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Life Book"
-                  }
-                }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Film Making" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VFX & Rotoscoping" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "2D/3D Animation" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Student's Lifebook" } }
               ]
             }
           })}
@@ -94,6 +82,8 @@ const Services = () => {
               <div className="service-media left">
                 <div 
                   className="service-photo" 
+                  role="img"
+                  aria-label="AI Film Making Services at PIXEL-I"
                   style={{
                     backgroundImage: "url('/images/wp 03 (5).png')",
                     backgroundSize: 'cover',
@@ -155,6 +145,8 @@ const Services = () => {
               <div className="service-media left">
                 <div 
                   className="service-photo" 
+                  role="img"
+                  aria-label="Student's Lifebook Educational Service"
                   style={{
                     backgroundImage: "url('/images/lifebook.png')",
                     backgroundSize: 'cover',
@@ -182,6 +174,8 @@ const Services = () => {
               <div className="service-media right">
                 <div 
                   className="service-photo" 
+                  role="img"
+                  aria-label="2D and 3D Animation Services"
                   style={{
                     backgroundImage: "url('/images/Animation/Animation_service.png')",
                     backgroundSize: 'cover',

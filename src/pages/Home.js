@@ -25,15 +25,13 @@ const Home = () => {
         <meta name="keywords" content="best AI film making Hyderabad, top VFX studio Hyderabad, animation studio Telangana, rotoscoping services Hyderabad, compositing studio Hyderabad, matte painting Hyderabad, 3D animation Hyderabad, student lifebook Hyderabad, e-learning Hyderabad, HITEC City VFX, Gachibowli animation, Madhapur creative studio, Secunderabad film production, post production Hyderabad, AI technology Hyderabad, visual effects Telangana" />
         <link rel="canonical" href="https://www.pixel-istudios.com/" />
         
-        {/* Open Graph */}
+        {/* Open Graph / Facebook */}
         <meta property="og:title" content="Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I Telangana" />
         <meta property="og:description" content="Top-rated AI Film Making, VFX & Animation Studio in Hyderabad. Expert Rotoscoping, Compositing, Matte Painting. 23+ years experience. Serving HITEC City, Gachibowli & across India." />
         <meta property="og:url" content="https://www.pixel-istudios.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.pixel-istudios.com/images/home_about.jpg" />
-        <meta property="og:locality" content="Hyderabad" />
-        <meta property="og:region" content="Telangana" />
-        <meta property="og:country-name" content="India" />
+        <meta property="og:site_name" content="PIXEL-I Creative Studio" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -41,19 +39,63 @@ const Home = () => {
         <meta name="twitter:description" content="Leading AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting services." />
         <meta name="twitter:image" content="https://www.pixel-istudios.com/images/home_about.jpg" />
         
-        {/* Structured Data */}
+        {/* Structured Data / JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "PIXEL-I Creative Studio - Home",
-            "description": "Professional creative studio offering AI Films, VFX, Animation, and educational content services",
-            "url": "https://www.pixel-istudios.com/",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "PIXEL-I Creative Studio",
-              "url": "https://www.pixel-istudios.com"
-            }
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://www.pixel-istudios.com/#website",
+                "url": "https://www.pixel-istudios.com/",
+                "name": "PIXEL-I Creative Studio",
+                "description": "AI Film Making, VFX & Animation Studio",
+                "publisher": { "@id": "https://www.pixel-istudios.com/#organization" }
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.pixel-istudios.com/#organization",
+                "name": "PIXEL-I Creative Studio",
+                "url": "https://www.pixel-istudios.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.pixel-istudios.com/images/footer_logo.png"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-9704771222",
+                  "contactType": "customer service",
+                  "email": "info@pixel-istudios.com"
+                },
+                "sameAs": [
+                  "https://x.com/RamaiahRaj86813",
+                  "https://www.facebook.com/profile.php?id=100064957750976",
+                  "https://www.instagram.com/pixell.inc/",
+                  "https://www.youtube.com/@pixel-i3252"
+                ]
+              },
+              {
+                "@type": "LocalBusiness",
+                "name": "PIXEL-I Creative Studio",
+                "image": "https://www.pixel-istudios.com/images/home_about.jpg",
+                "@id": "https://www.pixel-istudios.com/",
+                "url": "https://www.pixel-istudios.com/",
+                "telephone": "+91-9704771222",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "HITEC City",
+                  "addressLocality": "Hyderabad",
+                  "addressRegion": "Telangana",
+                  "postalCode": "500081",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 17.4483,
+                  "longitude": 78.3915
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>
@@ -71,6 +113,7 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
+          <h1 className="visually-hidden">Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I</h1>
           <div className="hero-buttons">
             <Link to="/services" className="btn-primary hero-btn">Our Services</Link>
             <Link to="/about" className="btn-primary hero-btn">About Us</Link>

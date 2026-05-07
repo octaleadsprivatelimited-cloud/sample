@@ -25,8 +25,15 @@ const About = () => {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             "name": "About PIXEL-I Creative Studio",
-            "description": "Information about PIXEL-I, a leading creative studio specializing in AI Films, VFX, and Animation",
-            "url": "https://www.pixel-istudios.com/about"
+            "description": "Learn about PIXEL-I, founded by Ramaiah Raju with 23+ years of expertise in AI Film Making, VFX, and Animation in Hyderabad.",
+            "url": "https://www.pixel-istudios.com/about",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pixel-istudios.com/" },
+                { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.pixel-istudios.com/about" }
+              ]
+            }
           })}
         </script>
       </Helmet>
@@ -44,6 +51,7 @@ const About = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content about-hero-content">
+          <h1 className="visually-hidden">About PIXEL-I Hyderabad - Our Journey & Vision</h1>
           <p className="about-tagline">{companyInfo.tagline}</p>
         </div>
       </section>
@@ -76,7 +84,7 @@ const About = () => {
               <h2>Meet Our Founder</h2>
               <div className="founder-content">
                 <div className="founder-image">
-                  <img src="/images/founder.jpg" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I" />
+                  <img src="/images/founder.jpg" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I Hyderabad, 23+ years experience in VFX & Animation" loading="lazy" />
                 </div>
                 <div className="founder-text">
                   <h3>Mr. Ramaiah Raju (B A Raju)</h3>

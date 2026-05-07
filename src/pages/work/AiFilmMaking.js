@@ -25,12 +25,21 @@ const AiFilmMaking = () => {
             "@context": "https://schema.org",
             "@type": "CreativeWork",
             "name": "AI Film Making Portfolio",
-            "description": "Portfolio of AI-powered film production projects",
+            "description": "Portfolio of AI-powered film production projects by PIXEL-I Hyderabad.",
             "creator": {
               "@type": "Organization",
-              "name": "PIXEL-I Creative Studio"
+              "name": "PIXEL-I Creative Studio",
+              "url": "https://www.pixel-istudios.com/"
             },
-            "genre": "AI Films"
+            "genre": "AI Films",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pixel-istudios.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://www.pixel-istudios.com/services" },
+                { "@type": "ListItem", "position": 3, "name": "AI Film Making", "item": "https://www.pixel-istudios.com/work/ai-film-making" }
+              ]
+            }
           })}
         </script>
       </Helmet>

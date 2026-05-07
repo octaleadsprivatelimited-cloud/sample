@@ -23,18 +23,21 @@ const Vfx = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "VFX Services",
+            "name": "VFX Services",
+            "description": "Professional VFX including Rotoscoping, Compositing, and Matte Painting in Hyderabad.",
             "provider": {
               "@type": "Organization",
-              "name": "PIXEL-I Creative Studio"
+              "name": "PIXEL-I Creative Studio",
+              "url": "https://www.pixel-istudios.com/"
             },
-            "offers": [
-              "Rotoscoping",
-              "Paint & Cleanup",
-              "Matchmove / Camera Tracking",
-              "Matte Painting / Environment",
-              "Compositing"
-            ]
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pixel-istudios.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://www.pixel-istudios.com/services" },
+                { "@type": "ListItem", "position": 3, "name": "VFX", "item": "https://www.pixel-istudios.com/work/vfx" }
+              ]
+            }
           })}
         </script>
       </Helmet>

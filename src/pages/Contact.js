@@ -70,8 +70,38 @@ const Contact = () => {
         <meta property="og:description" content="Get in touch with PIXEL-I: HITEC City, Hyderabad. Phone: +91-9704771222. AI Films, VFX, Animation services." />
         <meta property="og:url" content="https://www.pixel-istudios.com/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:locality" content="Hyderabad" />
-        <meta property="og:region" content="Telangana" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact PIXEL-I Creative Studio",
+            "description": "Contact our Hyderabad studio for AI Film Making, VFX, and Animation services.",
+            "url": "https://www.pixel-istudios.com/contact",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "PIXEL-I Creative Studio",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "HITEC City",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "postalCode": "500081",
+                "addressCountry": "IN"
+              },
+              "telephone": "+91-9704771222",
+              "email": "info@pixel-istudios.com",
+              "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pixel-istudios.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.pixel-istudios.com/contact" }
+              ]
+            }
+          })}
+        </script>
       </Helmet>
 
       <div className="modern-contact-page">
