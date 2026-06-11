@@ -7,12 +7,12 @@ const AiFilmMaking = () => {
   return (
     <div className="ai-film-making-page">
       <Helmet>
-        <title>AI Film Making Services Hyderabad | AI Movie Production, Script Generation | PIXEL-I Telangana</title>
+        <title>AI Film Making Services Hyderabad | AI Movie Production, Script Generation | PIXEL-I STUDIOS Telangana</title>
         <meta name="description" content="Revolutionary AI Film Making Services in Hyderabad: AI Script Generation, Automated Storyboarding, AI-Powered Editing, Socio Fantasy Films, Cover Songs, Web Series. HITEC City, Gachibowli, Madhapur. Portfolio: Virat 2500 BC, Mirror, Vedanta@AI. 📞 9704771222" />
         <meta name="keywords" content="AI film making Hyderabad, AI movie production Hyderabad, AI script generation Hyderabad, AI video editing Hyderabad, AI storyboarding Hyderabad, AI films Telangana, AI cinematography Hyderabad, AI post production Hyderabad, HITEC City AI films, Gachibowli AI production, artificial intelligence films Hyderabad" />
         <link rel="canonical" href="https://www.pixel-istudios.com/work/ai-film-making" />
         
-        <meta property="og:title" content="AI Film Making Services Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:title" content="AI Film Making Services Hyderabad | PIXEL-I STUDIOS Telangana" />
         <meta property="og:description" content="Revolutionary AI Film Making in Hyderabad: AI Script Generation, Editing, Storyboarding. Portfolio: Virat 2500 BC, Mirror, Vedanta@AI." />
         <meta property="og:url" content="https://www.pixel-istudios.com/work/ai-film-making" />
         <meta property="og:type" content="website" />
@@ -25,10 +25,10 @@ const AiFilmMaking = () => {
             "@context": "https://schema.org",
             "@type": "CreativeWork",
             "name": "AI Film Making Portfolio",
-            "description": "Portfolio of AI-powered film production projects by PIXEL-I Hyderabad.",
+            "description": "Portfolio of AI-powered film production projects by PIXEL-I STUDIOS Hyderabad.",
             "creator": {
               "@type": "Organization",
-              "name": "PIXEL-I Creative Studio",
+              "name": "PIXEL-I STUDIOS",
               "url": "https://www.pixel-istudios.com/"
             },
             "genre": "AI Films",

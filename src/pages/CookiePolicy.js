@@ -5,11 +5,11 @@ const CookiePolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Cookie Policy - Pixel-i Creative Studio</title>
-        <meta name="description" content="Cookie Policy for Pixel-i Creative Studio. Learn about how we use cookies and similar technologies on our website for AI Films, VFX, and Animation services." />
-        <meta name="keywords" content="cookie policy, cookies, tracking, GDPR, privacy, Pixel-i, creative studio, AI films, VFX, animation, website analytics" />
-        <meta property="og:title" content="Cookie Policy - Pixel-i Creative Studio" />
-        <meta property="og:description" content="Cookie Policy for Pixel-i Creative Studio. Learn about how we use cookies and similar technologies on our website." />
+        <title>Cookie Policy - Pixel-i studios</title>
+        <meta name="description" content="Cookie Policy for Pixel-i studios. Learn about how we use cookies and similar technologies on our website for AI Films, VFX, and Animation services." />
+        <meta name="keywords" content="cookie policy, cookies, tracking, GDPR, privacy, Pixel-i studios, creative studio, AI films, VFX, animation, website analytics" />
+        <meta property="og:title" content="Cookie Policy - Pixel-i studios" />
+        <meta property="og:description" content="Cookie Policy for Pixel-i studios. Learn about how we use cookies and similar technologies on our website." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.pixel-istudios.com/cookies" />
         <link rel="canonical" href="https://www.pixel-istudios.com/cookies" />
@@ -45,7 +45,7 @@ const CookiePolicy = () => {
 
               <div className="section">
                 <h2>2. How We Use Cookies</h2>
-                <p>Pixel-i Creative Studio uses cookies for several purposes:</p>
+                <p>Pixel-i studios uses cookies for several purposes:</p>
                 
                 <h3>2.1 Essential Cookies</h3>
                 <ul>
@@ -305,7 +305,7 @@ const CookiePolicy = () => {
                 
                 <div className="contact-info">
                   <div className="contact-item">
-                    <strong>Pixel-i Creative Studio</strong><br />
+                    <strong>Pixel-i studios</strong><br />
                     Hyderabad, Telangana, India
                   </div>
                   <div className="contact-item">

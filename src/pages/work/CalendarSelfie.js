@@ -7,11 +7,11 @@ const CalendarSelfie = () => {
   return (
     <div className="calendar-selfie-page">
       <Helmet>
-        <title>AI Calendar Selfie Hyderabad | Personalized AI Calendars | PIXEL-I Telangana</title>
-        <meta name="description" content="AI Calendar Selfie: Create personalized calendars with smart AI selfie integration in Hyderabad. Perfect for students, families, and corporate gifts. Innovative digital solutions by PIXEL-I." />
+        <title>AI Calendar Selfie Hyderabad | Personalized AI Calendars | PIXEL-I STUDIOS Telangana</title>
+        <meta name="description" content="AI Calendar Selfie: Create personalized calendars with smart AI selfie integration in Hyderabad. Perfect for students, families, and corporate gifts. Innovative digital solutions by PIXEL-I STUDIOS." />
         <meta name="keywords" content="calendar selfie Hyderabad, AI calendar Hyderabad, personalized calendar Hyderabad, smart calendar selfie, digital calendar solutions Telangana" />
         <link rel="canonical" href="https://www.pixel-istudios.com/work/calendar-selfie" />
-        <meta property="og:title" content="AI Calendar Selfie Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:title" content="AI Calendar Selfie Hyderabad | PIXEL-I STUDIOS Telangana" />
         <meta property="og:description" content="Create personalized AI calendars with smart selfie integration. Innovative digital gifts and solutions." />
         <meta property="og:url" content="https://www.pixel-istudios.com/work/calendar-selfie" />
         <meta property="og:type" content="website" />

@@ -5,12 +5,12 @@ const Services = () => {
   return (
     <div className="services-page">
       <Helmet>
-        <title>VFX, AI Film & Animation Services in Hyderabad | Rotoscoping, Compositing, Matte Painting | PIXEL-I</title>
+        <title>VFX, AI Film & Animation Services in Hyderabad | Rotoscoping, Compositing, Matte Painting | PIXEL-I STUDIOS</title>
         <meta name="description" content="Professional VFX Services in Hyderabad: Rotoscoping, Paint & Cleanup, Matchmove, Matte Painting, Compositing. AI Film Making, 2D/3D Animation, Student's Lifebook. HITEC City, Gachibowli, Madhapur. ⭐4.8 Rating. 📞 9704771222" />
         <meta name="keywords" content="VFX services Hyderabad, rotoscoping Hyderabad, compositing services Hyderabad, matte painting Hyderabad, matchmove Hyderabad, paint cleanup Hyderabad, AI film making services Hyderabad, animation services Hyderabad, 2D animation Hyderabad, 3D animation Hyderabad, student lifebook Hyderabad, e-learning Hyderabad, post production Hyderabad, visual effects Telangana, HITEC City VFX, Gachibowli animation services" />
         <link rel="canonical" href="https://www.pixel-istudios.com/services" />
         
-        <meta property="og:title" content="VFX, AI Film & Animation Services Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:title" content="VFX, AI Film & Animation Services Hyderabad | PIXEL-I STUDIOS Telangana" />
         <meta property="og:description" content="Expert VFX Services: Rotoscoping, Compositing, Matte Painting, Matchmove. AI Films, 2D/3D Animation. Serving Hyderabad, HITEC City, Gachibowli." />
         <meta property="og:url" content="https://www.pixel-istudios.com/services" />
         <meta property="og:type" content="website" />
@@ -25,7 +25,7 @@ const Services = () => {
             "description": "Professional creative services including AI Film Making, VFX, Animation, and educational content in Hyderabad.",
             "provider": {
               "@type": "Organization",
-              "name": "PIXEL-I Creative Studio",
+              "name": "PIXEL-I STUDIOS",
               "url": "https://www.pixel-istudios.com/"
             },
             "areaServed": {
@@ -83,7 +83,7 @@ const Services = () => {
                 <div 
                   className="service-photo" 
                   role="img"
-                  aria-label="AI Film Making Services at PIXEL-I"
+                  aria-label="AI Film Making Services at PIXEL-I STUDIOS"
                   style={{
                     backgroundImage: "url('/images/wp 03 (5).png')",
                     backgroundSize: 'cover',

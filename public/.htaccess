@@ -1,4 +1,4 @@
-# PIXEL-I Creative Studio - Apache Configuration
+# PIXEL-I STUDIOS - Apache Configuration
 # SEO and Performance Optimizations
 
 # Enable compression for better performance
@@ -17,88 +17,67 @@
 
 # Set cache headers for better performance
 <IfModule mod_expires.c>
-    ExpiresActive on
-    
+    ExpiresActive On
+
     # Images
     ExpiresByType image/jpg "access plus 1 month"
     ExpiresByType image/jpeg "access plus 1 month"
     ExpiresByType image/gif "access plus 1 month"
     ExpiresByType image/png "access plus 1 month"
     ExpiresByType image/webp "access plus 1 month"
-    
+
     # CSS and JavaScript
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType application/x-javascript "access plus 1 month"
-    
+
     # HTML
     ExpiresByType text/html "access plus 1 day"
-    
+
     # Fonts
     ExpiresByType font/woff "access plus 1 month"
     ExpiresByType font/woff2 "access plus 1 month"
-    
+
     # Manifest and other files
     ExpiresByType application/manifest+json "access plus 1 week"
     ExpiresByType text/xml "access plus 1 day"
 </IfModule>
 
-# Force HTTPS (uncomment when SSL is configured)
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Remove www (uncomment if you want to redirect www to non-www)
-# RewriteEngine On
-# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
 # Handle React Router (SPA routing)
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
 
-# Handle Angular and React Router
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+    # Force HTTPS (uncomment when SSL is configured)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Remove www (uncomment if you want to redirect www to non-www)
+    # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    # RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+    # Serve existing files/directories; otherwise fall back to index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [L]
+</IfModule>
 
 # Security headers
 <IfModule mod_headers.c>
-    # Prevent clickjacking
-    Header always append X-Frame-Options SAMEORIGIN
-    
-    # XSS Protection
+    Header always set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
-    
-    # Content type sniffing protection
-    Header set X-Content-Type-Options nosniff
-    
-    # Referrer policy
+    Header set X-Content-Type-Options "nosniff"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
-    
-    # Content Security Policy (adjust as needed)
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self'; frame-src 'self' https://www.google.com https://online.flippingbook.com https://www.youtube.com https://www.youtube-nocookie.com;"
 </IfModule>
 
-# Block access to sensitive files
-<Files ".htaccess">
-    Order allow,deny
-    Deny from all
-</Files>
+# Block access to hidden Apache config files
+<IfModule mod_alias.c>
+    RedirectMatch 403 (?i)^/\.ht
+</IfModule>
 
-<Files "robots.txt">
-    Order allow,deny
-    Allow from all
-</Files>
-
-<Files "sitemap.xml">
-    Order allow,deny
-    Allow from all
-</Files>
-
-# Custom error pages (optional)
+# SPA fallback for missing routes
 ErrorDocument 404 /index.html
-ErrorDocument 500 /index.html
 
 # MIME types for better browser support
 <IfModule mod_mime.c>

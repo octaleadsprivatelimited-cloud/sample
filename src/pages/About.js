@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About PIXEL-I Hyderabad - 23+ Years in AI Films, VFX & Animation | Ramaiah Raju Founder</title>
-        <meta name="description" content="PIXEL-I Hyderabad: Founded by Mr. Ramaiah Raju with 23+ years experience in AI Films, VFX & Animation. Leading creative studio in Telangana offering Rotoscoping, Compositing, Student's Lifebook. Serving HITEC City, Gachibowli, Madhapur since 2014." />
-        <meta name="keywords" content="PIXEL-I Hyderabad about, Ramaiah Raju founder, VFX studio Hyderabad history, animation company Telangana, creative studio HITEC City, Gachibowli VFX company, AI film making Hyderabad, visual effects studio India, 23 years experience VFX, Hyderabad animation studio" />
+        <title>About PIXEL-I STUDIOS Hyderabad - 23+ Years in AI Films, VFX & Animation | Ramaiah Raju Founder</title>
+        <meta name="description" content="PIXEL-I STUDIOS Hyderabad: Founded by Mr. Ramaiah Raju with 23+ years experience in AI Films, VFX & Animation. Leading creative studio in Telangana offering Rotoscoping, Compositing, Student's Lifebook. Serving HITEC City, Gachibowli, Madhapur since 2014." />
+        <meta name="keywords" content="PIXEL-I STUDIOS Hyderabad about, Ramaiah Raju founder, VFX studio Hyderabad history, animation company Telangana, creative studio HITEC City, Gachibowli VFX company, AI film making Hyderabad, visual effects studio India, 23 years experience VFX, Hyderabad animation studio" />
         <link rel="canonical" href="https://www.pixel-istudios.com/about" />
         
-        <meta property="og:title" content="About PIXEL-I - Leading AI Films, VFX & Animation Studio in Hyderabad" />
+        <meta property="og:title" content="About PIXEL-I STUDIOS - Leading AI Films, VFX & Animation Studio in Hyderabad" />
         <meta property="og:description" content="Founded by Mr. Ramaiah Raju. 23+ years experience in AI Films, VFX & Animation. Top creative studio in Hyderabad, Telangana serving clients worldwide." />
         <meta property="og:url" content="https://www.pixel-istudios.com/about" />
         <meta property="og:type" content="website" />
@@ -24,8 +24,8 @@ const About = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AboutPage",
-            "name": "About PIXEL-I Creative Studio",
-            "description": "Learn about PIXEL-I, founded by Ramaiah Raju with 23+ years of expertise in AI Film Making, VFX, and Animation in Hyderabad.",
+            "name": "About PIXEL-I STUDIOS",
+            "description": "Learn about PIXEL-I STUDIOS, founded by Ramaiah Raju with 23+ years of expertise in AI Film Making, VFX, and Animation in Hyderabad.",
             "url": "https://www.pixel-istudios.com/about",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -51,7 +51,7 @@ const About = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content about-hero-content">
-          <h1 className="visually-hidden">About PIXEL-I Hyderabad - Our Journey & Vision</h1>
+          <h1 className="visually-hidden">About PIXEL-I STUDIOS Hyderabad - Our Journey & Vision</h1>
           <p className="about-tagline">{companyInfo.tagline}</p>
         </div>
       </section>
@@ -60,7 +60,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>About Pixel-i</h2>
+              <h2>About Pixel-i studios</h2>
               <p>{aboutUs.description}</p>
               
               <div className="vision-mission">
@@ -84,7 +84,7 @@ const About = () => {
               <h2>Meet Our Founder</h2>
               <div className="founder-content">
                 <div className="founder-image">
-                  <img src="/images/founder.jpg" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I Hyderabad, 23+ years experience in VFX & Animation" loading="lazy" />
+                  <img src="/images/founder.jpg" alt="Mr. Ramaiah Raju (B A Raju) - Founder of PIXEL-I STUDIOS Hyderabad, 23+ years experience in VFX & Animation" loading="lazy" />
                 </div>
                 <div className="founder-text">
                   <h3>Mr. Ramaiah Raju (B A Raju)</h3>
@@ -96,7 +96,7 @@ const About = () => {
                     His expertise spans animation, VFX, e-learning, and multimedia, delivering innovative projects with strategic and creative excellence. Having worked with Pentafour Software and the Sri Sathya Sai Organisation, he gained strong experience in managing large-scale 2D/3D productions and global film markets.
                   </p>
                   <p>
-                    As the Founder of PIXEL-I (Visualize Your Idea), Mr. Raju leads business strategy, marketing, and innovation with visionary leadership. A true blend of creativity and strategy, he continues to inspire transformation in the digital media space.
+                    As the Founder of PIXEL-I STUDIOS (Visualize Your Idea), Mr. Raju leads business strategy, marketing, and innovation with visionary leadership. A true blend of creativity and strategy, he continues to inspire transformation in the digital media space.
                   </p>
                   <div className="founder-strengths">
                     <h4>Key Strengths:</h4>
@@ -167,7 +167,7 @@ const About = () => {
             </div>
 
             <div className="why-choose-us-section">
-              <h2>Why Choose Pixel-i?</h2>
+              <h2>Why Choose Pixel-i studios?</h2>
               <ul className="why-choose-list">
                 {whyChooseUs.map((reason, index) => (
                   <li key={index}>{reason}</li>

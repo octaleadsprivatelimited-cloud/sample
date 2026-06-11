@@ -7,11 +7,11 @@ const ELearning = () => {
   return (
     <div className="e-learning-page">
       <Helmet>
-        <title>E-Learning Solutions Hyderabad | AI-Enhanced Educational Content | PIXEL-I</title>
-        <meta name="description" content="Next-generation E-Learning solutions in Hyderabad. AI-enhanced educational content, interactive digital learning platforms for schools and corporate training. Edutainment by PIXEL-I." />
+        <title>E-Learning Solutions Hyderabad | AI-Enhanced Educational Content | PIXEL-I STUDIOS</title>
+        <meta name="description" content="Next-generation E-Learning solutions in Hyderabad. AI-enhanced educational content, interactive digital learning platforms for schools and corporate training. Edutainment by PIXEL-I STUDIOS." />
         <meta name="keywords" content="e-learning solutions Hyderabad, digital learning Hyderabad, educational content Hyderabad, AI in education Telangana, interactive learning Hyderabad, corporate training e-learning" />
         <link rel="canonical" href="https://www.pixel-istudios.com/work/e-learning" />
-        <meta property="og:title" content="E-Learning Solutions Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:title" content="E-Learning Solutions Hyderabad | PIXEL-I STUDIOS Telangana" />
         <meta property="og:description" content="Next-generation digital learning with AI-enhanced content. Edutainment solutions for schools and training." />
         <meta property="og:url" content="https://www.pixel-istudios.com/work/e-learning" />
         <meta property="og:type" content="website" />

@@ -61,13 +61,13 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact PIXEL-I Hyderabad | AI Film, VFX & Animation Studio in HITEC City, Telangana</title>
-        <meta name="description" content="Contact PIXEL-I Creative Studio: 📍 HITEC City, Hyderabad, Telangana 500081. 📞 +91-9704771222, ☎️ 040-31516696. ✉️ pixel.inc@gmail.com. AI Films, VFX, Animation, Rotoscoping services. Serving Gachibowli, Madhapur, Secunderabad & across India." />
-        <meta name="keywords" content="contact PIXEL-I Hyderabad, VFX studio Hyderabad address, animation studio Hyderabad phone, HITEC City creative studio, Gachibowli VFX contact, Madhapur animation studio, AI film making Hyderabad contact, visual effects studio Telangana, rotoscoping services Hyderabad contact, compositing studio Hyderabad" />
+        <title>Contact PIXEL-I STUDIOS Hyderabad | AI Film, VFX & Animation Studio in HITEC City, Telangana</title>
+        <meta name="description" content="Contact PIXEL-I STUDIOS: 📍 HITEC City, Hyderabad, Telangana 500081. 📞 +91-9704771222, ☎️ 040-31516696. ✉️ pixel.inc@gmail.com. AI Films, VFX, Animation, Rotoscoping services. Serving Gachibowli, Madhapur, Secunderabad & across India." />
+        <meta name="keywords" content="contact PIXEL-I STUDIOS Hyderabad, VFX studio Hyderabad address, animation studio Hyderabad phone, HITEC City creative studio, Gachibowli VFX contact, Madhapur animation studio, AI film making Hyderabad contact, visual effects studio Telangana, rotoscoping services Hyderabad contact, compositing studio Hyderabad" />
         <link rel="canonical" href="https://www.pixel-istudios.com/contact" />
         
-        <meta property="og:title" content="Contact PIXEL-I - AI Film, VFX & Animation Studio Hyderabad" />
-        <meta property="og:description" content="Get in touch with PIXEL-I: HITEC City, Hyderabad. Phone: +91-9704771222. AI Films, VFX, Animation services." />
+        <meta property="og:title" content="Contact PIXEL-I STUDIOS - AI Film, VFX & Animation Studio Hyderabad" />
+        <meta property="og:description" content="Get in touch with PIXEL-I STUDIOS: HITEC City, Hyderabad. Phone: +91-9704771222. AI Films, VFX, Animation services." />
         <meta property="og:url" content="https://www.pixel-istudios.com/contact" />
         <meta property="og:type" content="website" />
         
@@ -75,12 +75,12 @@ const Contact = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact PIXEL-I Creative Studio",
+            "name": "Contact PIXEL-I STUDIOS",
             "description": "Contact our Hyderabad studio for AI Film Making, VFX, and Animation services.",
             "url": "https://www.pixel-istudios.com/contact",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "PIXEL-I Creative Studio",
+              "name": "PIXEL-I STUDIOS",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "HITEC City",
@@ -326,7 +326,7 @@ const Contact = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Pixel-i Location"
+            title="Pixel-i studios Location"
           ></iframe>
         </section>
       </div>

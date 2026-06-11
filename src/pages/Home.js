@@ -20,22 +20,22 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I Telangana - Animation, Rotoscoping Services</title>
+        <title>Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I STUDIOS Telangana - Animation, Rotoscoping Services</title>
         <meta name="description" content="⭐ Top-rated AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting, 2D/3D Animation. Serving HITEC City, Gachibowli, Madhapur, Secunderabad. Student's Lifebook & E-Learning. 📞 9704771222" />
         <meta name="keywords" content="best AI film making Hyderabad, top VFX studio Hyderabad, animation studio Telangana, rotoscoping services Hyderabad, compositing studio Hyderabad, matte painting Hyderabad, 3D animation Hyderabad, student lifebook Hyderabad, e-learning Hyderabad, HITEC City VFX, Gachibowli animation, Madhapur creative studio, Secunderabad film production, post production Hyderabad, AI technology Hyderabad, visual effects Telangana" />
         <link rel="canonical" href="https://www.pixel-istudios.com/" />
         
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I Telangana" />
+        <meta property="og:title" content="Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I STUDIOS Telangana" />
         <meta property="og:description" content="Top-rated AI Film Making, VFX & Animation Studio in Hyderabad. Expert Rotoscoping, Compositing, Matte Painting. 23+ years experience. Serving HITEC City, Gachibowli & across India." />
         <meta property="og:url" content="https://www.pixel-istudios.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.pixel-istudios.com/images/home_about.jpg" />
-        <meta property="og:site_name" content="PIXEL-I Creative Studio" />
+        <meta property="og:site_name" content="PIXEL-I STUDIOS" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PIXEL-I Hyderabad - AI Film, VFX & Animation Studio" />
+        <meta name="twitter:title" content="PIXEL-I STUDIOS Hyderabad - AI Film, VFX & Animation Studio" />
         <meta name="twitter:description" content="Leading AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting services." />
         <meta name="twitter:image" content="https://www.pixel-istudios.com/images/home_about.jpg" />
         
@@ -48,14 +48,14 @@ const Home = () => {
                 "@type": "WebSite",
                 "@id": "https://www.pixel-istudios.com/#website",
                 "url": "https://www.pixel-istudios.com/",
-                "name": "PIXEL-I Creative Studio",
+                "name": "PIXEL-I STUDIOS",
                 "description": "AI Film Making, VFX & Animation Studio",
                 "publisher": { "@id": "https://www.pixel-istudios.com/#organization" }
               },
               {
                 "@type": "Organization",
                 "@id": "https://www.pixel-istudios.com/#organization",
-                "name": "PIXEL-I Creative Studio",
+                "name": "PIXEL-I STUDIOS",
                 "url": "https://www.pixel-istudios.com/",
                 "logo": {
                   "@type": "ImageObject",
@@ -76,7 +76,7 @@ const Home = () => {
               },
               {
                 "@type": "LocalBusiness",
-                "name": "PIXEL-I Creative Studio",
+                "name": "PIXEL-I STUDIOS",
                 "image": "https://www.pixel-istudios.com/images/home_about.jpg",
                 "@id": "https://www.pixel-istudios.com/",
                 "url": "https://www.pixel-istudios.com/",
@@ -113,7 +113,7 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1 className="visually-hidden">Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I</h1>
+          <h1 className="visually-hidden">Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I STUDIOS</h1>
           <div className="hero-buttons">
             <Link to="/services" className="btn-primary hero-btn">Our Services</Link>
             <Link to="/about" className="btn-primary hero-btn">About Us</Link>
@@ -149,11 +149,11 @@ const Home = () => {
           <div className="about-grid">
             <div className="about-content-left">
                   <div className="about-image" style={{ marginTop: '20px' }}>
-                    <img src="/images/home_about.jpg" alt="About Pixel-i" />
+                    <img src="/images/home_about.jpg" alt="About Pixel-i studios" />
                   </div>
             </div>
                 <div className="about-content-right">
-                  <h2>About Pixel-i</h2>
+                  <h2>About Pixel-i studios</h2>
                   <p>
                     We are a pioneering creative studio at the forefront of AI Films, 
                     advanced visual effects (VFX), and next-generation animation. Our team combines 
