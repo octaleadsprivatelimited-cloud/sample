@@ -19,10 +19,12 @@ import CalendarSelfie from './pages/work/CalendarSelfie';
 import FinancialLiteracyBook from './pages/work/FinancialLiteracyBook';
 import ELearning from './pages/work/ELearning';
 import Footer from './components/Footer';
+import ScrollToTopOnPageChange from './components/ScrollToTopOnPageChange';
 
 function App() {
   return (
     <Router>
+      <ScrollToTopOnPageChange />
       <div className="App">
         <Navbar />
         <SideNavigation />

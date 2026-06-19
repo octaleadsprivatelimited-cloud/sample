@@ -1191,6 +1191,10 @@ body {
   overflow: hidden;
 }
 
+.financial-literacy-page .hero-with-video {
+  min-height: 50vh;
+}
+
 /* Reduce hero height to half for all pages except home */
 .about-page .hero-with-image,
 .services-page .hero-with-image,
@@ -1276,6 +1280,10 @@ body {
   height: 100%;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   z-index: 2;
+}
+
+.hero-with-video .hero-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
 }
 
 .hero-content {

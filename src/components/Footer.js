@@ -34,7 +34,7 @@ const Footer = () => {
                 <Link to="/work/animation" className="footer-grid-link">Animation</Link>
                 <Link to="/work/life-book" className="footer-grid-link">Student's Lifebook</Link>
                 <Link to="/work/calendar-selfie" className="footer-grid-link">Calendar Selfie</Link>
-                <Link to="/work/financial-literacy-book" className="footer-grid-link">Archviz</Link>
+                <Link to="/work/financial-literacy-book" className="footer-grid-link">Architectural Visualization (ArchViz)</Link>
                 <Link to="/work/e-learning" className="footer-grid-link">E-Learning</Link>
                 <Link to="/portfolio" className="footer-grid-link">Portfolio</Link>
               </div>

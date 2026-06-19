@@ -51,7 +51,7 @@ const Navbar = () => {
     { name: 'Animation', path: '/work/animation' },
     { name: 'Student\'s Lifebook', path: '/work/life-book' },
     { name: 'Calendar Selfie', path: '/work/calendar-selfie' },
-    { name: 'Financial Literacy', path: '/work/financial-literacy-book' },
+    { name: 'Architectural Visualization (ArchViz)', path: '/work/financial-literacy-book' },
     { name: 'E-Learning', path: '/work/e-learning' }
   ];
 

@@ -53,9 +53,9 @@ const Sitemap = () => {
       description: "AI-powered calendar generation with personalized selfie integration and smart design"
     },
     {
-      title: "Financial Literacy Book",
+      title: "Architectural Visualization (ArchViz)",
       url: "/work/financial-literacy-book",
-      description: "Interactive educational content for financial awareness and money management"
+      description: "High-end 3D renders, immersive environments, and cinematic walkthroughs"
     },
     {
       title: "E-Learning",
@@ -181,7 +181,7 @@ const Sitemap = () => {
                     <h3>Educational Services</h3>
                     <ul>
                       <li><Link to="/work/life-book">Student's Lifebook</Link></li>
-                      <li><Link to="/work/financial-literacy-book">Financial Literacy</Link></li>
+                      <li><Link to="/work/financial-literacy-book">Architectural Visualization (ArchViz)</Link></li>
                       <li><Link to="/work/e-learning">E-Learning Solutions</Link></li>
                     </ul>
                   </div>
