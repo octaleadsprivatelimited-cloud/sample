@@ -149,11 +149,11 @@ const Home = () => {
           <div className="about-grid">
             <div className="about-content-left">
                   <div className="about-image" style={{ marginTop: '20px' }}>
-                    <img src="/images/home_about.jpg" alt="About Pixel-i studios" />
+                    <img src="/images/home_about.jpg" alt="About Pixel-i Studios" />
                   </div>
             </div>
                 <div className="about-content-right">
-                  <h2>About Pixel-i studios</h2>
+                  <h2>About Pixel-i Studios</h2>
                   <p>
                     We are a pioneering creative studio at the forefront of AI Films, 
                     advanced visual effects (VFX), and next-generation animation. Our team combines 

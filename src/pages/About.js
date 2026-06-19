@@ -60,7 +60,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>About Pixel-i studios</h2>
+              <h2>About Pixel-i Studios</h2>
               <p>{aboutUs.description}</p>
               
               <div className="vision-mission">
@@ -167,7 +167,7 @@ const About = () => {
             </div>
 
             <div className="why-choose-us-section">
-              <h2>Why Choose Pixel-i studios?</h2>
+              <h2>Why Choose Pixel-i Studios?</h2>
               <ul className="why-choose-list">
                 {whyChooseUs.map((reason, index) => (
                   <li key={index}>{reason}</li>

@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="footer-section footer-company">
             <div className="footer-logo-block">
               <div className="footer-logo">
-                <img src="/images/footer_logo.png" alt="Pixel-i studios Logo" className="footer-logo-img" />
+                <img src="/images/footer_logo.png" alt="Pixel-i Studios Logo" className="footer-logo-img" />
               </div>
-              <h3>Pixel-i studios</h3>
+              <h3>Pixel-i Studios</h3>
               <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
               <p className="footer-description">
                 Pioneering creative studio at the forefront of AI Films, VFX, and Animation.
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              <p>&copy; 2014-25 Pixel-i studios. All rights reserved.</p>
+              <p>&copy; 2014-25 Pixel-i Studios. All rights reserved.</p>
             </div>
             <div className="footer-links-bottom">
               <Link to="/privacy">Privacy Policy</Link>

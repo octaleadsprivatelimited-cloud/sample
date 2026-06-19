@@ -326,7 +326,7 @@ const Contact = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Pixel-i studios Location"
+            title="Pixel-i Studios Location"
           ></iframe>
         </section>
       </div>
