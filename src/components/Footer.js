@@ -12,7 +12,7 @@ const Footer = () => {
                 <img src="/images/footer_logo.png" alt="Pixel-i Studios Logo" className="footer-logo-img" />
               </div>
               <h3>Pixel-i Studios</h3>
-              <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK</p>
+              <p className="footer-tagline">AI FILMS | VFX | ANIMATION | STUDENT'S LIFEBOOK | ARCHVIZ</p>
               <p className="footer-description">
                 Pioneering creative studio at the forefront of AI Films, VFX, and Animation.
                 We craft immersive, world-class content using cutting-edge artificial intelligence
@@ -33,8 +33,8 @@ const Footer = () => {
                 <Link to="/work/vfx" className="footer-grid-link">Visual Effects (VFX)</Link>
                 <Link to="/work/animation" className="footer-grid-link">Animation</Link>
                 <Link to="/work/life-book" className="footer-grid-link">Student's Lifebook</Link>
-                <Link to="/work/calendar-selfie" className="footer-grid-link">Calendar Selfie</Link>
                 <Link to="/work/financial-literacy-book" className="footer-grid-link">Architectural Visualization (ArchViz)</Link>
+                <Link to="/work/calendar-selfie" className="footer-grid-link">Calendar Selfie</Link>
                 <Link to="/work/e-learning" className="footer-grid-link">E-Learning</Link>
                 <Link to="/portfolio" className="footer-grid-link">Portfolio</Link>
               </div>
