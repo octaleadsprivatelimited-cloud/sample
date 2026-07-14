@@ -18,7 +18,7 @@ import { abroadShootsImages } from '../data/abroadShootsImages';
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <Helmet>
         <title>Best AI Film Making & VFX Studio in Hyderabad | PIXEL-I STUDIOS Telangana - Animation, Rotoscoping Services</title>
         <meta name="description" content="⭐ Top-rated AI Film Making, VFX & Animation Studio in Hyderabad, Telangana. Expert Rotoscoping, Compositing, Matte Painting, 2D/3D Animation. Serving HITEC City, Gachibowli, Madhapur, Secunderabad. Student's Lifebook & E-Learning. 📞 9704771222" />

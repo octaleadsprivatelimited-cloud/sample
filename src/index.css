@@ -1286,6 +1286,10 @@ body {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
 }
 
+.home-page .hero-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15));
+}
+
 .hero-content {
   position: absolute;
   bottom: 2rem;
